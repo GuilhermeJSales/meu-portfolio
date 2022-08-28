@@ -23,6 +23,7 @@ export const Paragraph = styled.p`
   color:#E0E0E0;
 `;
 
+
 export const ButtonForm = styled(Link)`
   font-family:'Roboto';
   font-size:1.25rem;
@@ -79,7 +80,8 @@ export const LinkHeader = styled(Link)`
   font-family:${({font}) => font};
   position:relative;
   transition: .2s ease-in-out;
-  &:hover{
+  &:hover,
+  &:focus{
     opacity:1;
     color:#F5F5F5;
   }
@@ -93,12 +95,14 @@ export const LinkHeader = styled(Link)`
    display: block;
    opacity:0;
   transition: .2s ease-in-out;
-  }&:hover:after{
+  }&:hover:after,
+  &:focus:after{
     opacity:1;
+    outline:none;
   }`;
 
 
-// INICIO SOBRE
+// HOME PRESENTATION
 
 export const Span = styled.span`
   font-family:'Roboto';
@@ -113,13 +117,77 @@ export const SubTitle = styled.h2`
   color:#F5F5F5;
 `;
 
-export const ParagraphSobre = styled(Paragraph)`
+export const ParagraphPresentation = styled(Paragraph)`
   margin-top: 1.875rem;
-  max-width:30vw;
+  max-width:35vw;
 `;
-
 
 export const DivFlex = styled.div`
 display:flex;
 align-items:center;
 `;
+
+
+// ABOUT SECTION
+
+export const TitleAbout = styled.h2`
+color:#E0E0E0;
+font-size:1.875rem;
+font-family: 'Arial';
+margin-bottom: 1.875rem;
+&:before{
+  content:"❖";
+  color:#F29602;
+  margin-right:0.625rem;
+}
+`;
+
+export const AboutSect = styled.section `
+  padding:100px 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+`;
+
+
+export const ParagraphAbout = styled(Paragraph)`
+  max-width:40vw;
+`;
+
+export const  ImgDiv = styled.div`
+  justify-self:end;
+`;
+
+// TECNOLOGIAS
+
+export const  TecDiv = styled.ul`
+  display:grid;
+  grid-template-columns: repeat(4, 60px);
+  gap:1.5rem;
+  align-items:center;
+  margin-top:1.875rem;
+  text-align:center;
+`;
+
+
+export const TecLink = styled(Link)`
+  background:#1F1F1F;
+  border:2px solid #474747;
+  padding:10px;
+  display:block;
+  cursor:pointer;
+  &:hover,
+  &:focus{
+    background:#333333;
+    border:2px solid #F29602;
+    outline:none;
+  }
+`
+
+
+export const  TecSpan = styled.span`
+  font-family:'Roboto';
+  font-size:.75rem;  
+  font-style:italic;
+  color:#E0E0E0;
+`;
+

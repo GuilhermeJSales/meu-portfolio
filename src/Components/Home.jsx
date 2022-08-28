@@ -1,11 +1,14 @@
-import { Sobre } from "./Sobre/Sobre";
+import {Presentation} from "./Sobre/Presentation";
 import { Container } from "../styles";
+import { About } from "./Sobre/About";
+
 
 export const Home = () => {
   return (
     <main>
       <Container>
-        <Sobre />
+        <Presentation />
+        <About />
       </Container>
       </main>
   )
