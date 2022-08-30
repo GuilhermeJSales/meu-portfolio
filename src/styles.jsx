@@ -8,24 +8,37 @@ import { Link } from 'react-router-dom';
 export const Container = styled.div`
  max-width:1400px;
  margin: 0 auto;
- padding: 6.25rem 0;
+ padding: 6.25rem 60px;
 `;
 
 export const Title = styled.h1`
-  font-family:'Roboto';
+  font-family:'Roboto', sans-serif;
   font-size:3.125rem;
   color:#F5F5F5;
 `;
 
+
+export const SubTitleAll = styled.h2`
+color:#E0E0E0;
+font-size:1.875rem;
+font-family: 'Arial';
+margin-bottom: 1.875rem;
+&:before{
+  content:"❖";
+  color:#F29602;
+  margin-right:0.625rem;
+}
+`;
+
 export const Paragraph = styled.p`
-  font-family:'Roboto';
+  font-family:'Roboto', sans-serif;
   font-size:1.125rem;
   color:#E0E0E0;
 `;
 
 
 export const ButtonForm = styled(Link)`
-  font-family:'Roboto';
+  font-family:'Roboto', sans-serif;
   font-size:1.25rem;
   text-transform:uppercase;
   color:#E0E0E0;
@@ -52,7 +65,7 @@ export const ButtonForm = styled(Link)`
 
 // HEADER
 export const HeaderSite = styled.header`
-padding: 1.875rem;
+padding: 1.875rem 0;
 background:#1F1F1F;
 `;
 
@@ -60,7 +73,7 @@ export const ContainerHeader = styled(Container)`
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:0;
+padding:0 60px;
 `;
 
 export const HeaderUl = styled.ul`
@@ -105,14 +118,14 @@ export const LinkHeader = styled(Link)`
 // HOME PRESENTATION
 
 export const Span = styled.span`
-  font-family:'Roboto';
+  font-family:'Roboto', sans-serif;
   font-size:1.25rem;
   color:#F29602;
 `;
 
 
 export const SubTitle = styled.h2`
-  font-family:'Roboto';
+  font-family:'Roboto', sans-serif;
   font-size:3.125rem;
   color:#F5F5F5;
 `;
@@ -130,17 +143,7 @@ align-items:center;
 
 // ABOUT SECTION
 
-export const TitleAbout = styled.h2`
-color:#E0E0E0;
-font-size:1.875rem;
-font-family: 'Arial';
-margin-bottom: 1.875rem;
-&:before{
-  content:"❖";
-  color:#F29602;
-  margin-right:0.625rem;
-}
-`;
+
 
 export const AboutSect = styled.section `
   padding:100px 0;
@@ -185,9 +188,63 @@ export const TecLink = styled(Link)`
 
 
 export const  TecSpan = styled.span`
-  font-family:'Roboto';
+  font-family:'Roboto', sans-serif;
   font-size:.75rem;  
   font-style:italic;
   color:#E0E0E0;
 `;
+
+
+
+// MY EXPERIENCIES 
+
+export const SubH3 = styled.h3`
+  font-family:'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-style:italic;
+  font-weight:normal;
+  color:#E0E0E0;
+  margin-bottom:1.875rem;
+`;
+
+
+
+
+export const ButtonExp = styled.button`
+  background:transparent;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  color:#474747;
+  font-size:1.25rem;
+  font-family:'Roboto', sans-serif;
+  display:flex;
+  flex:1;
+  padding:10px 0;
+  width:20vw; 
+  transition:.5s ease-in-out;
+  &:before{
+    content:"•";
+    color:#F29602;
+    margin:0 0.625rem;
+  } &:hover{
+      color:#f29602;
+    } &:focus{
+      color:#fff;
+      background:#1F1F1F;  
+      cursor:pointer;
+    }&.active{
+      color:#fff;
+      background:#1F1F1F;  
+      cursor:pointer;
+    }
+`;
+
+
+
+
+
+
+
+
 
