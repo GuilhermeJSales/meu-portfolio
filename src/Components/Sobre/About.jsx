@@ -1,6 +1,6 @@
 import {ReactComponent as LogoTipo} from '../../Assets/sobre-logo.svg'
 import {AboutSect,SubTitleAll, ParagraphAbout, ImgDiv} from "../../styles"
-import { Tecnologias } from './Tecnologias'
+import { Tecnologies } from './Tecnologies'
 
 export const About = () => {
   return (
@@ -16,7 +16,7 @@ export const About = () => {
           mas não fico apenas no "codar", também crio logotipos e imagens para mídias sociais.<br></br>
           <br></br>Enfim, aqui vão algumas tecnologias e softwares que possuo experiências:
         </ParagraphAbout>
-        <Tecnologias />
+        <Tecnologies />
       </div>
 
       <ImgDiv>

@@ -4,7 +4,7 @@ import { Header } from "./Components/Header"
 import { Portfolio } from "./Components/Portfolio"
 import { Contato } from "./Components/Contato"
 import  GlobalStyle from "./Global"
-import { Tecnologias } from "./Components/Sobre/Tecnologias"
+import { Tecnologies } from "./Components/Sobre/Tecnologies"
 
 
 
@@ -17,7 +17,7 @@ export const App = () => {
           <Route path="/" element={<Home/>}/>
           <Route path="portfolio" element={<Portfolio/>}/>
           <Route path="contato" element={<Contato/>}/>
-          <Route path="tecnologia/:name" element={<Tecnologias/>}/>
+          <Route path="tecnologia/:name" element={<Tecnologies/>}/>
         </Routes>
         <GlobalStyle />
       </BrowserRouter>

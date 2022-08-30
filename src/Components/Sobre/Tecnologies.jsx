@@ -3,7 +3,7 @@ import {api} from "../../api"
 import {TecDiv, TecSpan, TecLink} from "../../styles"
 
 
-export const Tecnologias = () => {
+export const Tecnologies = () => {
   return (
    <TecDiv>
    {api.map((api) => <li  key={api.id}><TecLink to={api.name}><img src={api.logo}/></TecLink><TecSpan>{api.name}</TecSpan></li>)}

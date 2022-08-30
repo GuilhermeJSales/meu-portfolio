@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 
@@ -208,20 +208,17 @@ export const SubH3 = styled.h3`
 `;
 
 
-
-
 export const ButtonExp = styled.button`
   background:transparent;
   border:none;
   outline:none;
   cursor:pointer;
   color:#474747;
-  font-size:1.25rem;
+  font-size:1rem;
   font-family:'Roboto', sans-serif;
   display:flex;
   flex:1;
   padding:10px 0;
-  width:20vw; 
   transition:.5s ease-in-out;
   &:before{
     content:"•";
@@ -241,9 +238,47 @@ export const ButtonExp = styled.button`
 `;
 
 
+export const JobDiv = styled.div`
+  display:grid;
+  grid-template-columns:1fr;
+`;
+
+
+export const DivExp = styled(JobDiv)`
+  grid-template-columns:repeat(2,400px);
+  gap:1.875rem;
+`;
+
+
+export const TitleExp = styled.h4`
+font-family:'Roboto', sans-serif;
+font-size:1rem;
+font-style:italic;
+font-weight: normal;
+color:#F5F5F5;
+margin-bottom:10px;
+`;
+
+
+export const TitleSpan = styled.span`
+  color:#F29602;
+  font-family:'Roboto', sans-serif;
+  font-size:1rem;
+  font-style:initial;
+  font-weight:bold;
+  display:inline-block;
+  letter-spacing:1px;
+  margin-left:5px;
+`;
 
 
 
+export const ParagraphExp = styled.p`
+  font-family:'Roboto', sans-serif;
+  font-size: .875rem;
+  color:#E0E0E0;
+  line-height:1.2;
+`;
 
 
 
