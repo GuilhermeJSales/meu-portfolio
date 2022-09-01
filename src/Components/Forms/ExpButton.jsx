@@ -1,17 +1,21 @@
+import { useRef } from "react";
 import { ButtonExp } from "../../styles";
 
-export const ExpButton = ({children, id, setJob,setAnima, anima, job}) => {
+export const ExpButton = ({children, id, setJob,setAnima, anima, job, setScrollButton}) => {
 
+  const ref = useRef();
 
   const handleClick = () => {
     setJob(id);
     setAnima(!anima);
+    const height = ref.current.clientHeight;
+    setScrollButton(`${id * height}px`);
   }
-
   return(
     <>
     <ButtonExp 
-      className={job === 0 && id === 0 && 'active'} 
+      ref={ref}
+      className={job === id && 'active'} 
       onClick={handleClick} 
       id={id}
     >

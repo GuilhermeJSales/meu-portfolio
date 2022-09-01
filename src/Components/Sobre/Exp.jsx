@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { CssTest, DivFlexExp, ExpName, ExpParagraph, ExpSpanName } from "../../styles";
+import { CssTest, DivButtonFlex, DivFlexExp, DivScroll, ExpName, ExpParagraph, ExpSpanName, SubTitleAll, ThirdTitle } from "../../styles";
 import { ExpButton } from "../Forms/ExpButton";
 import { CSSTransition } from 'react-transition-group';
 
@@ -16,26 +16,36 @@ export const Exp = () => {
 
   const [job, setJob] = useState(0);
   const [anima, setAnima] = useState(false);
-  const nodeRef = useRef();
+  const [scrollButton, setScrollButton] = useState(0);
+  const nodeRef = useRef(null);
+
+  
 
 
   return( 
    <section>
+    <SubTitleAll>Minhas Experiências</SubTitleAll>
+    <ThirdTitle>Experiências relacionadas a área de Tecnologia</ThirdTitle>
     <DivFlexExp>
-      <div>
-   {exp.map(e => <ExpButton anima={anima} setAnima={setAnima} job={job} setJob={setJob} key={e.id} id={e.id}>{e.cargo}</ExpButton>)}
-      </div>
+      <DivButtonFlex>
+   {exp.map(e => <ExpButton setScrollButton={setScrollButton} anima={anima} setAnima={setAnima} job={job} setJob={setJob} key={e.id} id={e.id}>{e.cargo}</ExpButton>)}
+      </DivButtonFlex>
    {job === exp[job].id &&    
-   <ul>
+   <ul style={{flex:1, maxWidth:'100%'}}>
     <CSSTransition
-   in={anima} timeout={500} classNames="my-node" ref={nodeRef}>
-    <CssTest>
+      in={anima} 
+      timeout={500} 
+      classNames="my-node" 
+      ref={nodeRef}
+    >
+    <CssTest ref={nodeRef}>
       <ExpName>{exp[job].cargo} <ExpSpanName>{`❖ ${exp[job].empresa}`}</ExpSpanName></ExpName>
       <ExpParagraph>{exp[job].description}</ExpParagraph>
     </CssTest>
     </CSSTransition>
    </ul>
    }
+    <DivScroll scrollButton={`translateY(${scrollButton})`}></DivScroll>
    </DivFlexExp>
    </section>
   )

@@ -32,9 +32,20 @@ margin-bottom: 1.875rem;
 }
 `;
 
+export const ThirdTitle = styled.h3`
+  font-size:1rem;
+  color:#E0E0E0;
+  font-family:'Roboto Mono', monospace;
+  font-style:italic;
+  font-weight:Normal;
+  margin-bottom: 1.875rem;
+
+`;
+
 export const Paragraph = styled.p`
   font-family:'Roboto', sans-serif;
-  font-size:1.125rem;
+  font-size:1rem;
+  line-height:1.2;
   color:#E0E0E0;
 `;
 
@@ -202,13 +213,20 @@ export const  TecSpan = styled.span`
 
 
 
+
 export const DivFlexExp = styled.div`
-  display:grid;
-  grid-template-columns:repeat(2, 400px);
+  display:flex;
+  max-width:800px;
   gap:1.25rem;
+  justify-content:center;
+  position:relative;
 `;
 
 
+export const DivButtonFlex = styled.div`
+  flex: 1;
+  max-width:100%;
+`;
 
 export const ButtonExp = styled.button`
   font-family: 'Roboto Mono', monospace;
@@ -283,4 +301,15 @@ export const ExpParagraph = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size:.875rem;
   color:#E0E0E0;
+`
+
+export const DivScroll = styled.div`
+position:absolute;
+background:#F29602;
+width:2px;
+height:41px;
+top:0;
+left:0;
+transform: ${({scrollButton}) => scrollButton};
+transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 `

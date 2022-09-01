@@ -10,6 +10,8 @@ export default createGlobalStyle `
 
   body{
     background:#141414;
+    -webkit-font-smoothing: antialiased;
+
   }
 
   button {
