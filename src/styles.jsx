@@ -1,5 +1,7 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
+
 
 
 
@@ -198,88 +200,87 @@ export const  TecSpan = styled.span`
 
 // MY EXPERIENCIES 
 
-export const SubH3 = styled.h3`
-  font-family:'Roboto', sans-serif;
-  font-size: 1.25rem;
-  font-style:italic;
-  font-weight:normal;
-  color:#E0E0E0;
-  margin-bottom:1.875rem;
+
+
+export const DivFlexExp = styled.div`
+  display:grid;
+  grid-template-columns:repeat(2, 400px);
+  gap:1.25rem;
 `;
+
 
 
 export const ButtonExp = styled.button`
-  background:transparent;
-  border:none;
-  outline:none;
-  cursor:pointer;
-  color:#474747;
+  font-family: 'Roboto Mono', monospace;
   font-size:1rem;
-  font-family:'Roboto', sans-serif;
+  font-weight:bold;
+  background:transparent;
+  border: none;
   display:flex;
-  flex:1;
-  padding:10px 0;
-  transition:.5s ease-in-out;
+  border-left:2px solid #333333;
+  width:100%;
+  color:#474747;
+  padding:10px;
+  cursor:pointer;
+  transition: .5s ease-in-out;
   &:before{
     content:"•";
     color:#F29602;
-    margin:0 0.625rem;
-  } &:hover{
-      color:#f29602;
-    } &:focus{
-      color:#fff;
-      background:#1F1F1F;  
-      cursor:pointer;
-    }&.active{
-      color:#fff;
-      background:#1F1F1F;  
-      cursor:pointer;
-    }
-`;
+    margin-right:10px;
+  }
+  &:hover{
+    color:#f29602;
+    background:#3333;
+  } &:focus{
+    color:#E0E0E0;
+    background:#3333;
+  }&.active{
+    color:#E0E0E0;
+    background:#3333;
+  }
+`
+
+export const CssTest = styled.li`
+&.my-node-enter {
+  opacity: 0;
+}
+&.my-node-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+&.my-node-enter-done {
+  opacity: 1;
+}&.my-node-exit {
+  opacity: 0;
+}
+&.my-node-exit-active {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+&.my-node-exit-done {
+  opacity: 1;
+}
+`
 
 
-export const JobDiv = styled.div`
-  display:grid;
-  grid-template-columns:1fr;
-`;
-
-
-export const DivExp = styled(JobDiv)`
-  grid-template-columns:repeat(2,400px);
-  gap:1.875rem;
-`;
-
-
-export const TitleExp = styled.h4`
-font-family:'Roboto', sans-serif;
-font-size:1rem;
-font-style:italic;
-font-weight: normal;
-color:#F5F5F5;
-margin-bottom:10px;
-`;
-
-
-export const TitleSpan = styled.span`
-  color:#F29602;
-  font-family:'Roboto', sans-serif;
+export const ExpName = styled.h4`
+  font-family: 'Roboto Mono', monospace;
   font-size:1rem;
-  font-style:initial;
-  font-weight:bold;
-  display:inline-block;
-  letter-spacing:1px;
-  margin-left:5px;
-`;
-
-
-
-export const ParagraphExp = styled.p`
-  font-family:'Roboto', sans-serif;
-  font-size: .875rem;
+  font-style:italic;
   color:#E0E0E0;
-  line-height:1.2;
+  margin-bottom:0.625rem;
+`;
+
+export const ExpSpanName = styled.span`
+  font-family: 'Roboto Mono', monospace;
+  font-size:1rem;
+  font-style:normal;
+  color:#F29602;
 `;
 
 
-
-
+export const ExpParagraph = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-size:.875rem;
+  color:#E0E0E0;
+`

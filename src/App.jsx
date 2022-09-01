@@ -8,6 +8,7 @@ import { Tecnologies } from "./Components/Sobre/Tecnologies"
 
 
 
+
 export const App = () => {
   return (
     <div>

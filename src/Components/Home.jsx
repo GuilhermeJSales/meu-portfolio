@@ -1,7 +1,7 @@
 import {Presentation} from "./Sobre/Presentation";
 import { Container } from "../styles";
 import { About } from "./Sobre/About";
-import { Experiences } from "./Sobre/Experiences";
+import { Exp } from "./Sobre/Exp";
 
 
 export const Home = () => {
@@ -10,7 +10,7 @@ export const Home = () => {
       <Container>
         <Presentation />
         <About />
-        <Experiences />
+        <Exp/>
       </Container>
       </main>
   )
