@@ -8,14 +8,20 @@ import { Link } from 'react-router-dom';
 // ALL STYLES
 
 export const Container = styled.div`
- max-width:1400px;
+ max-width:1200px;
  margin: 0 auto;
- padding: 6.25rem 60px;
+ padding:0 20px 100px 20px;
+`;
+
+export const SectionAll = styled.section`
+  position:relative;
+  top: 150px;
+  min-height:100vh;
 `;
 
 export const Title = styled.h1`
   font-family:'Roboto', sans-serif;
-  font-size:3.125rem;
+  font-size:clamp(40px, 8vw, 80px);
   color:#F5F5F5;
 `;
 
@@ -51,23 +57,23 @@ export const Paragraph = styled.p`
 
 
 export const ButtonForm = styled(Link)`
-  font-family:'Roboto', sans-serif;
-  font-size:1.25rem;
+  font-family:'Roboto Mono', monospace;
+  font-size:1rem;
+  letter-spacing:1px;
   text-transform:uppercase;
-  color:#E0E0E0;
+  color:#9F9F9F;
   background:#1F1F1F;
   outline: 2px solid #474747;
   border: 3px solid #141414;
   padding:1.375rem;
   margin-top: 1.875rem;
-  display:inline-block;
-  width:241px;
-  height:68px;
+  width:250px;
   text-align:center;
   margin-right:${({margin}) => margin ? margin : ''};
+  transition: .3s ease-in-out;
   &:hover,
   &:focus{
-    background:#333333;
+    background:#3333;
     color:#F5F5F5;
     border: 3px solid #141414;
     outline: 2px solid #F29602;
@@ -78,15 +84,14 @@ export const ButtonForm = styled(Link)`
 
 // HEADER
 export const HeaderSite = styled.header`
-padding: 1.875rem 0;
-background:#1F1F1F;
+padding: 30px 0;
 `;
 
 export const ContainerHeader = styled(Container)`
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:0 60px;
+padding:0;
 `;
 
 export const HeaderUl = styled.ul`
@@ -139,13 +144,13 @@ export const Span = styled.span`
 
 export const SubTitle = styled.h2`
   font-family:'Roboto', sans-serif;
-  font-size:3.125rem;
-  color:#F5F5F5;
+  font-size:clamp(40px, 8vw, 80px);
+  color:#9F9F9F;
 `;
 
 export const ParagraphPresentation = styled(Paragraph)`
-  margin-top: 1.875rem;
-  max-width:35vw;
+  margin: 1.875rem 0 1.875rem;
+  max-width:600px;
 `;
 
 export const DivFlex = styled.div`
@@ -158,8 +163,7 @@ align-items:center;
 
 
 
-export const AboutSect = styled.section `
-  padding:100px 0;
+export const AboutSect = styled.div `
   display:grid;
   grid-template-columns: 1fr 1fr;
 `;
