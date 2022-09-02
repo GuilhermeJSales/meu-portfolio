@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { CssTest, DivButtonFlex, DivFlexExp, DivScroll, ExpName, ExpParagraph, ExpSpanName, SubTitleAll, ThirdTitle } from "../../styles";
+import { CssTest, DivButtonFlex, DivFlexExp, DivScroll, ExpName, ExpParagraph, ExpSection, ExpSpanName, SubTitleAll, ThirdTitle } from "../../styles";
 import { ExpButton } from "../Forms/ExpButton";
 import { CSSTransition } from 'react-transition-group';
 
@@ -23,9 +23,11 @@ export const Exp = () => {
 
 
   return( 
-   <section>
+   <ExpSection>
+    <div>
     <SubTitleAll>Minhas Experiências</SubTitleAll>
     <ThirdTitle>Experiências relacionadas a área de Tecnologia</ThirdTitle>
+    </div>
     <DivFlexExp>
       <DivButtonFlex>
    {exp.map(e => <ExpButton setScrollButton={setScrollButton} anima={anima} setAnima={setAnima} job={job} setJob={setJob} key={e.id} id={e.id}>{e.cargo}</ExpButton>)}
@@ -47,6 +49,6 @@ export const Exp = () => {
    }
     <DivScroll scrollButton={`translateY(${scrollButton})`}></DivScroll>
    </DivFlexExp>
-   </section>
+   </ExpSection>
   )
 }

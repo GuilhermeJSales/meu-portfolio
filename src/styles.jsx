@@ -13,11 +13,6 @@ export const Container = styled.div`
  padding:0 20px 100px 20px;
 `;
 
-export const SectionAll = styled.section`
-  position:relative;
-  top: 150px;
-  min-height:100vh;
-`;
 
 export const Title = styled.h1`
   font-family:'Roboto', sans-serif;
@@ -29,12 +24,24 @@ export const Title = styled.h1`
 export const SubTitleAll = styled.h2`
 color:#E0E0E0;
 font-size:1.875rem;
-font-family: 'Arial';
+font-family: 'Helvetica', arial;
+letter-spacing:1.1px;
 margin-bottom: 1.875rem;
+position:relative;
 &:before{
   content:"❖";
+  font-size:1.5rem;
   color:#F29602;
   margin-right:0.625rem;
+}&:after{
+  content:'';
+  background:#333333;
+  width:400px;
+  height:1px;
+  display:inline-block;
+  position:absolute;
+  top:20px;
+  margin-left:10px;
 }
 `;
 
@@ -44,8 +51,7 @@ export const ThirdTitle = styled.h3`
   font-family:'Roboto Mono', monospace;
   font-style:italic;
   font-weight:Normal;
-  margin-bottom: 1.875rem;
-
+  margin-bottom: 2.25rem;
 `;
 
 export const Paragraph = styled.p`
@@ -135,6 +141,12 @@ export const LinkHeader = styled(Link)`
 
 // HOME PRESENTATION
 
+
+export const SectionPresentation = styled.section`
+  min-height:calc(100vh - 161px);
+  padding-top:140px;
+`;
+
 export const Span = styled.span`
   font-family:'Roboto', sans-serif;
   font-size:1.25rem;
@@ -161,20 +173,24 @@ align-items:center;
 
 // ABOUT SECTION
 
-
+export const AboutSection = styled.section`
+  min-height:70vh;
+  padding-top:20px;
+`;
 
 export const AboutSect = styled.div `
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 700px 1fr;
+  align-items:center;
 `;
 
 
 export const ParagraphAbout = styled(Paragraph)`
-  max-width:40vw;
+  max-width:600px;
 `;
 
 export const  ImgDiv = styled.div`
-  justify-self:end;
+  justify-self:center;
 `;
 
 // TECNOLOGIAS
@@ -191,15 +207,18 @@ export const  TecDiv = styled.ul`
 
 export const TecLink = styled(Link)`
   background:#1F1F1F;
-  border:2px solid #474747;
   padding:10px;
+  outline: 2px solid #474747;
+  border: 3px solid #141414;
   display:block;
   cursor:pointer;
+  transition: .3s ease-in-out;
+  margin-bottom:2px;
   &:hover,
   &:focus{
-    background:#333333;
-    border:2px solid #F29602;
-    outline:none;
+    background:#3333;
+    border: 3px solid #141414;
+    outline: 2px solid #F29602;
   }
 `
 
@@ -215,15 +234,19 @@ export const  TecSpan = styled.span`
 
 // MY EXPERIENCIES 
 
-
+export const ExpSection = styled.section`
+  min-height:50vh;
+  max-width:800px;
+  margin:0 auto;
+`;
 
 
 export const DivFlexExp = styled.div`
   display:flex;
   max-width:800px;
   gap:1.25rem;
-  justify-content:center;
   position:relative;
+  margin:0 auto;
 `;
 
 
@@ -290,7 +313,7 @@ export const ExpName = styled.h4`
   font-size:1rem;
   font-style:italic;
   color:#E0E0E0;
-  margin-bottom:0.625rem;
+  margin-bottom:1rem;
 `;
 
 export const ExpSpanName = styled.span`
@@ -298,7 +321,7 @@ export const ExpSpanName = styled.span`
   font-size:1rem;
   font-style:normal;
   color:#F29602;
-`;
+  `;
 
 
 export const ExpParagraph = styled.p`
@@ -316,4 +339,17 @@ top:0;
 left:0;
 transform: ${({scrollButton}) => scrollButton};
 transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+`
+
+
+
+// FOOTER 
+
+export const FooterP = styled.p` 
+  text-align:center;
+  font-size:1rem;
+  font-family:'Roboto Mono', monospace;
+  color:#E0E0E0;
+  padding-bottom: 100px ;
+
 `

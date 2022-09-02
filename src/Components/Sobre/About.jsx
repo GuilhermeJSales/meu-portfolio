@@ -1,11 +1,11 @@
 import {ReactComponent as LogoTipo} from '../../Assets/sobre-logo.svg'
-import {SectionAll, AboutSect,SubTitleAll, ParagraphAbout, ImgDiv} from "../../styles"
+import {AboutSect,SubTitleAll, ParagraphAbout, ImgDiv, AboutSection} from "../../styles"
 import { Tecnologies } from './Tecnologies'
 
 export const About = () => {
   return (
 
-    <>
+    <AboutSection>
       <AboutSect>
         <div>
           <SubTitleAll>Sobre Mim</SubTitleAll>
@@ -25,6 +25,6 @@ export const About = () => {
           <LogoTipo/>
         </ImgDiv>
         </AboutSect>
-    </>
+    </AboutSection>
   )
 }

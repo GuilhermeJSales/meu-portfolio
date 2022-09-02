@@ -13,6 +13,7 @@ export default createGlobalStyle `
     -webkit-font-smoothing: antialiased;
     width:100%;
     min-height:100%;
+    line-height: 1.2;
   }
 
   button {

@@ -1,9 +1,9 @@
-import {Span, Title, SubTitle, ParagraphPresentation, DivFlex, SectionAll} from '../../styles'
+import {Span, Title, SubTitle, ParagraphPresentation, DivFlex, SectionPresentation} from '../../styles'
 import { Button } from '../Forms/Button'
 
 export const Presentation = () => {
   return (
-    <SectionAll>
+    <SectionPresentation>
       <Span>Olá, meu nome é</Span>
       <Title>Guilherme Jesus Sales.</Title>
       <SubTitle>Sou desenvolvedor front-end.</SubTitle>
@@ -16,6 +16,6 @@ export const Presentation = () => {
       <DivFlex>
         <Button margin={'3.125rem'} to="portfolio">Meu Portfólio</Button>    
       </DivFlex>
-    </SectionAll>
+    </SectionPresentation>
   )
 }
