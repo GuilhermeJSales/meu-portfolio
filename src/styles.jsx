@@ -88,55 +88,7 @@ export const ButtonForm = styled(Link)`
 
 
 
-// HEADER
-export const HeaderSite = styled.header`
-padding: 30px 0;
-`;
 
-export const ContainerHeader = styled(Container)`
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0;
-`;
-
-export const HeaderUl = styled.ul`
-display:flex;
-align-items:center;
-`;
-
-export const HeaderLI = styled.li`
-  font-size:1rem;
-  margin:1.25rem;
-`;
-
-
-export const LinkHeader = styled(Link)`
-  color:#E0E0E0;
-  opacity:0.8;
-  font-family:${({font}) => font};
-  position:relative;
-  transition: .2s ease-in-out;
-  &:hover,
-  &:focus{
-    opacity:1;
-    color:#F5F5F5;
-  }
-  &:after{
-   content:"";
-   width:100%;
-   height:2px;
-   background:#FDA821;
-   position:relative;
-   bottom:-68px;
-   display: block;
-   opacity:0;
-  transition: .2s ease-in-out;
-  }&:hover:after,
-  &:focus:after{
-    opacity:1;
-    outline:none;
-  }`;
 
 
 // HOME PRESENTATION
