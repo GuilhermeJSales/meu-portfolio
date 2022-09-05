@@ -10,6 +10,7 @@ const AboutSection = styled.section`
   padding-top:20px;
   @media (max-width:69rem){
     padding-top:0;
+    min-height:90vh;
   }
 `;
 

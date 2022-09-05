@@ -12,6 +12,9 @@ import { Button } from '../Forms/Button'
 const SectionPresentation = styled.section`
   min-height:calc(100vh - 161px);
   padding-top:140px;
+  @media(max-width:63rem) {
+    min-height:100vh;
+  }
 `;
 
 const Span = styled.span`

@@ -4,6 +4,7 @@ import { useMedia } from '../Hooks/useMedia';
 import { useOutsideClick } from '../Hooks/useOutsideClick';
 import styled from 'styled-components';
 import { ReactComponent as Logo } from '../Assets/header-logo.svg'
+import { ReactComponent as MobileLogo } from '../Assets/header-mobile.svg'
 import {Container} from '../styles'
 
 // HEADER STYLES
@@ -32,7 +33,7 @@ align-items:center;
   flex-direction:column;
   background:#141414;
   box-shadow: 2px 6px rgba(0,0,0,.1);
-  width:30vw;
+  width:50vw;
   height:100vh;
   position:absolute;
   left:-100px;
@@ -59,9 +60,7 @@ const HeaderLI = styled.li`
       content:"•";
       color:#FDA821;
       margin-right:10px;
-    }
-    
-    
+    }    
   }  
 `;
 
@@ -155,7 +154,7 @@ export const Header = () => {
     <ContainerHeader>
       <DivImg>
       <Link to="/">
-        <Logo />
+        {mobile ? <MobileLogo /> : <Logo />}
       </Link>
       </DivImg>
     <nav ref={wrapperRef}>
