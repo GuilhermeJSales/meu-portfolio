@@ -1,10 +1,41 @@
+import styled from 'styled-components';
+import {Paragraph, SubTitleAll} from "../../styles"
 import {ReactComponent as LogoTipo} from '../../Assets/sobre-logo.svg'
-import {AboutSect,SubTitleAll, ParagraphAbout, ImgDiv, AboutSection} from "../../styles"
 import { Tecnologies } from './Tecnologies'
 
+// ABOUT SECTION
+
+const AboutSection = styled.section`
+  min-height:70vh;
+  padding-top:20px;
+  @media (max-width:69rem){
+    padding-top:0;
+  }
+`;
+
+const AboutSect = styled.div `
+  display:grid;
+  grid-template-columns: 700px auto;
+  align-items:center;
+  @media (max-width:69rem){
+    grid-template-columns:1fr;
+  }
+`;
+
+
+const ParagraphAbout = styled(Paragraph)`
+  max-width:600px;
+`;
+
+const  ImgDiv = styled.div`
+  max-width:100%;
+  justify-self:center;
+  @media (max-width:69rem){
+    display:none;
+  }
+`;
 export const About = () => {
   return (
-
     <AboutSection>
       <AboutSect>
         <div>

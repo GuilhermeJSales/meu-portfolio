@@ -10,14 +10,15 @@ import { Link } from 'react-router-dom';
 export const Container = styled.div`
  max-width:1200px;
  margin: 0 auto;
- padding:0 20px 100px 20px;
+ padding:0 60px 100px 60px;
 `;
 
 
 export const Title = styled.h1`
   font-family:'Roboto', sans-serif;
-  font-size:clamp(40px, 8vw, 80px);
+  font-size:clamp(2.2rem, 5vw, 5rem);
   color:#F5F5F5;
+
 `;
 
 
@@ -42,7 +43,20 @@ position:relative;
   position:absolute;
   top:20px;
   margin-left:10px;
-}
+}   @media (max-width:63rem){
+    &:after{
+      width: 250px;
+    }
+  } @media (max-width:33rem){
+    &:after{
+      width: 100px;
+    }
+  }
+  @media (max-width:25rem){
+    &:after{
+      display:none;
+    }
+  }
 `;
 
 export const ThirdTitle = styled.h3`
@@ -59,6 +73,9 @@ export const Paragraph = styled.p`
   font-size:1rem;
   line-height:1.2;
   color:#E0E0E0;
+  @media (max-width:32rem) {
+    font-size:.875rem;
+  }
 `;
 
 
@@ -84,103 +101,14 @@ export const ButtonForm = styled(Link)`
     border: 3px solid #141414;
     outline: 2px solid #F29602;
   }
-`;
-
-
-
-
-
-
-// HOME PRESENTATION
-
-
-export const SectionPresentation = styled.section`
-  min-height:calc(100vh - 161px);
-  padding-top:140px;
-`;
-
-export const Span = styled.span`
-  font-family:'Roboto', sans-serif;
-  font-size:1.25rem;
-  color:#F29602;
-`;
-
-
-export const SubTitle = styled.h2`
-  font-family:'Roboto', sans-serif;
-  font-size:clamp(40px, 8vw, 80px);
-  color:#9F9F9F;
-`;
-
-export const ParagraphPresentation = styled(Paragraph)`
-  margin: 1.875rem 0 1.875rem;
-  max-width:600px;
-`;
-
-export const DivFlex = styled.div`
-display:flex;
-align-items:center;
-`;
-
-
-// ABOUT SECTION
-
-export const AboutSection = styled.section`
-  min-height:70vh;
-  padding-top:20px;
-`;
-
-export const AboutSect = styled.div `
-  display:grid;
-  grid-template-columns: 700px 1fr;
-  align-items:center;
-`;
-
-
-export const ParagraphAbout = styled(Paragraph)`
-  max-width:600px;
-`;
-
-export const  ImgDiv = styled.div`
-  justify-self:center;
-`;
-
-// TECNOLOGIAS
-
-export const  TecDiv = styled.ul`
-  display:grid;
-  grid-template-columns: repeat(4, 60px);
-  gap:1.5rem;
-  align-items:center;
-  margin-top:1.875rem;
-  text-align:center;
-`;
-
-
-export const TecLink = styled(Link)`
-  background:#1F1F1F;
-  padding:10px;
-  outline: 2px solid #474747;
-  border: 3px solid #141414;
-  display:block;
-  cursor:pointer;
-  transition: .3s ease-in-out;
-  margin-bottom:2px;
-  &:hover,
-  &:focus{
-    background:#3333;
-    border: 3px solid #141414;
-    outline: 2px solid #F29602;
+  @media (max-width:25rem) {
+    font-size:.875rem;
+    width:210px;
   }
-`
-
-
-export const  TecSpan = styled.span`
-  font-family:'Roboto', sans-serif;
-  font-size:.75rem;  
-  font-style:italic;
-  color:#E0E0E0;
 `;
+
+
+
 
 
 

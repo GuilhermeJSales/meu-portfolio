@@ -4,11 +4,12 @@ import {ReactComponent as GitHub} from '../../Assets/git.svg'
 import {ReactComponent as Behance} from '../../Assets/behance.svg'
 import {ReactComponent as Instagram} from '../../Assets/instagram.svg'
 import styled from 'styled-components';
+import { useMedia } from '../../Hooks/UseMedia'
 
 
 const RedesDiv = styled.div` 
   position:fixed;
-  left: 40px;
+  left: 20px;
   bottom:80px;
 `;
 
@@ -30,7 +31,10 @@ margin-bottom:30px;
 
 
 export const Redes = () => {
+  const media = useMedia('(max-width:63rem)')
   return (
+    <>
+    {!media && 
     <RedesDiv>
       <RedesSpan>Redes Sociais |</RedesSpan>
       <ul>
@@ -65,5 +69,7 @@ export const Redes = () => {
         </RedesLi>
       </ul>
     </RedesDiv>
+  }
+  </>
   )
 }

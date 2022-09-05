@@ -14,6 +14,7 @@ export default createGlobalStyle `
     width:100%;
     min-height:100%;
     line-height: 1.2;
+    overflow-x:hidden;
   }
 
   button {
@@ -31,5 +32,15 @@ export default createGlobalStyle `
   img{
     display:block;
     max-width:100%;
+  }
+
+  @keyframes animaLink{
+    from {
+      opacity:0;
+      transform:  translateX(-100%);
+    } to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
   }
 `
