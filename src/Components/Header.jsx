@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState,useRef, useEffect} from 'react';
-import { useMedia } from '../Hooks/UseMedia';
+import { useMedia } from '../Hooks/useMedia';
 import { useOutsideClick } from '../Hooks/useOutsideClick';
 import styled from 'styled-components';
 import { ReactComponent as Logo } from '../Assets/header-logo.svg'
