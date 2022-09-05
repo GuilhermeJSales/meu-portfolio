@@ -4,7 +4,7 @@ import {ReactComponent as GitHub} from '../../Assets/git.svg'
 import {ReactComponent as Behance} from '../../Assets/behance.svg'
 import {ReactComponent as Instagram} from '../../Assets/instagram.svg'
 import styled from 'styled-components';
-import { useMedia } from '../../Hooks/UseMedia'
+import { useMedia } from '../../Hooks/useMedia'
 
 
 const RedesDiv = styled.div` 
