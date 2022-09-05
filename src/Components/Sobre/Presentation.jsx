@@ -12,14 +12,11 @@ import { Button } from '../Forms/Button'
 const SectionPresentation = styled.section`
   min-height:calc(100vh - 161px);
   padding-top:140px;
-  @media(max-width:63rem) {
-    min-height:100vh;
-  }
 `;
 
 const Span = styled.span`
   font-family:'Roboto', sans-serif;
-  font-size:clamp(1rem,2vw, 1.3rem);
+  font-size:1.1rem;
   color:#F29602;
 `;
 
@@ -32,7 +29,7 @@ const SubTitle = styled.h2`
 
 const ParagraphPresentation = styled(Paragraph)`
   margin: 1.875rem 0 1.875rem;
-  max-width:600px;
+  max-width:550px;
 `;
 
 const DivFlex = styled.div`
@@ -49,8 +46,10 @@ export const Presentation = () => {
       <Title>Guilherme Jesus Sales.</Title>
       <SubTitle>Sou desenvolvedor front-end.</SubTitle>
       <ParagraphPresentation>
-      Construo sites para web e estou me aprimorando cada dia mais para atender as expectativas dos clientes.
-      Atualmente estou cursando Análise e Desenvolvimento de Sistemas e concluindo cursos de certificações em linguagens de programação e frameworks através de plataformas online.
+      Possuo experiência na construção de sites.
+      Sou aficionado em tecnologia, procuro sempre me manter atualizado, por isso tenho diversos certificados em linguagens de programação e seus frameworks, busco todos os dias aprimorar meus conhecimentos para melhor atender as expectativas dos clientes.<br></br>Bem-vindo ao meu Portfólio!
+      
+      
 
 
       </ParagraphPresentation>

@@ -9,34 +9,22 @@ import { useMedia } from '../../Hooks/useMedia'
 
 const RedesDiv = styled.div` 
   position:fixed;
-  left: 20px;
-  bottom:80px;
+  left: 1rem;
+  bottom:1rem;
+  z-index:10;
 `;
 
 const RedesLi = styled.li`
   margin-bottom:1rem;
   cursor:pointer;
+ 
 `
-
-const RedesSpan = styled.span`
-font-family:'Roboto Mono', monospace;
-font-size:.875rem;
-text-transform:uppercase;
-color:#fff;
-writing-mode: vertical-rl;
-text-orientation: upright;
-margin-bottom:30px;
-`
-
-
-
 export const Redes = () => {
-  const media = useMedia('(max-width:63rem)')
+  const media = useMedia('(max-width:49rem)')
   return (
     <>
     {!media && 
     <RedesDiv>
-      <RedesSpan>Redes Sociais |</RedesSpan>
       <ul>
         <RedesLi>
           <a href="https://wa.me/5511961683295?text=Ol%C3%A1%2C+estou+entrando+em+contato+referente+ao+seu+site." target="_blank">

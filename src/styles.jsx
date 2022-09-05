@@ -6,19 +6,11 @@ import { Link } from 'react-router-dom';
 
 
 // ALL STYLES
-
-export const Container = styled.div`
- max-width:1200px;
- margin: 0 auto;
- padding:0 60px 100px 60px;
-`;
-
-
 export const Title = styled.h1`
   font-family:'Roboto', sans-serif;
   font-size:clamp(2.2rem, 5vw, 5rem);
   color:#F5F5F5;
-
+  margin-top:1.125rem;
 `;
 
 

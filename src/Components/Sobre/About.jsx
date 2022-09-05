@@ -31,7 +31,7 @@ const ParagraphAbout = styled(Paragraph)`
 const  ImgDiv = styled.div`
   max-width:100%;
   justify-self:center;
-  @media (max-width:69rem){
+  @media (max-width:75rem){
     display:none;
   }
 `;

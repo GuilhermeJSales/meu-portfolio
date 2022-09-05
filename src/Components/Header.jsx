@@ -5,19 +5,26 @@ import { useOutsideClick } from '../Hooks/useOutsideClick';
 import styled from 'styled-components';
 import { ReactComponent as Logo } from '../Assets/header-logo.svg'
 import { ReactComponent as MobileLogo } from '../Assets/header-mobile.svg'
-import {Container} from '../styles'
 
 // HEADER STYLES
 const HeaderSite = styled.header`
 padding: 30px 0;
 `;
 
-const ContainerHeader = styled(Container)`
+const ContainerHeader = styled.div`
+max-width:1600px;
+width:100%;
+margin:0 auto;
+padding: 0 150px;
 display:grid;
 grid-template-columns: 1fr auto;
 align-items:center;
 justify-content:space-between;
-padding:0 60px;
+@media (max-width: 48rem){
+    padding:0 50px;
+  }  @media (max-width: 38rem){
+    padding:0 25px;
+  } 
 `;
 
 const DivImg = styled.div`
@@ -29,21 +36,25 @@ const DivImg = styled.div`
 const HeaderUl = styled.ul`
 display:flex;
 align-items:center;
+z-index:9;
 @media (max-width:63rem){
   flex-direction:column;
+  justify-content:space-evenly;
   background:#141414;
   box-shadow: 2px 6px rgba(0,0,0,.1);
-  width:50vw;
-  height:100vh;
-  position:absolute;
+  width:60vw;
+  height:100%;
+  position:fixed;
   left:-100px;
   transition: .3s ease-in-out;
   opacity:0;
   top:0;
-  padding:100px 20px 0 50px;
+  pointer-events:none;
+  padding:3.125rem 0;
   &.mobileActive{
     left:0;
     opacity:1;
+    pointer-events:initial;
   }
 }
 `;
@@ -54,8 +65,7 @@ const HeaderLI = styled.li`
   margin:1.25rem;
   @media(max-width:63rem) {
     opacity:0;
-    margin-bottom: 2rem;
-    align-self:start;
+    margin:2rem auto;
     &:before{
       content:"•";
       color:#FDA821;
@@ -141,13 +151,23 @@ export const Header = () => {
   // evento de click do mobile menu
   const handleClick = () => {
     setMobileMenu(!mobileMenu);
-    const list = [...ref.current.children];
-    list.forEach((item, index) => {
-      !mobileMenu ? item.style.animation=`animaLink .5s ease forwards ${index / 7 + 0.3}s` : item.style.animation = '';
-    })
+ 
   }
 
+  // Evento outside para fechar menu ao clicar fora.
   useOutsideClick(wrapperRef, () => setMobileMenu(false));
+
+
+  //Animação dos links no menu mobile.
+  useEffect(() => {
+    const animationlink = ()=> {
+      const list = [...ref.current.children];
+      list.forEach((item, index) => {
+        mobileMenu ? item.style.animation=`animaLink .5s ease forwards ${index / 7 + 0.3}s` : item.style.animation = '';
+      })
+    }
+    animationlink();
+  },[mobileMenu]);
 
   return (
   <HeaderSite>
