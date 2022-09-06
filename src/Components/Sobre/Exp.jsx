@@ -1,7 +1,110 @@
+import styled from "styled-components";
+import {SubTitleAll, ThirdTitle} from "../../styles"
 import { useRef, useState } from "react";
-import { CssTest, DivButtonFlex, DivFlexExp, DivScroll, ExpName, ExpParagraph, ExpSection, ExpSpanName, SubTitleAll, ThirdTitle } from "../../styles";
 import { ExpButton } from "../Forms/ExpButton";
 import { CSSTransition } from 'react-transition-group';
+
+
+// MY EXPERIENCIES 
+
+const ExpSection = styled.section`
+  min-height:50vh;
+  max-width:800px;
+  margin:0 auto;
+`;
+
+
+const DivFlexExp = styled.div`
+  display:flex;
+  max-width:800px;
+  gap:1.25rem;
+  position:relative;
+  margin:0 auto;
+  @media (max-width:54rem){
+    flex-direction:column;    
+  }
+`;
+
+
+const DivButtonFlex = styled.div`
+  flex: 1;
+  max-width:100%;
+  @media (max-width:54rem){
+    display:flex;
+    overflow-x:auto;
+    position:relative;
+  }&::-webkit-scrollbar-track {
+    background-color: #3333;
+  }&::-webkit-scrollbar {
+    width: 6px;
+    background: #3333;
+}&::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius:6px;
+}
+`;
+
+const CssTest = styled.li`
+&.my-node-enter {
+  opacity: 0;
+}
+&.my-node-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+&.my-node-enter-done {
+  opacity: 1;
+}&.my-node-exit {
+  opacity: 0;
+}
+&.my-node-exit-active {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+&.my-node-exit-done {
+  opacity: 1;
+}
+`
+
+
+const ExpName = styled.h4`
+  font-family: 'Roboto Mono', monospace;
+  font-size:1rem;
+  font-style:italic;
+  color:#E0E0E0;
+  margin-bottom:1rem;
+`;
+
+const ExpSpanName = styled.span`
+  font-family: 'Roboto Mono', monospace;
+  font-size:1rem;
+  font-style:normal;
+  color:#F29602;
+  `;
+
+
+const ExpParagraph = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-size:.875rem;
+  color:#E0E0E0;
+`
+
+const DivScroll = styled.div`
+position:absolute;
+background:#F29602;
+width:2px;
+height:41px;
+top:0;
+left:0;
+transform: ${({scrollButton}) => scrollButton};
+transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+@media (max-width:54rem){
+  top: 0;
+  bottom:auto;
+  width:300px;
+  height:2px;
+  }
+`
 
 
 
@@ -16,21 +119,20 @@ export const Exp = () => {
 
   const [job, setJob] = useState(0);
   const [anima, setAnima] = useState(false);
-  const [scrollButton, setScrollButton] = useState(0);
+  const [scrollButton, setScrollButton] = useState('');
   const nodeRef = useRef(null);
-
-  
 
 
   return( 
    <ExpSection>
     <div>
-    <SubTitleAll>Minhas Experiências</SubTitleAll>
+    <SubTitleAll>Experiências</SubTitleAll>
     <ThirdTitle>Experiências relacionadas a área de Tecnologia</ThirdTitle>
     </div>
     <DivFlexExp>
       <DivButtonFlex>
    {exp.map(e => <ExpButton setScrollButton={setScrollButton} anima={anima} setAnima={setAnima} job={job} setJob={setJob} key={e.id} id={e.id}>{e.cargo}</ExpButton>)}
+      <DivScroll scrollButton={scrollButton}></DivScroll>
       </DivButtonFlex>
    {job === exp[job].id &&    
    <ul style={{flex:1, maxWidth:'100%'}}>
@@ -47,7 +149,7 @@ export const Exp = () => {
     </CSSTransition>
    </ul>
    }
-    <DivScroll scrollButton={`translateY(${scrollButton})`}></DivScroll>
+
    </DivFlexExp>
    </ExpSection>
   )

@@ -6,12 +6,7 @@ import { Tecnologies } from './Tecnologies'
 // ABOUT SECTION
 
 const AboutSection = styled.section`
-  min-height:70vh;
-  padding-top:20px;
-  @media (max-width:69rem){
-    padding-top:0;
-    min-height:90vh;
-  }
+  min-height:100vh;
 `;
 
 const AboutSect = styled.div `
@@ -25,11 +20,10 @@ const AboutSect = styled.div `
 
 
 const ParagraphAbout = styled(Paragraph)`
-  max-width:600px;
+  max-width:550px;
 `;
 
 const  ImgDiv = styled.div`
-  max-width:100%;
   justify-self:center;
   @media (max-width:75rem){
     display:none;
@@ -42,13 +36,12 @@ export const About = () => {
         <div>
           <SubTitleAll>Sobre Mim</SubTitleAll>
           <ParagraphAbout>
-            Olá! Meu nome é Guilherme Jesus Sales. 
-            Me lembro que comecei a me interessar por desenvolvimento web quando podíamos estilizar páginas do Orkut com HTML,
-            desde então sou apaixonado em criação de sites e layouts. Quebrar a cabeça para fazer algumas linhas de código e depois ver
-            aquele resultado na tela se tornou uma de minhas felicidades.<br></br>
-            <br></br>Hoje faço trabalhos freelances para algumas agências de marketing, 
-            mas não fico apenas no "codar", também crio logotipos e imagens para mídias sociais.<br></br>
-            <br></br>Enfim, aqui vão algumas tecnologias e softwares que possuo experiências:
+            Olá, meu nome é Guilherme Jesus Sales, tenho 28 anos e sou desenvolvedor front-end.
+            Possuo experiências com desenvolvimento de sites WordPress e alguns projetos utilizando HTML5, CSS3, Javascript ES6+ e ReactJS. <br></br>
+           <br></br>Sempre gostei muito de tecnologia, por isso desde cedo eu estudo os mais variados temas sobre a mesma. Primeiramente me apaixonei pelo Photoshop, algo que utilizo até hoje para alguns trabalhos freelance, criando logotipos e artes para mídias sociais.
+           Após isso, me interessei pela programação ainda na época do Orkut, onde mergulhava nos conteúdos de diversas comunidades e fóruns da plataforma.<br></br> 
+           <br></br>Enfim, já tive algumas experiências fazendo o que amo, inclusive isso me deu oportunidade de aprender e as vezes até me certificar nas tecnologias e softwares abaixo:
+           <br></br><br></br>
           </ParagraphAbout>
           <Tecnologies />
         </div>

@@ -29,7 +29,7 @@ position:relative;
 }&:after{
   content:'';
   background:#333333;
-  width:400px;
+  width:200px;
   height:1px;
   display:inline-block;
   position:absolute;
@@ -58,6 +58,9 @@ export const ThirdTitle = styled.h3`
   font-style:italic;
   font-weight:Normal;
   margin-bottom: 2.25rem;
+  @media (max-width:38rem){
+    font-size:.675rem;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -104,124 +107,3 @@ export const ButtonForm = styled(Link)`
 
 
 
-// MY EXPERIENCIES 
-
-export const ExpSection = styled.section`
-  min-height:50vh;
-  max-width:800px;
-  margin:0 auto;
-`;
-
-
-export const DivFlexExp = styled.div`
-  display:flex;
-  max-width:800px;
-  gap:1.25rem;
-  position:relative;
-  margin:0 auto;
-`;
-
-
-export const DivButtonFlex = styled.div`
-  flex: 1;
-  max-width:100%;
-`;
-
-export const ButtonExp = styled.button`
-  font-family: 'Roboto Mono', monospace;
-  font-size:1rem;
-  font-weight:bold;
-  background:transparent;
-  border: none;
-  display:flex;
-  border-left:2px solid #333333;
-  width:100%;
-  color:#474747;
-  padding:10px;
-  cursor:pointer;
-  transition: .5s ease-in-out;
-  &:before{
-    content:"•";
-    color:#F29602;
-    margin-right:10px;
-  }
-  &:hover{
-    color:#f29602;
-    background:#3333;
-  } &:focus{
-    color:#E0E0E0;
-    background:#3333;
-  }&.active{
-    color:#E0E0E0;
-    background:#3333;
-  }
-`
-
-export const CssTest = styled.li`
-&.my-node-enter {
-  opacity: 0;
-}
-&.my-node-enter-active {
-  opacity: 1;
-  transition: opacity .5s ease-in-out;
-}
-&.my-node-enter-done {
-  opacity: 1;
-}&.my-node-exit {
-  opacity: 0;
-}
-&.my-node-exit-active {
-  opacity: 1;
-  transition: opacity .5s ease-in-out;
-}
-&.my-node-exit-done {
-  opacity: 1;
-}
-`
-
-
-export const ExpName = styled.h4`
-  font-family: 'Roboto Mono', monospace;
-  font-size:1rem;
-  font-style:italic;
-  color:#E0E0E0;
-  margin-bottom:1rem;
-`;
-
-export const ExpSpanName = styled.span`
-  font-family: 'Roboto Mono', monospace;
-  font-size:1rem;
-  font-style:normal;
-  color:#F29602;
-  `;
-
-
-export const ExpParagraph = styled.p`
-  font-family: 'Roboto', sans-serif;
-  font-size:.875rem;
-  color:#E0E0E0;
-`
-
-export const DivScroll = styled.div`
-position:absolute;
-background:#F29602;
-width:2px;
-height:41px;
-top:0;
-left:0;
-transform: ${({scrollButton}) => scrollButton};
-transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
-`
-
-
-
-// FOOTER 
-
-export const FooterP = styled.p` 
-  text-align:center;
-  font-size:1rem;
-  font-family:'Roboto Mono', monospace;
-  color:#E0E0E0;
-  padding-bottom: 100px ;
-
-`

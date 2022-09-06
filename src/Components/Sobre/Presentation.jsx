@@ -46,7 +46,7 @@ export const Presentation = () => {
       <Title>Guilherme Jesus Sales.</Title>
       <SubTitle>Sou desenvolvedor front-end.</SubTitle>
       <ParagraphPresentation>
-      Possuo experiência na construção de sites.
+      Sou um "construtor" de sites.
       Sou aficionado em tecnologia, procuro sempre me manter atualizado, por isso tenho diversos certificados em linguagens de programação e seus frameworks, busco todos os dias aprimorar meus conhecimentos para melhor atender as expectativas dos clientes.<br></br>Bem-vindo ao meu Portfólio!
       
       

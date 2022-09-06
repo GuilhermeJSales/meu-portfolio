@@ -17,6 +17,20 @@ export default createGlobalStyle `
     overflow-x:hidden;
   }
 
+  body::-webkit-scrollbar-track {
+    background-color: #3333;
+  }
+
+  body::-webkit-scrollbar {
+    width: 1rem;
+    background: #3333;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius:6px;
+}
+
   button {
     cursor: pointer;
   }
