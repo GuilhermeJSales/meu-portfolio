@@ -5,6 +5,7 @@ import { useOutsideClick } from '../Hooks/useOutsideClick';
 import styled from 'styled-components';
 import { ReactComponent as Logo } from '../Assets/header-logo.svg'
 import { ReactComponent as MobileLogo } from '../Assets/header-mobile.svg'
+import { Dropdown } from './Forms/Dropdown';
 
 // HEADER STYLES
 const HeaderSite = styled.header`
@@ -14,7 +15,7 @@ padding: 30px 0;
 const ContainerHeader = styled.div`
 max-width:1600px;
 width:100%;
-margin:0 auto;
+margin:0 auto 100px;
 padding: 0 150px;
 display:grid;
 grid-template-columns: 1fr auto;
@@ -22,8 +23,10 @@ align-items:center;
 justify-content:space-between;
 @media (max-width: 48rem){
     padding:0 50px;
+    margin: 0 auto 100px;
   }  @media (max-width: 38rem){
     padding:0 25px;
+    margin: 0 auto 50px;
   } 
 `;
 
@@ -39,7 +42,7 @@ align-items:center;
 z-index:9;
 @media (max-width:63rem){
   flex-direction:column;
-  justify-content:space-evenly;
+  align-items:flex-start;
   background:#141414;
   box-shadow: 2px 6px rgba(0,0,0,.1);
   width:60vw;
@@ -65,12 +68,8 @@ const HeaderLI = styled.li`
   margin:1.25rem;
   @media(max-width:63rem) {
     opacity:0;
-    margin:2rem auto;
-    &:before{
-      content:"•";
-      color:#FDA821;
-      margin-right:10px;
-    }    
+    margin:1.25rem 3rem;
+    align-self:flex-start; 
   }  
 `;
 
@@ -82,27 +81,7 @@ const LinkHeader = styled(Link)`
   transition: .2s ease-in-out;
   &:hover,
   &:focus{
-    opacity:1;
-    color:#F5F5F5;
-  }
-  &:after{
-   content:"";
-   width:100%;
-   height:2px;
-   background:#FDA821;
-   position:relative;
-   bottom:-68px;
-   display: block;
-   opacity:0;
-    transition: .2s ease-in-out;
-  }&:hover:after,
-  &:focus:after{
-    opacity:1;
-    outline:none;
-  } @media (max-width:63rem){
-    &:after{
-    display:none;
-    } 
+    color:#FDA821;
   }
   `;
 
@@ -139,23 +118,28 @@ export const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const {pathname} = useLocation();
   const ref = useRef(null);
+  const dropRef = useRef(null);
   const wrapperRef = useRef()
-
+  const [dropdown, setDropdown] = useState(false);
 
   // fechar menu toda vez que mudar de rota
   useEffect(() => {
     setMobileMenu(false);
   },[pathname])
 
+  // Evento outside para fechar menu ao clicar fora.
+  useOutsideClick(wrapperRef, () => setMobileMenu(false));
+  useOutsideClick(wrapperRef, () => setDropdown(false));
 
   // evento de click do mobile menu
   const handleClick = () => {
     setMobileMenu(!mobileMenu);
- 
+    if(!mobileMenu && mobile) {
+      setDropdown(true);
+    }
   }
 
-  // Evento outside para fechar menu ao clicar fora.
-  useOutsideClick(wrapperRef, () => setMobileMenu(false));
+
 
 
   //Animação dos links no menu mobile.
@@ -182,7 +166,9 @@ export const Header = () => {
       <HeaderUl ref={ref} className={mobileMenu && 'mobileActive'}>
         <HeaderLI><LinkHeader font={'Roboto'} to="/">Início</LinkHeader></HeaderLI>
         <HeaderLI><LinkHeader font={'Roboto'} to="portfolio">Portfólio</LinkHeader></HeaderLI>
-        <HeaderLI><LinkHeader font={'Roboto'} to="contato">Contato</LinkHeader></HeaderLI>
+          <HeaderLI style={{position:'relative'}} ref={dropRef}>
+            <Dropdown dropRef={dropRef} setDropdown={setDropdown} dropdown={dropdown}/>
+          </HeaderLI>
       </HeaderUl>
     </nav>
     </ContainerHeader>

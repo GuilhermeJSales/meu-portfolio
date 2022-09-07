@@ -6,7 +6,7 @@ useEffect(() =>  {
     if(!ref.current || ref.current.contains(event.target)){
       return;
     }
-    call()
+    call(event)
   };
 
   document.addEventListener('mousedown', insideClick);

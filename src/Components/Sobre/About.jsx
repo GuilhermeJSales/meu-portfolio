@@ -6,7 +6,7 @@ import { Tecnologies } from './Tecnologies'
 // ABOUT SECTION
 
 const AboutSection = styled.section`
-  min-height:100vh;
+    padding-bottom:200px; 
 `;
 
 const AboutSect = styled.div `

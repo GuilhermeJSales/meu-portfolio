@@ -10,7 +10,7 @@ import { useMedia } from '../../Hooks/useMedia'
 const RedesDiv = styled.div` 
   position:fixed;
   left: 1rem;
-  bottom:1rem;
+  bottom:100px;
   z-index:10;
 `;
 
