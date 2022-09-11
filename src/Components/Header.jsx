@@ -140,22 +140,20 @@ export const Header = () => {
   }
 
 
-
-
   //Animação dos links no menu mobile.
   useEffect(() => {
-    const animationlink = ()=> {
+    const animationLink = ()=> {
       const list = [...ref.current.children];
       list.forEach((item, index) => {
         mobileMenu ? item.style.animation=`animaLink .5s ease forwards ${index / 7 + 0.3}s` : item.style.animation = '';
       })
     }
-    animationlink();
+    animationLink();
   },[mobileMenu]);
 
   return (
   <HeaderSite>
-    <ContainerHeader>
+    <ContainerHeader>   
       <DivImg>
       <Link to="/">
         {mobile ? <MobileLogo /> : <Logo />}
@@ -163,6 +161,7 @@ export const Header = () => {
       </DivImg>
     <nav ref={wrapperRef}>
     {mobile && <MobileButton aria-label='menu' onClick={handleClick} className={mobileMenu && 'buttonActive'}></MobileButton>}
+   
       <HeaderUl ref={ref} className={mobileMenu && 'mobileActive'}>
         <HeaderLI><LinkHeader font={'Roboto'} to="/">Início</LinkHeader></HeaderLI>
         <HeaderLI><LinkHeader font={'Roboto'} to="portfolio">Portfólio</LinkHeader></HeaderLI>
@@ -170,7 +169,7 @@ export const Header = () => {
             <Dropdown dropRef={dropRef} setDropdown={setDropdown} dropdown={dropdown}/>
           </HeaderLI>
       </HeaderUl>
-    </nav>
+    </nav>    
     </ContainerHeader>
   </HeaderSite>
   )

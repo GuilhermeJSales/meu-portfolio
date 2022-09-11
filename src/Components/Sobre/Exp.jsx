@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import {SubTitleAll, ThirdTitle} from "../../styles"
-import { useRef, useState } from "react";
-import { ExpButton } from "../Forms/ExpButton";
 import { CSSTransition } from 'react-transition-group';
+import { useRef, useState } from "react";
+import {SubTitleAll, ThirdTitle} from "../../styles"
+import { ExpButton } from "../Forms/ExpButton";
 
 
 // MY EXPERIENCIES 
@@ -124,16 +124,18 @@ export const Exp = () => {
 
 
   return( 
-   <ExpSection>
+   <ExpSection className="init-hidden">
     <div>
     <SubTitleAll>Experiências</SubTitleAll>
     <ThirdTitle>Experiências relacionadas a área de Tecnologia</ThirdTitle>
     </div>
     <DivFlexExp>
+   
       <DivButtonFlex>
    {exp.map(e => <ExpButton setScrollButton={setScrollButton} anima={anima} setAnima={setAnima} job={job} setJob={setJob} key={e.id} id={e.id}>{e.cargo}</ExpButton>)}
       <DivScroll scrollButton={scrollButton}></DivScroll>
       </DivButtonFlex>
+
    {job === exp[job].id &&    
    <ul style={{flex:1, maxWidth:'100%'}}>
     <CSSTransition

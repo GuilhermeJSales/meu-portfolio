@@ -57,4 +57,48 @@ body::-webkit-scrollbar-thumb {
       transform: translateX(0%);
     }
   }
+
+
+
+// CLASSES E ANIMAÇÕES GERAIS PARA REVEAL SCROLL
+
+  @keyframes animaSection{
+    0% {
+      opacity:0;
+      transform: translate3d(0, 100px , 0);
+    } 100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  
+  @keyframes animaRedes{
+    0% {
+      opacity:0;
+      transform: translate3d(-100px, 0 , 0);
+    } 100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  .init-hidden{
+    opacity:0;
+  }
+
+  .init-hidden-of{
+    animation: animaSection 1.5s ease-in-out forwards;
+  }
+
+  .redes{
+    opacity:0;
+  }
+
+  .init-hidden-redes{
+    opacity:1;
+    animation: animaRedes 3s ease;
+  }
+
 `

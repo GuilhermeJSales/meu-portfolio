@@ -7,11 +7,13 @@ import { Contato } from "./Components/Contato"
 import { Tecnologies } from "./Components/Sobre/Tecnologies"
 import { Footer } from "./Components/Footer"
 import  GlobalStyle from "./Global"
-
-
+import { useScrollAnima } from "./Hooks/useScrollAnima"
 
 
 export const App = () => {
+
+  useScrollAnima('.init-hidden', 'init-hidden-of');
+
   return (
     <div>
       <BrowserRouter>

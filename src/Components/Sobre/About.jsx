@@ -3,6 +3,9 @@ import {Paragraph, SubTitleAll} from "../../styles"
 import {ReactComponent as LogoTipo} from '../../Assets/sobre-logo.svg'
 import { Tecnologies } from './Tecnologies'
 
+
+
+
 // ABOUT SECTION
 
 const AboutSection = styled.section`
@@ -30,8 +33,11 @@ const  ImgDiv = styled.div`
   }
 `;
 export const About = () => {
+
+
   return (
-    <AboutSection>
+    
+    <AboutSection className='init-hidden'>
       <AboutSect>
         <div>
           <SubTitleAll>Sobre Mim</SubTitleAll>
@@ -45,11 +51,11 @@ export const About = () => {
           </ParagraphAbout>
           <Tecnologies />
         </div>
-
         <ImgDiv>
           <LogoTipo/>
         </ImgDiv>
         </AboutSect>
     </AboutSection>
+    
   )
 }

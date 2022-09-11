@@ -5,6 +5,7 @@ import {ReactComponent as Behance} from '../../Assets/behance.svg'
 import {ReactComponent as Instagram} from '../../Assets/instagram.svg'
 import styled from 'styled-components';
 import { useMedia } from '../../Hooks/useMedia'
+import { useScrollAnima } from '../../Hooks/useScrollAnima'
 
 
 const RedesDiv = styled.div` 
@@ -21,10 +22,14 @@ const RedesLi = styled.li`
 `
 export const Redes = () => {
   const media = useMedia('(max-width:49rem)')
+  useScrollAnima('.redes', 'init-hidden-redes');
+
   return (
     <>
+    
     {!media && 
-    <RedesDiv>
+ 
+    <RedesDiv className="redes">
       <ul>
         <RedesLi>
           <a href="https://wa.me/5511961683295?text=Ol%C3%A1%2C+estou+entrando+em+contato+referente+ao+seu+site." target="_blank">
@@ -57,7 +62,9 @@ export const Redes = () => {
         </RedesLi>
       </ul>
     </RedesDiv>
+  
   }
+ 
   </>
   )
 }
