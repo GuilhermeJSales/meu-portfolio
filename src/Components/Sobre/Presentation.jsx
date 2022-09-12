@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { useScrollAnima } from '../../Hooks/useScrollAnima';
 import {Title, Paragraph} from '../../styles'
@@ -42,7 +43,6 @@ align-items:center;
 
 export const Presentation = () => {
 
-
   return (   
     <SectionPresentation className="init-hidden">
       <Span>Olá, meu nome é</Span>
@@ -53,7 +53,7 @@ export const Presentation = () => {
       Sou aficionado em tecnologia, procuro sempre me manter atualizado, por isso tenho diversos certificados em linguagens de programação e seus frameworks, busco todos os dias aprimorar meus conhecimentos para melhor atender as expectativas dos clientes.<br></br>Bem-vindo ao meu Portfólio!
       </ParagraphPresentation>
       <DivFlex>
-        <Button margin={'3.125rem'} to="portfolio">Meu Portfólio</Button>  
+        <Button to="portfolio">Meu Portfólio</Button>  
       </DivFlex>
     </SectionPresentation>
     

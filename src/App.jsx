@@ -4,15 +4,13 @@ import { Redes } from "./Components/Forms/Redes"
 import { Home } from "./Components/Home"
 import { Portfolio } from "./Components/Portfolio"
 import { Contato } from "./Components/Contato"
-import { Tecnologies } from "./Components/Sobre/Tecnologies"
+import { Technologies } from "./Components/Sobre/Technologies"
 import { Footer } from "./Components/Footer"
 import  GlobalStyle from "./Global"
-import { useScrollAnima } from "./Hooks/useScrollAnima"
+import { Certificados } from "./Components/Sobre/Certificados"
 
 
 export const App = () => {
-
-  useScrollAnima('.init-hidden', 'init-hidden-of');
 
   return (
     <div>
@@ -20,10 +18,10 @@ export const App = () => {
         <Header />
         <Redes />
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route index path="/" element={<Home/>}/>
           <Route path="portfolio" element={<Portfolio/>}/>
           <Route path="contato" element={<Contato/>}/>
-          <Route path="tecnologia/:name" element={<Tecnologies/>}/>
+          <Route path="tecnologia/:name" element={<Certificados/>}/>
         </Routes>
         <Footer/>
         <GlobalStyle />

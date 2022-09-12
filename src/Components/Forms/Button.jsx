@@ -1,8 +1,8 @@
 import {ButtonForm} from '../../styles'
 
-export const Button = ({children, to, ...props}) => {
+export const Button = ({children, to}) => {
   return (
-    <ButtonForm to={to} {...props}>{children}</ButtonForm>
+    <ButtonForm to={to}>{children}</ButtonForm>
 
   )
 }

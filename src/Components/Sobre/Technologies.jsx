@@ -38,10 +38,10 @@ const  TecSpan = styled.span`
   color:#E0E0E0;
 `;
 
-export const Tecnologies = () => {
+export const Technologies = () => {
   return (
    <TecDiv>
-   {api.map((api) => <li  key={api.id}><TecLink to={api.name}><img src={api.logo}/></TecLink><TecSpan>{api.name}</TecSpan></li>)}
+   {api.map((api) => <li  key={api.id}><TecLink to={`tecnologia/${api.name}`}><img src={api.logo}/></TecLink><TecSpan>{api.name}</TecSpan></li>)}
    </TecDiv>
   )
 }

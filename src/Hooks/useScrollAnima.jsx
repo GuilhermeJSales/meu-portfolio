@@ -1,8 +1,12 @@
 import { useEffect } from "react";
 
-export const useScrollAnima = (classe, hiddenOff) => {
+
+
+export const useScrollAnima = (classe, hiddenOff, pathname) => {  
+  
 
   useEffect(() => {
+    
     const sections = [...document.querySelectorAll(classe)];
      const observer = new IntersectionObserver(entries => {
       Array.from(entries).forEach(entry => {
@@ -18,6 +22,6 @@ export const useScrollAnima = (classe, hiddenOff) => {
   
      return () => observer.disconnect();
       
-   },[])
+   },[pathname])
 
 }

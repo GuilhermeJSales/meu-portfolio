@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {Paragraph, SubTitleAll} from "../../styles"
 import {ReactComponent as LogoTipo} from '../../Assets/sobre-logo.svg'
-import { Tecnologies } from './Tecnologies'
+import { Technologies } from './Technologies';
 
 
 
@@ -49,7 +49,7 @@ export const About = () => {
            <br></br>Enfim, já tive algumas experiências fazendo o que amo, inclusive isso me deu oportunidade de aprender e as vezes até me certificar nas tecnologias e softwares abaixo:
            <br></br><br></br>
           </ParagraphAbout>
-          <Tecnologies />
+          <Technologies />
         </div>
         <ImgDiv>
           <LogoTipo/>

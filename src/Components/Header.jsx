@@ -125,6 +125,7 @@ export const Header = () => {
   // fechar menu toda vez que mudar de rota
   useEffect(() => {
     setMobileMenu(false);
+    setDropdown(false);
   },[pathname])
 
   // Evento outside para fechar menu ao clicar fora.
@@ -134,7 +135,7 @@ export const Header = () => {
   // evento de click do mobile menu
   const handleClick = () => {
     setMobileMenu(!mobileMenu);
-    if(!mobileMenu && mobile) {
+    if(!mobileMenu) {
       setDropdown(true);
     }
   }

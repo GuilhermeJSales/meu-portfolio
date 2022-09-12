@@ -2,6 +2,8 @@ import styled from "styled-components";
 import {Presentation} from "./Sobre/Presentation";
 import { About } from "./Sobre/About";
 import { Exp } from "./Sobre/Exp";
+import { useLocation } from "react-router-dom";
+import { useScrollAnima } from "../Hooks/useScrollAnima";
 
 
 
@@ -19,6 +21,10 @@ const MainConfigs = styled.main`
 `
 
 export const Home = () => {
+  // ANIMA AO SCROLL TODA VEZ QUE ALTERA A ROTA.
+  const {pathname} = useLocation();
+  useScrollAnima('.init-hidden', 'init-hidden-of',pathname);
+
   return (
     <MainConfigs>
         <Presentation />

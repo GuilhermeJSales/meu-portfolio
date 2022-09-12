@@ -85,11 +85,6 @@ export const Dropdown = ({setDropdown, dropdown, dropRef}) => {
     setDropdown(!dropdown);
   }
 
-
-    
-  
-
-
   return (
     <>
     <ContatoLink className={dropdown ? 'active' : ''} font={'Roboto'} onClick={handleDropdown} href="contato.html">Contato</ContatoLink>
@@ -97,7 +92,7 @@ export const Dropdown = ({setDropdown, dropdown, dropRef}) => {
             <DropUl>
               <DropLi>
                 <DropLink href="https://wa.me/5511961683295?text=Ol%C3%A1%2C+estou+entrando+em+contato+referente+ao+seu+site." target="_blank">
-                  <Whatsapp/> <Span>Whatsapp</Span>
+                  <Whatsapp/> <Span>WhatsApp</Span>
                 </DropLink>
               </DropLi>
               <DropLi>
