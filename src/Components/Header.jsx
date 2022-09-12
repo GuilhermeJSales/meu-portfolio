@@ -48,7 +48,7 @@ z-index:9;
   width:60vw;
   height:100%;
   position:fixed;
-  left:-100px;
+  left:-400px;
   transition: .3s ease-in-out;
   opacity:0;
   top:0;
@@ -66,6 +66,8 @@ z-index:9;
 const HeaderLI = styled.li`
   font-size:1rem;
   margin:1.25rem;
+  opacity:0;
+  z-index:9;
   @media(max-width:63rem) {
     opacity:0;
     margin:1.25rem 3rem;
@@ -146,11 +148,15 @@ export const Header = () => {
     const animationLink = ()=> {
       const list = [...ref.current.children];
       list.forEach((item, index) => {
-        mobileMenu ? item.style.animation=`animaLink .5s ease forwards ${index / 7 + 0.3}s` : item.style.animation = '';
+        if(mobile && mobileMenu) {
+          item.style.animation=`animaLink .5s ease forwards ${index / 7 + 0.3}s`;
+        } else {
+          item.style.animation=`animaHeader .5s ease forwards ${index / 7 + 0.3}s`;
+        }       
       })
     }
     animationLink();
-  },[mobileMenu]);
+  },[mobile]);
 
   return (
   <HeaderSite>

@@ -13,6 +13,7 @@ const MainConfigs = styled.main`
   min-height:100vh;
   margin:0 auto;
   padding: 0 150px;
+  z-index:-1;
   @media (max-width: 48rem){
     padding:0 50px;
   }  @media (max-width: 38rem){

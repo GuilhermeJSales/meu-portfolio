@@ -78,7 +78,7 @@ const Span = styled.span`
 
 
 
-export const Dropdown = ({setDropdown, dropdown, dropRef}) => {
+export const Dropdown = ({setDropdown, dropdown}) => {
 
   const handleDropdown = (event) => {
     event.preventDefault();
