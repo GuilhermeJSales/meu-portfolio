@@ -1,7 +1,4 @@
-import { useRef } from 'react';
-import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { useScrollAnima } from '../../Hooks/useScrollAnima';
 import {Title, Paragraph} from '../../styles'
 import { Button } from '../Forms/Button'  
 

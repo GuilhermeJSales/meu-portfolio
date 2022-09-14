@@ -1,11 +1,19 @@
+import styled from 'styled-components';
+
+
+import { ReactComponent as Logo } from '../Assets/header-logo.svg'
+import { ReactComponent as MobileLogo } from '../Assets/header-mobile.svg'
+
+
+
+
+
 import { Link, useLocation } from 'react-router-dom'
 import { useState,useRef, useEffect} from 'react';
 import { useMedia } from '../Hooks/useMedia';
 import { useOutsideClick } from '../Hooks/useOutsideClick';
-import styled from 'styled-components';
-import { ReactComponent as Logo } from '../Assets/header-logo.svg'
-import { ReactComponent as MobileLogo } from '../Assets/header-mobile.svg'
-import { Dropdown } from './Forms/Dropdown';
+import { Dropdown } from './DropdownContact/Dropdown';
+
 
 // HEADER STYLES
 const HeaderSite = styled.header`
@@ -62,7 +70,6 @@ z-index:9;
 }
 `;
 
-
 const HeaderLI = styled.li`
   font-size:1rem;
   margin:1.25rem;
@@ -115,12 +122,13 @@ grid:1;
 }
 `
 
+
+
 export const Header = () => {
   const mobile = useMedia('(max-width:63rem)');
   const [mobileMenu, setMobileMenu] = useState(false);
   const {pathname} = useLocation();
   const ref = useRef(null);
-  const dropRef = useRef(null);
   const wrapperRef = useRef()
   const [dropdown, setDropdown] = useState(false);
 
@@ -168,12 +176,11 @@ export const Header = () => {
       </DivImg>
     <nav ref={wrapperRef}>
     {mobile && <MobileButton aria-label='menu' onClick={handleClick} className={mobileMenu && 'buttonActive'}></MobileButton>}
-   
       <HeaderUl ref={ref} className={mobileMenu && 'mobileActive'}>
         <HeaderLI><LinkHeader font={'Roboto'} to="/">Início</LinkHeader></HeaderLI>
         <HeaderLI><LinkHeader font={'Roboto'} to="portfolio">Portfólio</LinkHeader></HeaderLI>
-          <HeaderLI style={{position:'relative'}} ref={dropRef}>
-            <Dropdown dropRef={dropRef} setDropdown={setDropdown} dropdown={dropdown}/>
+          <HeaderLI style={{position:'relative'}}>
+          <Dropdown setDropdown={setDropdown} dropdown={dropdown}/>
           </HeaderLI>
       </HeaderUl>
     </nav>    

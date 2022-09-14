@@ -9,7 +9,7 @@ export const FooterP = styled.p`
   font-size:1rem;
   font-family:'Roboto Mono', monospace;
   color:#E0E0E0;
-  padding:0 150px 100px ;
+  padding:50px 150px 100px ;
   @media (max-width: 48rem){
     padding:0 50px 50px;
   }  @media (max-width: 38rem){

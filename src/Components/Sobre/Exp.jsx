@@ -115,6 +115,8 @@ export const Exp = () => {
       {id: 0, empresa:"Máxima Voip", cargo:'Suporte Técnico',  description:"Suporte Técnico via chat para os clientes, criação de novos ambientes, configurações de conta voip e treinamento de novos clientes."},
       {id: 1, empresa:"Agência R3", cargo:'Desenvolvedor WordPress', description:"Desenvolvimento de sites via WordPress, editando na maioria das vezes temas premium, ou criando novos através de plugins da plataforma."},
       {id: 2, empresa:"Freelance", cargo:'Social Media', description:"Desenvolvimento de artes para redes sociais de clientes de diversos tipos de segmentos. Criação de story, post-image e também cartões de visita."},
+      {id: 3, empresa:"Omnibees", cargo:'Analista de Suporte', description:"Prestando suporte técnico sobre configurações dos softwares oferecidos pela empresa aos hotéis. Tentando entender regras de negócios dos clientes para uma melhor configuração do sistema para os mesmos."},
+      
   ];
 
   const [job, setJob] = useState(0);
