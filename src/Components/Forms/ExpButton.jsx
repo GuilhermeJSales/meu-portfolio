@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useRef } from "react";
-import styled from "styled-components";
 import { useMedia } from "../../Hooks/useMedia";
+import styled from "styled-components";
 
 
 const ButtonExp = styled.button`

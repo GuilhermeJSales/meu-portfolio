@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Paragraph, SubTitleAll} from "../../styles"
-import {ReactComponent as LogoTipo} from '../../Assets/sobre-logo.svg'
+import PhotoHover from '../../Assets/foto-hover.png'
+import PhotoOpacity from '../../Assets/foto-opacity.png'
 import { Technologies } from './Technologies';
 
 
@@ -10,27 +11,61 @@ import { Technologies } from './Technologies';
 
 const AboutSection = styled.section`
     padding-bottom:200px; 
+    margin: 0 auto;
+ 
 `;
 
 const AboutSect = styled.div `
   display:grid;
-  grid-template-columns: 700px auto;
-  align-items:center;
-  @media (max-width:69rem){
+  grid-template-columns: 1fr 1fr;
+  gap:50px;
+  @media (max-width:70rem){
     grid-template-columns:1fr;
   }
 `;
 
 
-const ParagraphAbout = styled(Paragraph)`
-  max-width:550px;
+const  SobreDiv = styled.div`
+  margin-bottom: 50px;
 `;
 
-const  ImgDiv = styled.div`
-  justify-self:center;
-  @media (max-width:75rem){
-    display:none;
+const MyImage = styled.div`
+  width:352px;
+  height:330px;
+  background-image: url(${PhotoOpacity});
+  background-size:cover;
+  transition: 1s ease-in-out;
+  position: relative;
+  &:hover{
+  background-image: url(${PhotoHover});
+  }&:after{
+    content:"";
+    width:352px;
+    height:330px;
+    background:#333;
+    opacity:.3;
+    border-radius:0 120px 120px 120px;
+    display:block;
+    position:absolute;
+    left:15px;
+    top:10px;
+    transition: .5s ease-in-out;
+  }&:hover:after{
+    opacity:.1;
+    left:0;
+    top:0;
   }
+  `;
+
+const  ImgDiv = styled.div`
+  justify-self:start;
+  align-self:flex-end;
+  @media (max-width:70rem){
+    margin-bottom:30px;
+  }
+  @media (max-width:49rem){
+    display:none;
+  } 
 `;
 export const About = () => {
 
@@ -40,21 +75,33 @@ export const About = () => {
     <AboutSection className='init-hidden'>
       <AboutSect>
         <div>
-          <SubTitleAll>Sobre Mim</SubTitleAll>
-          <ParagraphAbout>
-            Olá, meu nome é Guilherme Jesus Sales, tenho 28 anos e sou desenvolvedor front-end.
-            Possuo experiências com desenvolvimento de sites WordPress e alguns projetos utilizando HTML5, CSS3, Javascript ES6+ e ReactJS. <br></br>
-           <br></br>Sempre gostei muito de tecnologia, por isso desde cedo eu estudo os mais variados temas sobre a mesma. Primeiramente me apaixonei pelo Photoshop, algo que utilizo até hoje para alguns trabalhos freelance, criando logotipos e artes para mídias sociais.
-           Após isso, me interessei pela programação ainda na época do Orkut, onde mergulhava nos conteúdos de diversas comunidades e fóruns da plataforma.<br></br> 
-           <br></br>Enfim, já tive algumas experiências fazendo o que amo, inclusive isso me deu oportunidade de aprender e as vezes até me certificar nas tecnologias e softwares abaixo:
-           <br></br><br></br>
-          </ParagraphAbout>
-          <Technologies />
+            <SobreDiv>
+              <SubTitleAll>Desenvolvedor</SubTitleAll>          
+              <Paragraph>
+              Sou um desenvolvedor web front-end, com experiência 
+              na criação de diversos sites. Apaixonado por tecnologia,
+              estou cursando superior em Analise e Desenvolvimento
+              de Sistemas e coleciono alguns certificados de linguagens
+              e frameworks da web.
+              </Paragraph>
+            </SobreDiv>
+
+
+            <SobreDiv>          
+              <SubTitleAll>Designer</SubTitleAll>          
+              <Paragraph>
+              Apaixonado por designer desde cedo, aprendi a utilizar alguns softwares de edição somente com vídeos tutoriais do Youtube.
+              Possuo experiência em design para mídias sociais e construção de layouts para sites. 
+              </Paragraph>
+            </SobreDiv>
+
         </div>
         <ImgDiv>
-          <LogoTipo/>
+          <MyImage/>
         </ImgDiv>
+        
         </AboutSect>
+        <Technologies />
     </AboutSection>
     
   )

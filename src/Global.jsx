@@ -11,9 +11,10 @@ export default createGlobalStyle `
   body{
     background: #141414;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
     width:100%;
     min-height:100%;
-    line-height: 1.2;
     overflow-x:hidden;
   }
 
@@ -94,13 +95,13 @@ body::-webkit-scrollbar-thumb {
   }
 
 
-  .init-hidden{
-    opacity:0;
-  }
+  // .init-hidden{
+  //   opacity:0;
+  // }
 
-  .init-hidden-of{
-    animation: animaSection 1.5s ease-in-out forwards;
-  }
+  // .init-hidden-of{
+  //   animation: animaSection 1.4s forwards;
+  // }
 
   .redes{
     opacity:0;

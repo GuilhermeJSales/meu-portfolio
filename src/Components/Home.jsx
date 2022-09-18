@@ -24,7 +24,7 @@ const MainConfigs = styled.main`
 export const Home = () => {
   // ANIMA AO SCROLL TODA VEZ QUE ALTERA A ROTA.
   const {pathname} = useLocation();
-  useScrollAnima('.init-hidden', 'init-hidden-of',pathname);
+  // useScrollAnima('.init-hidden', 'init-hidden-of',pathname);
 
   return (
     <MainConfigs>

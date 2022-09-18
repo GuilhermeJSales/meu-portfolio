@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 // ALL STYLES
 export const Title = styled.h1`
-  font-family:'Roboto', sans-serif;
   font-size:clamp(2.2rem, 5vw, 5rem);
   color:#F5F5F5;
   margin-top:1.125rem;
@@ -15,40 +14,27 @@ export const Title = styled.h1`
 
 
 export const SubTitleAll = styled.h2`
-color:#E0E0E0;
-font-size:1.875rem;
-font-family: 'Helvetica', arial;
-letter-spacing:1.1px;
-margin-bottom: 1.875rem;
-position:relative;
-&:before{
-  content:"❖";
-  font-size:1.5rem;
-  color:#F29602;
-  margin-right:0.625rem;
-}&:after{
+  color:#F5F5F5;
+  font-size:2.5rem;
+  letter-spacing:1.1px;
+  font-weight:bold;
+  position:relative;
+  z-index:1;
+  margin: 0  0 20px 5px;
+  &:before{
   content:'';
-  background:#333333;
-  width:200px;
-  height:1px;
+  z-index:-1;
+  background:#FF7A21;
+  border-radius:0 6px 6px 6px ;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  width:24px;
+  height:18px;
   display:inline-block;
   position:absolute;
-  top:20px;
-  margin-left:10px;
-}   @media (max-width:63rem){
-    &:after{
-      width: 250px;
-    }
-  } @media (max-width:33rem){
-    &:after{
-      width: 100px;
-    }
-  }
-  @media (max-width:25rem){
-    &:after{
-      display:none;
-    }
-  }
+  bottom:5px;
+  left:-5px;
+  margin-left:0px;
+}
 `;
 
 export const ThirdTitle = styled.h3`
@@ -65,8 +51,6 @@ export const ThirdTitle = styled.h3`
 
 export const Paragraph = styled.p`
   font-family:'Roboto', sans-serif;
-  font-size:1rem;
-  line-height:1.2;
   color:#E0E0E0;
   @media (max-width:32rem) {
     font-size:.875rem;

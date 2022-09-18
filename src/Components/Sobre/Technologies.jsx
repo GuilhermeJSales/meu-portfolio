@@ -5,12 +5,23 @@ import {api} from "../../api"
 
 const  TecDiv = styled.ul`
   display:grid;
-  grid-template-columns: repeat(4, 60px);
+  grid-template-columns:repeat(7, 60px);
   gap:1.5rem;
   align-items:center;
-  margin-top:3rem;
+  margin-top:2rem;
   text-align:center;
+  @media (max-width:44rem){
+    grid-template-columns:repeat(4,60px);
+  }
+  @media (max-width:25rem){
+    grid-template-columns:repeat(3,60px);
+  }
 `;
+
+const CertificateTitle = styled.span`
+  font-size:1.5rem;
+  color:#e0e0e0;
+`
 
 
 const TecLink = styled(Link)`
@@ -40,8 +51,11 @@ const  TecSpan = styled.span`
 
 export const Technologies = () => {
   return (
-   <TecDiv>
+    <>
+    <CertificateTitle>Minhas especializações:</CertificateTitle>
+   <TecDiv>   
    {api.map((api) => <li  key={api.id}><TecLink to={`tecnologia/${api.name}`}><img src={api.logo}/></TecLink><TecSpan>{api.name}</TecSpan></li>)}
    </TecDiv>
+   </>
   )
 }
