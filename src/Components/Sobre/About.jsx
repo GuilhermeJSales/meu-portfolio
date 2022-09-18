@@ -12,7 +12,6 @@ import { Technologies } from './Technologies';
 const AboutSection = styled.section`
     padding-bottom:200px; 
     margin: 0 auto;
- 
 `;
 
 const AboutSect = styled.div `
@@ -43,16 +42,16 @@ const MyImage = styled.div`
     width:352px;
     height:330px;
     background:#333;
-    opacity:.3;
+    opacity:.2;
     border-radius:0 120px 120px 120px;
     display:block;
     position:absolute;
-    left:15px;
+    right:10px;
     top:10px;
     transition: .5s ease-in-out;
   }&:hover:after{
     opacity:.1;
-    left:0;
+    right:0;
     top:0;
   }
   `;
@@ -72,12 +71,12 @@ export const About = () => {
 
   return (
     
-    <AboutSection className='init-hidden'>
+    <AboutSection>
       <AboutSect>
         <div>
             <SobreDiv>
-              <SubTitleAll>Desenvolvedor</SubTitleAll>          
-              <Paragraph>
+              <SubTitleAll data-aos="fade-right" data-aos-duration="1500">Desenvolvedor</SubTitleAll>          
+              <Paragraph data-aos="fade-right" data-aos-duration="1600">
               Sou um desenvolvedor web front-end, com experiência 
               na criação de diversos sites. Apaixonado por tecnologia,
               estou cursando superior em Analise e Desenvolvimento
@@ -88,15 +87,15 @@ export const About = () => {
 
 
             <SobreDiv>          
-              <SubTitleAll>Designer</SubTitleAll>          
-              <Paragraph>
+              <SubTitleAll data-aos="fade-right" data-aos-duration="1500">Designer</SubTitleAll>          
+              <Paragraph data-aos="fade-right" data-aos-duration="1600">
               Apaixonado por designer desde cedo, aprendi a utilizar alguns softwares de edição somente com vídeos tutoriais do Youtube.
               Possuo experiência em design para mídias sociais e construção de layouts para sites. 
               </Paragraph>
             </SobreDiv>
 
         </div>
-        <ImgDiv>
+        <ImgDiv data-aos="zoom-in" data-aos-duration="1500">
           <MyImage/>
         </ImgDiv>
         

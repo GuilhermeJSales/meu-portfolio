@@ -169,7 +169,7 @@ export const Header = () => {
   return (
   <HeaderSite>
     <ContainerHeader>   
-      <DivImg>
+      <DivImg data-aos="fade-down"  data-aos-duration="1500">
       <Link to="/">
         {mobile ? <MobileLogo /> : <Logo />}
       </Link>

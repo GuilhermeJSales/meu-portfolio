@@ -54,7 +54,8 @@ export const Technologies = () => {
     <>
     <CertificateTitle>Minhas especializações:</CertificateTitle>
    <TecDiv>   
-   {api.map((api) => <li  key={api.id}><TecLink to={`tecnologia/${api.name}`}><img src={api.logo}/></TecLink><TecSpan>{api.name}</TecSpan></li>)}
+   {api.map((api) => <li  data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos-delay={api.duration} key={api.id}><TecLink to={`tecnologia/${api.name}`}><img src={api.logo}/></TecLink><TecSpan>{api.name}</TecSpan></li>)}
    </TecDiv>
    </>
   )

@@ -126,12 +126,12 @@ export const Exp = () => {
 
 
   return( 
-   <ExpSection className="init-hidden">
-    <div>
+   <ExpSection>
+    <div data-aos="fade-up"  data-aos-duration="1500">
     <SubTitleAll>Experiências</SubTitleAll>
     <ThirdTitle>Experiências relacionadas a área de Tecnologia</ThirdTitle>
     </div>
-    <DivFlexExp>
+    <DivFlexExp data-aos="fade-up"  data-aos-duration="2000">
    
       <DivButtonFlex>
    {exp.map(e => <ExpButton setScrollButton={setScrollButton} anima={anima} setAnima={setAnima} job={job} setJob={setJob} key={e.id} id={e.id}>{e.cargo}</ExpButton>)}

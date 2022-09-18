@@ -94,15 +94,6 @@ body::-webkit-scrollbar-thumb {
     }
   }
 
-
-  // .init-hidden{
-  //   opacity:0;
-  // }
-
-  // .init-hidden-of{
-  //   animation: animaSection 1.4s forwards;
-  // }
-
   .redes{
     opacity:0;
   }

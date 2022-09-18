@@ -41,7 +41,7 @@ align-items:center;
 export const Presentation = () => {
 
   return (   
-    <SectionPresentation className="init-hidden">
+    <SectionPresentation data-aos="fade-up"  data-aos-duration="2000">
       <Span>Olá, meu nome é</Span>
       <Title>Guilherme Jesus Sales.</Title>
       <SubTitle>Sou desenvolvedor front-end.</SubTitle>
