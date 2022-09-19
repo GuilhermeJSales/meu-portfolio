@@ -44,7 +44,7 @@ const DivButtonFlex = styled.div`
 }
 `;
 
-const CssTest = styled.li`
+const LiTransition = styled.li`
 &.my-node-enter {
   opacity: 0;
 }
@@ -146,10 +146,10 @@ export const Exp = () => {
       classNames="my-node" 
       ref={nodeRef}
     >
-    <CssTest ref={nodeRef}>
+    <LiTransition ref={nodeRef}>
       <ExpName>{exp[job].cargo} <ExpSpanName>{`❖ ${exp[job].empresa}`}</ExpSpanName></ExpName>
       <ExpParagraph>{exp[job].description}</ExpParagraph>
-    </CssTest>
+    </LiTransition>
     </CSSTransition>
    </ul>
    }

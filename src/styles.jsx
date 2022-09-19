@@ -6,6 +6,24 @@ import { Link } from 'react-router-dom';
 
 
 // ALL STYLES
+
+export const MainConfigs = styled.main`
+  max-width:1600px;
+  width:100%;
+  min-height:100vh;
+  margin:0 auto;
+  padding: 0 150px;
+  z-index:-1;
+  @media (max-width: 48rem){
+    padding:0 50px;
+  }  @media (max-width: 38rem){
+    padding:0 25px;
+  } 
+`
+
+
+
+
 export const Title = styled.h1`
   font-size:clamp(2.2rem, 5vw, 5rem);
   color:#F5F5F5;

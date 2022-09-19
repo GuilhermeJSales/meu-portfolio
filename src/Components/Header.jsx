@@ -169,9 +169,9 @@ export const Header = () => {
   return (
   <HeaderSite>
     <ContainerHeader>   
-      <DivImg data-aos="fade-down"  data-aos-duration="1500">
+      <DivImg>
       <Link to="/">
-        {mobile ? <MobileLogo /> : <Logo />}
+        {mobile ? <MobileLogo /> : <Logo data-aos="fade-down"  data-aos-duration="1600"/>}
       </Link>
       </DivImg>
     <nav ref={wrapperRef}>

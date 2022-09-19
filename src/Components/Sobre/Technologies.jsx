@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom"
-import {api} from "../../api"
+import {specializations} from "../../utils/Specializations-object"
 
 
 const  TecDiv = styled.ul`
@@ -54,8 +54,8 @@ export const Technologies = () => {
     <>
     <CertificateTitle>Minhas especializações:</CertificateTitle>
    <TecDiv>   
-   {api.map((api) => <li  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos-delay={api.duration} key={api.id}><TecLink to={`tecnologia/${api.name}`}><img src={api.logo}/></TecLink><TecSpan>{api.name}</TecSpan></li>)}
+   {specializations.map((specializations) => <li  data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos-delay={specializations.duration} key={specializations.id}><TecLink to={`tecnologia/${specializations.name}`}><img src={specializations.logo}/></TecLink><TecSpan>{specializations.name}</TecSpan></li>)}
    </TecDiv>
    </>
   )
