@@ -15,7 +15,7 @@ const {request, data, loading, error, loadScroll} = useFetch()
 useEffect(() => {
   async function fetchProjects() {
     if(page <= 3){
-    const {json} = await request(`./page${page}.json`)
+    const {json} = await request(`../../../page${page}.json`)
     setProject([...project,...json]);
     } 
   }
