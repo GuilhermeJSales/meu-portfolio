@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Header } from "./Components/Header"
 import { Home } from "./Components/Home"
 import { Redes } from "./Components/Forms/Redes"
-import { Portfolio } from "./Components/Portfolio"
+import { Projects } from "./Components/Projects"
 import { Qualifications } from "./Components/Qualifications/Qualifications"
 import { Footer } from "./Components/Footer"
 import { useEffect } from "react"
@@ -28,7 +28,7 @@ export const App = () => {
         <Redes />
         <Routes>
           <Route index path="/" element={<Home/>}/>
-          <Route path="portfolio" element={<Portfolio/>}/>
+          <Route path="projetos" element={<Projects/>}/>
           <Route path="tecnologia/:name" element={<Qualifications/>}/>
         </Routes>
         </MainConfigs>

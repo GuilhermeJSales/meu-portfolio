@@ -178,7 +178,7 @@ export const Header = () => {
     {mobile && <MobileButton aria-label='menu' onClick={handleClick} className={mobileMenu && 'buttonActive'}></MobileButton>}
       <HeaderUl ref={ref} className={mobileMenu && 'mobileActive'}>
         <HeaderLI><LinkHeader font={'Roboto'} to="/">Início</LinkHeader></HeaderLI>
-        <HeaderLI><LinkHeader font={'Roboto'} to="portfolio">Portfólio</LinkHeader></HeaderLI>
+        <HeaderLI><LinkHeader font={'Roboto'} to="projetos">Projetos</LinkHeader></HeaderLI>
           <HeaderLI style={{position:'relative'}}>
           <Dropdown setDropdown={setDropdown} dropdown={dropdown}/>
           </HeaderLI>

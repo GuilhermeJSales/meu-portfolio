@@ -13,7 +13,7 @@ export const useScrollAnima = (classe, hiddenOff, pathname) => {
         entry.intersectionRatio >= .1 && entry.target.classList.add(hiddenOff);        
       })
      },{
-      threshold: .1,
+      threshold: 1,
      })
      
      sections.forEach((element) => {

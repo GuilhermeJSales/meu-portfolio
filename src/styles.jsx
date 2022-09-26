@@ -61,6 +61,7 @@ export const ThirdTitle = styled.h3`
   font-family:'Roboto Mono', monospace;
   font-style:italic;
   font-weight:Normal;
+  margin-top:10px;
   margin-bottom: 2.25rem;
   @media (max-width:38rem){
     font-size:.675rem;

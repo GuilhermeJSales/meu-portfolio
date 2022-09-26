@@ -103,4 +103,27 @@ body::-webkit-scrollbar-thumb {
     animation: animaRedes 3s ease;
   }
 
+
+  .init-hidden{
+    opacity:0;
+  }
+
+  .init-hidden-off{
+    opacity:1;
+    animation: animaLink .6s ease;
+  }
+
+  .animeLeft{
+    opacity:0;
+    transform:translateX(-250px);
+    animation: animeLeft 2s ease forwards;
+  }
+  
+  @keyframes animeLeft{
+    to {
+      opacity:1;
+      transform:initial;
+    }
+  }
+
 `
