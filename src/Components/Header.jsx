@@ -171,7 +171,7 @@ export const Header = () => {
     <ContainerHeader>   
       <DivImg>
       <Link to="/">
-        {mobile ? <MobileLogo /> : <Logo data-aos="fade-down"  data-aos-duration="1600"/>}
+        {mobile ? <MobileLogo /> : <Logo data-aos="fade"  data-aos-duration="1600"/>}
       </Link>
       </DivImg>
     <nav ref={wrapperRef}>
