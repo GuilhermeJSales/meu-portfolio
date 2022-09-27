@@ -9,18 +9,18 @@ import {ReactComponent as LoadScroll} from '../../Assets/three-dots.svg'
 export const ProjectContent = ({contRef}) => {
 const [page, setPage] = useState(1);
 const [project, setProject] = useState([]);
-
 const {request, data, loading, error, loadScroll} = useFetch()
 
 useEffect(() => {
   async function fetchProjects() {
     if(page <= 3){
-    const {json} = await request(`../../../page${page}.json`)
+    const {json} = await request(`https://meu-portfolio-two-tau.vercel.app/projetos/page${page}.json`);
     setProject([...project,...json]);
-    } 
+    }
   }
   fetchProjects()
 },[page]);
+
 
 useEffect(() => {
   const observer = new IntersectionObserver((entries) => {
@@ -54,5 +54,4 @@ if(data)
     </div>  
   </>
   )
-    
 }
