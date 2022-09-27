@@ -1,25 +1,54 @@
 import { useEffect, useState } from "react";
-import { useFetch } from "../../Hooks/useFetch";
 import { ThirdTitle, Title } from "../../styles";
-import {Loading} from '../Loading/Loading'
-import {ReactComponent as LoadScroll} from '../../Assets/three-dots.svg'
+
+import pageAll from '../../../pageAll.json'
+
 
 
 
 export const ProjectContent = ({contRef}) => {
-const [page, setPage] = useState(1);
+const [page, setPage] = useState(0);
 const [project, setProject] = useState([]);
-const {request, data, loading, error, loadScroll} = useFetch()
+
+const [content, setContent] = useState([[]]);
+
 
 useEffect(() => {
-  async function fetchProjects() {
-    if(page <= 3){
-    const {json} = await request(`https://meu-portfolio-two-tau.vercel.app/projetos/page${page}.json`);
-    setProject([...project,...json]);
+  const result = getPartsOfArray(pageAll, 2)
+  setContent(result);
+},[])
+
+
+const getPartsOfArray = (array, perPage) => {
+  const resultRestDivision = array.length % perPage
+  const resultDivisionInt = Math.floor(array.length / perPage)
+  let newArray = []
+  let inicio = 0
+  let final = perPage
+
+  for (let i = 1; i <= resultDivisionInt; i++) {
+    newArray.push(array.slice(inicio, final))
+    inicio += perPage
+    if (i === resultDivisionInt) {
+      final += resultRestDivision
+    } else {
+      final += perPage
     }
   }
-  fetchProjects()
-},[page]);
+  if (resultRestDivision > 0) {
+    newArray.push(array.slice(inicio, final))
+  }
+  return newArray
+}
+
+
+useEffect(() => {
+    if(page < content.length){
+    const json = content[page]
+    setProject([...project,...json]);
+    console.log(json)
+  }
+},[page,content]);
 
 
 useEffect(() => {
@@ -36,9 +65,6 @@ return () => {
 }
 },[]);
   
-if(loading) return <Loading />
-if(error) return <h1>{error}</h1>
-if(data)  
     return (
     <>      
       <Title>Projetos</Title>
@@ -48,9 +74,8 @@ if(data)
       {project.map((item) => <li className="animeLeft" key={item.id}>
        <img style={{padding:'100px 0'}} src={`https://res.cloudinary.com/dwmikyqye/image/upload/${item.img}`}/>  
       </li>)}
-      {loadScroll && <LoadScroll/>}  
       </ul>
-      {page > 3 && <ThirdTitle>Não existem mais projetos até o momento</ThirdTitle>}
+      {page > 2 && <ThirdTitle>Não existem mais projetos até o momento</ThirdTitle>}
     </div>  
   </>
   )
