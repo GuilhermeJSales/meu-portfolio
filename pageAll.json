@@ -7,7 +7,7 @@
     "live": null,
     "img": "v1663968770/projects/esports_mot0rq.png",
     "gif": "",
-    "description": "",
+    "description": "Projeto desenvolvido na semana da NLW ESPORTS - Trilha Ignite da @Rocketseat. O projeto consiste em facilitar a vida do gamer, disponibilizando uma maneira de encontrar um duo com os mesmos níveis de habilidade e mesmos horários de disponibilidade, basta apenas criar um anúncio e aguardar que alguém envie o convite no discord para começar a gameplay.",
     "technologies":"ReactJS - React Native - NodeJS - TailwindCSS - Radix UI - Prisma"
   },{
     "id": 1,
@@ -16,8 +16,8 @@
     "git": "https://github.com/GuilhermeJSales/react-dogs",
     "live": "https://react-dogs-xi.vercel.app/",
     "img": "v1663968770/projects/dogs_dckra3.png",
-    "gif": "",
-    "description": "",
+    "gif": "v1664419195/projects/reactdogs_dwas3h.gif",
+    "description": "Projeto desenvolvido no curso para certificação de ReactJs, da plataforma de ensino @Origamid. Consiste em um 'Instagram' para cachorros. Criamos a API pelo WordPress, possibilitando assim a criação de novas contas, postagens de fotos, troca e recuperação de senha perdida/esquecida pelo usuário, comentários nas fotos do feed, visualização do gráfico de alcance individual de cada conta e atualização de visualização em tempo real.",
     "technologies":"ReactJS - CSS3 - WordPress"
   }, {
     "id": 2,
@@ -27,7 +27,7 @@
     "live": "https://guilhermejsales.github.io/ranekProductAPI/",
     "img": "v1663968770/projects/ranek_swmupk.png",
     "gif": "",
-    "description": "",
+    "description": "Projeto desenvolvido no curso de React Completo, puxando dados da API Ranek para fazer um 'mini ecommerce', utilizando react-router.",
     "technologies":"ReactJS - CSS3"
   },  {
     "id": 3,
@@ -37,8 +37,8 @@
     "live": "https://nlw-return-impulse-web-gamma-drab.vercel.app/",
     "img": "v1663968770/projects/nlwimpulse_udecxv.png",
     "gif": "",
-    "description": "",
-    "technologies":"ReactJS - NodeJS - TailwindCSS - Prisma"
+    "description": "Projeto desenvolvido na semana da NLW Impulse, da @Rocketseat. O projeto consiste em um widgetForm, que possibilita o usuário enviar/reportar um(a) Feedback/Ideia/Bug através de um texto e também enviar um print da tela clicando no botão de print do widget.",
+    "technologies":"ReactJS - NodeJS - ReactNative - TailwindCSS - Prisma"
    }, {
     "id": 4,
     "title": "Impulse Advogados",
@@ -47,7 +47,7 @@
     "live": "https://guilhermejsales.github.io/impulseadv/",
     "img": "v1663968770/projects/impulseadv_spzqhl.png",
     "gif": "",
-    "description": "",
+    "description": "Este é o desenvolvimento de um site para uma empresa FICTÍCIA,cujo nome é Impulse Advogados. Desenvolvido para estudo tantos das tecnologias utilizadas como de criação de layout pelo adobe xD.",
     "technologies":"Javascript - HTML5 - CSS3"
     },{
       "id": 5,
@@ -57,7 +57,7 @@
       "live": "https://guilhermejsales.github.io/animais-fantasticos/",
       "img": "v1663968770/projects/animais_knp2p7.png",
       "gif": "",
-      "description": "",
+      "description": "Site desenvolvido no curso de certificação de Javascript ES6+ da @Origamid. Site possui modal de login, menu dropdown, slide, animação de números, scroll to section e algumas outras funcionalidades, todas feitas do zero. É um projeto bem completo para finalização do curso e bom entendimento do Javascript.",
       "technologies":"Javascript - HTML5 - CSS3"
     },{
       "id": 6,
@@ -67,7 +67,7 @@
       "live": "https://guilhermejsales.github.io/wildbeast/",
       "img": "v1663968770/projects/wildbeast_xcpfv8.png",
       "gif": "",
-      "description": "",
+      "description": "Site desenvolvido no curso de CSS Grid Layout, onde aprendi a utilizar o css Grid a partir de um template bem complexo",
       "technologies":"HTML5 - CSS3"
     }
 ]

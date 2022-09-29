@@ -52,7 +52,7 @@ const  TecSpan = styled.span`
 export const Technologies = () => {
   return (
     <>
-    <CertificateTitle>Minhas especializações:</CertificateTitle>
+    <CertificateTitle data-aos="fade-up" data-aos-duration="1500">Minhas especializações:</CertificateTitle>
    <TecDiv>   
    {specializations.map((specializations) => <li  data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos-delay={specializations.duration} key={specializations.id}><TecLink to={`tecnologia/${specializations.name}`}><img src={specializations.logo}/></TecLink><TecSpan>{specializations.name}</TecSpan></li>)}

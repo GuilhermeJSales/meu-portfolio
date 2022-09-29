@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import {Paragraph, SubTitleAll} from "../../styles"
-import PhotoHover from '../../Assets/foto-hover.png'
 import PhotoOpacity from '../../Assets/foto-opacity.png'
 import { Technologies } from './Technologies';
 
@@ -33,26 +32,11 @@ const MyImage = styled.div`
   height:330px;
   background-image: url(${PhotoOpacity});
   background-size:cover;
-  transition: 1s ease-in-out;
+  transition: .3s ease-in-out;
   position: relative;
   &:hover{
-  background-image: url(${PhotoHover});
-  }&:after{
-    content:"";
-    width:352px;
-    height:330px;
-    background:#333;
-    opacity:.2;
-    border-radius:0 120px 120px 120px;
-    display:block;
-    position:absolute;
-    right:10px;
-    top:10px;
-    transition: .5s ease-in-out;
-  }&:hover:after{
-    opacity:.1;
-    right:0;
-    top:0;
+  width:362px;
+  height:340px;
   }
   `;
 
@@ -89,7 +73,7 @@ export const About = () => {
             <SobreDiv>          
               <SubTitleAll data-aos="fade-right" data-aos-duration="1500">Designer</SubTitleAll>          
               <Paragraph data-aos="fade-right" data-aos-duration="1600">
-              Apaixonado por designer desde cedo, aprendi a utilizar alguns softwares de edição somente com vídeos tutoriais do Youtube.
+              Apaixonado por design desde cedo, aprendi a utilizar alguns softwares de edição somente com vídeos tutoriais do Youtube.
               Possuo experiência em design para mídias sociais e construção de layouts para sites. 
               </Paragraph>
             </SobreDiv>
