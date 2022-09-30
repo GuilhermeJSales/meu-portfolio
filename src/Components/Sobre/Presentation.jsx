@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import {Title, Paragraph} from '../../styles'
 import { Button } from '../Forms/Button'  
@@ -52,7 +54,7 @@ export const Presentation = () => {
       podemos alavancar negócios com a construção de sites e aplicativos.
       </ParagraphPresentation>
       <DivFlex>
-        <Button to="portfolio">Meu Portfólio</Button>  
+        <Button to="projetos">Meus Projetos</Button>  
       </DivFlex>
     </SectionPresentation>
     

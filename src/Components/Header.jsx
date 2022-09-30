@@ -136,7 +136,12 @@ export const Header = () => {
   useEffect(() => {
     setMobileMenu(false);
     setDropdown(false);
+    window.scroll(0,0);
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
   },[pathname])
+
 
   // Evento outside para fechar menu ao clicar fora.
   useOutsideClick(wrapperRef, () => setMobileMenu(false));

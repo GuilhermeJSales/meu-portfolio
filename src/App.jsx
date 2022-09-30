@@ -1,5 +1,5 @@
 import  GlobalStyle from "./Global"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 import { Header } from "./Components/Header"
 import { Home } from "./Components/Home"
 import { Redes } from "./Components/Forms/Redes"
@@ -19,6 +19,7 @@ export const App = () => {
       once: true,
     });
   },[])
+  
 
   return (
     <div>

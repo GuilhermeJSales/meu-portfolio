@@ -57,8 +57,11 @@ const ProjectDescription = styled.div`
 const DivImage = styled.div`
 grid-column:1/8;
 grid-row: 1/-1;
-position:relative;
+img{
+
+}
 `
+
 
 export const ProjectContent = ({contRef}) => {
 const [page, setPage] = useState(0);
@@ -122,17 +125,16 @@ return () => {
 
 
 //  FUNÇÃO PARA TROCAR SRC DA IMG PARA GIF NO HOVER
-  function handleMouseOver(event){
-    let target = event.target
+  function handleMouseOver({target}){
     let gif = target.attributes.gif.nodeValue;
-      event.target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${gif}`);
+      target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${gif}`);
+
    }
 
 //  FUNÇÃO PARA TROCAR SRC DE GIF PARA IMG NO LEAVE HOVER
-   function handleMouseLeave(event){
-    let target = event.target
+   function handleMouseLeave({target}){
     let image = target.attributes.image.nodeValue;
-      event.target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${image}`);
+      target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${image}`);
    }
   
     return (

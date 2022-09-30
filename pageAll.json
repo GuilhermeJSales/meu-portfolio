@@ -5,8 +5,8 @@
     "server": false,
     "git": "https://github.com/GuilhermeJSales/nlw-esports-ignite",
     "live": null,
-    "img": "v1663968770/projects/esports_mot0rq.png",
-    "gif": "",
+    "img": "v1664483109/projects/esports_fiklnl.png",
+    "gif": "v1664482616/projects/esports_zjhy8g.gif",
     "description": "Projeto desenvolvido na semana da NLW ESPORTS - Trilha Ignite da @Rocketseat. O projeto consiste em facilitar a vida do gamer, disponibilizando uma maneira de encontrar um duo com os mesmos níveis de habilidade e mesmos horários de disponibilidade, basta apenas criar um anúncio e aguardar que alguém envie o convite no discord para começar a gameplay.",
     "technologies":"ReactJS - React Native - NodeJS - TailwindCSS - Radix UI - Prisma"
   },{
@@ -15,8 +15,8 @@
     "server": true,
     "git": "https://github.com/GuilhermeJSales/react-dogs",
     "live": "https://react-dogs-xi.vercel.app/",
-    "img": "v1663968770/projects/dogs_dckra3.png",
-    "gif": "v1664419195/projects/reactdogs_dwas3h.gif",
+    "img": "v1664480923/projects/reactdogs_ureawk.png",
+    "gif": "v1664481031/projects/reactdogs_1_qqzahd.gif",
     "description": "Projeto desenvolvido no curso para certificação de ReactJs, da plataforma de ensino @Origamid. Consiste em um 'Instagram' para cachorros. Criamos a API pelo WordPress, possibilitando assim a criação de novas contas, postagens de fotos, troca e recuperação de senha perdida/esquecida pelo usuário, comentários nas fotos do feed, visualização do gráfico de alcance individual de cada conta e atualização de visualização em tempo real.",
     "technologies":"ReactJS - CSS3 - WordPress"
   }, {
@@ -25,8 +25,8 @@
     "server": true,
     "git": "https://github.com/GuilhermeJSales/ranekProductAPI",
     "live": "https://guilhermejsales.github.io/ranekProductAPI/",
-    "img": "v1663968770/projects/ranek_swmupk.png",
-    "gif": "",
+    "img": "v1664483646/projects/ranek_tcqwiu.png",
+    "gif": "v1664483719/projects/ranek_rzlgil.gif",
     "description": "Projeto desenvolvido no curso de React Completo, puxando dados da API Ranek para fazer um 'mini ecommerce', utilizando react-router.",
     "technologies":"ReactJS - CSS3"
   },  {
@@ -35,8 +35,8 @@
     "server": true,
     "git": "https://github.com/GuilhermeJSales/nlw-return-impulse-web",
     "live": "https://nlw-return-impulse-web-gamma-drab.vercel.app/",
-    "img": "v1663968770/projects/nlwimpulse_udecxv.png",
-    "gif": "",
+    "img": "v1664484148/projects/nlwimpulse_kjnbko.png",
+    "gif": "v1664484148/projects/nlwimpulse_ercpfi.gif",
     "description": "Projeto desenvolvido na semana da NLW Impulse, da @Rocketseat. O projeto consiste em um widgetForm, que possibilita o usuário enviar/reportar um(a) Feedback/Ideia/Bug através de um texto e também enviar um print da tela clicando no botão de print do widget.",
     "technologies":"ReactJS - NodeJS - ReactNative - TailwindCSS - Prisma"
    }, {
@@ -45,8 +45,8 @@
     "server": true,
     "git": "https://github.com/GuilhermeJSales/impulseadv",
     "live": "https://guilhermejsales.github.io/impulseadv/",
-    "img": "v1663968770/projects/impulseadv_spzqhl.png",
-    "gif": "",
+    "img": "v1664485637/projects/impulseadv_dq1fys.png",
+    "gif": "v1664489321/projects/Projeto_sem_t%C3%ADtulo_1_qgxdlw.gif",
     "description": "Este é o desenvolvimento de um site para uma empresa FICTÍCIA,cujo nome é Impulse Advogados. Desenvolvido para estudo tantos das tecnologias utilizadas como de criação de layout pelo adobe xD.",
     "technologies":"Javascript - HTML5 - CSS3"
     },{
@@ -55,8 +55,8 @@
       "server": true,
       "git": "https://github.com/GuilhermeJSales/animais-fantasticos",
       "live": "https://guilhermejsales.github.io/animais-fantasticos/",
-      "img": "v1663968770/projects/animais_knp2p7.png",
-      "gif": "",
+      "img": "v1664489864/projects/animais_agevtx.png",
+      "gif": "v1664491951/projects/Projeto_sem_t%C3%ADtulo_ambslm.gif",
       "description": "Site desenvolvido no curso de certificação de Javascript ES6+ da @Origamid. Site possui modal de login, menu dropdown, slide, animação de números, scroll to section e algumas outras funcionalidades, todas feitas do zero. É um projeto bem completo para finalização do curso e bom entendimento do Javascript.",
       "technologies":"Javascript - HTML5 - CSS3"
     },{
@@ -65,8 +65,8 @@
       "server": true,
       "git": "https://github.com/GuilhermeJSales/wildbeast",
       "live": "https://guilhermejsales.github.io/wildbeast/",
-      "img": "v1663968770/projects/wildbeast_xcpfv8.png",
-      "gif": "",
+      "img": "v1664492251/projects/wild_y1pbhz.png",
+      "gif": "v1664492729/projects/Projeto_sem_t%C3%ADtulo_etuyme.gif",
       "description": "Site desenvolvido no curso de CSS Grid Layout, onde aprendi a utilizar o css Grid a partir de um template bem complexo",
       "technologies":"HTML5 - CSS3"
     }
