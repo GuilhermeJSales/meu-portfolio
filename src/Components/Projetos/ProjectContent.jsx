@@ -12,54 +12,120 @@ import styled from "styled-components";
 const DivGrid =  styled.li`
 display:grid;
 grid-template-columns: repeat(12, 1fr);
-align-items:center;
 gap:10px;
+align-items:center;
 margin-top:120px;
 color:#E0E0E0;
+@media (max-width:51.25rem) {
+  align-items:end;
+}
 .projectInfos{
   grid-column:7/-1;
   grid-row: 1/-1;
   z-index:1;
-  background:#101010;
-  box-shadow: -5px 5px 5px rgba(0,0,0,.6);
-  padding: 20px;  
   text-align:right;
-}.projectTitle{
+}
+.projectTitle{
   display:flex;
   gap:10px;
-  margin-bottom:1rem;
   align-items:center;
+  align-self:start;
   justify-content:flex-end;
-}&:nth-of-type(even){
+}.projectImage{
+  grid-column:1/8;
+  grid-row: 1/-1;
+}.projectDescription{
+  background:#101010;
+  box-shadow: -5px 5px 5px rgba(0,0,0,.6);
+  padding:20px;
+p{
+  font-size:.875rem;
+  @media (max-width:51.25rem){
+  font-size:.75rem;
+  }
+}
+}
+&:nth-of-type(even){
   .projectInfos{
     grid-column:1/7;
-    box-shadow: 5px 5px 5px rgba(0,0,0,.6);
     text-align:initial;
-  }.projectTitle{
-    justify-content:flex-start;
   }.projectImage{
     grid-column:6/-1;
+  }.projectTitle{
+    justify-content:flex-start;
+  }.projectDescription{
+    box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+}
+} 
+@media (max-width:81.25rem){
+  .projectInfos{
+  grid-column:6/-1;
+  }.projectImage{
+    grid-column:1/9;
   }
+  &:nth-of-type(even){
+    .projectInfos{
+    grid-column:1/8;
+    }.projectImage{
+    grid-column:5/-1;
+    }
+  }
+ } 
+ @media (max-width:62.5rem){
+  .projectInfos{
+  grid-column:4/-1;
+  }
+  .projectImage{
+    grid-column:1/10;
+  }
+  &:nth-of-type(even){
+    .projectInfos{
+    grid-column:1/10;
+  }
+    .projectImage{
+    grid-column:4/-1;
+  }
+ } 
+}
+ @media (max-width:51.25rem){
+  .projectInfos{
+  grid-column:1/-1;
+  padding:10px;
+  text-align:left;
+  grid-row: 2;
+  }
+  .projectImage{
+    grid-column:1/-1;
+  }
+  .projectTitle{
+    justify-content:flex-start;
+  }
+  &:nth-of-type(even){
+    .projectInfos{
+    grid-column:1/-1;
+    }
+    .projectImage{
+    grid-column:1/-1;
+    }
+ }
 }
 `
 const ProjectName = styled.h2`
  font-size:2rem;
+ @media (max-width:81.25rem){
+  font-size:1.5rem;
+ } @media (max-width:62.5rem){
+  font-size:1rem;
+ }
 `
 
-const ProjectDescription = styled.div`
-  p:last-child{
-    font-size:1.125rem;
-    color:#FF9C00;
-    margin-top:1rem;
-  }
-`
-
-const DivImage = styled.div`
-grid-column:1/8;
-grid-row: 1/-1;
-img{
-
-}
+const Tech = styled.p`
+  font-size:.875rem;
+  color:#FF4500;
+  margin:10px 0 20px 0;
+  @media (max-width:62.5rem){
+  font-size:.75rem;
+ }
 `
 
 
@@ -145,20 +211,21 @@ return () => {
           <ProjectName>{item.title}</ProjectName>
           {item.server ? <> <a href={item.git} target="_blank"><Git/></a> <a href={item.live} target="_blank"><ExternalLink/></a> </> : <a href={item.git}><Git/></a> }
         </div>
-        <ProjectDescription>
+          <Tech>{item.technologies}</Tech>
+        <div className="projectDescription">
           <p>{item.description}</p>
-          <p>{item.technologies}</p>
-        </ProjectDescription>
+        </div>
+          
       </div>
 
-      <DivImage className="projectImage">
+      <div className="projectImage">
          <img 
             onMouseEnter={handleMouseOver}
             onMouseOut={handleMouseLeave}
             gif={`${item.gif}`} image={item.img} 
             src={`https://res.cloudinary.com/dwmikyqye/image/upload/${item.img}`}
           />        
-      </DivImage>
+      </div>
       
       </DivGrid>)}
       {page > 6 && <ThirdTitle style={{marginTop:'50px'}}>Não existem mais projetos até o momento</ThirdTitle>}
