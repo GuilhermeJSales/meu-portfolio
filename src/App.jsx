@@ -25,8 +25,8 @@ export const App = () => {
     <div>
       <BrowserRouter>
         <Header />
-        <MainConfigs>
         <Redes />
+        <MainConfigs>
         <Routes>
           <Route index path="/" element={<Home/>}/>
           <Route path="projetos" element={<Projects/>}/>

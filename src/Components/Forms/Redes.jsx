@@ -33,31 +33,41 @@ export const Redes = () => {
       <ul>
         <RedesLi>
           <a href="https://wa.me/5511961683295?text=Ol%C3%A1%2C+estou+entrando+em+contato+referente+ao+seu+site." target="_blank">
-            <Whatsapp/>
+            <i>
+              <Whatsapp/>
+            </i>
           </a>          
         </RedesLi>
 
         <RedesLi>
           <a href="https://www.linkedin.com/in/guilherme-jesus-sales-792157209/" target="_blank">
-          <Linkedin/>
+          <i>
+           <Linkedin/>
+          </i>
           </a>
         </RedesLi>
 
         <RedesLi>
         <a href="https://github.com/GuilhermeJSales" target="_blank">
-          <GitHub/>
+          <i>
+            <GitHub/>
+          </i>
         </a>
         </RedesLi>
 
         <RedesLi>
         <a href="https://www.behance.net/guijsales" target="_blank">
-          <Behance/>
+          <i>
+            <Behance/>
+          </i>
         </a>
         </RedesLi>
         
         <RedesLi>
         <a href="https://www.instagram.com/guijsales/" target="_blank">
-          <Instagram/>
+          <i>
+            <Instagram/>
+          </i>
         </a>
         </RedesLi>
       </ul>

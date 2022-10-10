@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import {Title, Paragraph} from '../../styles'
 import { Button } from '../Forms/Button'  
@@ -48,10 +46,9 @@ export const Presentation = () => {
       <Title>Guilherme Jesus Sales.</Title>
       <SubTitle>Sou desenvolvedor front-end.</SubTitle>
       <ParagraphPresentation>
-      Tenho 28 anos e moro em São Paulo.<br></br>
-      Me especializei e obtive experiências e certificações no desenvolvimento web.
-      Utilizando Javascript, seus frameworks e algumas outras tecnologias, 
-      podemos alavancar negócios com a construção de sites e aplicativos.
+      Seja bem vindo ao meu portfolio!<br></br>
+      Tenho 28 anos e moro em São Paulo. Sou apaixonado por tecnologia e praticidade. Sempre fui muito perfeccionista(com datas e detalhes),
+      por isso procuro me manter sempre atualizado com as melhores tendências do mercado, fazendo assim um trabalho cada vez melhor.
       </ParagraphPresentation>
       <DivFlex>
         <Button to="projetos">Meus Projetos</Button>  

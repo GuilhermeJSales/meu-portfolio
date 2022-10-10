@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { useScrollAnima } from "../Hooks/useScrollAnima";

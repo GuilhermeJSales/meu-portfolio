@@ -87,7 +87,7 @@ export const Dropdown = ({dropdown, setDropdown}) => {
           {dropdownItems.map((item) => 
           <DropLi key={item.id}>
             <DropLink  href={item.linkSrc} target="_blank" >
-              <img style={{maxWidth:'20px'}} src={item.imgSrc} alt={item.span} />
+            <i><img style={{maxWidth:'20px'}} src={item.imgSrc} alt={item.span} /></i>              
               <SpanDrop>{item.span}</SpanDrop>
             </DropLink>
             </DropLi>)

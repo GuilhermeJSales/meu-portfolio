@@ -61,11 +61,9 @@ export const About = () => {
             <SobreDiv>
               <SubTitleAll data-aos="fade-right" data-aos-duration="1500">Desenvolvedor</SubTitleAll>          
               <Paragraph data-aos="fade-right" data-aos-duration="1600">
-              Sou um desenvolvedor web front-end, com experiência 
-              na criação de diversos sites. Apaixonado por tecnologia,
-              estou cursando superior em Analise e Desenvolvimento
-              de Sistemas e coleciono alguns certificados de linguagens
-              e frameworks da web.
+                Em constante evolução para aproveitar as tendências do mercado futuro, me especializei no desenvolvimento front-end.
+                Sempre fui apaixonado por programação, me lembro de ler muito sobre esse tema quando era bem mais novo, o que me fez me interessar pela área, durante esse tempo
+                obtive experiências no desenvolvimento de alguns sites e aplicativos para web, como também a conclusão de cursos para certificação em algumas tecnologias.
               </Paragraph>
             </SobreDiv>
 
@@ -73,8 +71,11 @@ export const About = () => {
             <SobreDiv>          
               <SubTitleAll data-aos="fade-right" data-aos-duration="1500">Designer</SubTitleAll>          
               <Paragraph data-aos="fade-right" data-aos-duration="1600">
-              Apaixonado por design desde cedo, aprendi a utilizar alguns softwares de edição somente com vídeos tutoriais do Youtube.
-              Possuo experiência em design para mídias sociais e construção de layouts para sites. 
+                Sempre fui muito interessado também na criação de imagens e conteúdos para redes sociais. 
+                No começo eu administrava comunidades do Orkut e para manter a qualidade das mesmas, tive que aprender a trabalhar com o Photoshop, através de vídeo aulas da internet.
+                Juntei o útil ao agradável e durante algum tempo, trabalhei como um designer freelance para empresas de baixo/médio porte.
+              {/* Apaixonado por design desde cedo, aprendi a utilizar alguns softwares de edição somente com vídeos tutoriais do Youtube.
+              Possuo experiência em design para mídias sociais e construção de layouts para sites.  */}
               </Paragraph>
             </SobreDiv>
 
