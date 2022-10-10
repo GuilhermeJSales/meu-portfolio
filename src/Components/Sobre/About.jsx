@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Paragraph, SubTitleAll} from "../../styles"
-import PhotoOpacity from '../../Assets/foto-opacity.png'
+import Photo from '../../Assets/minhafoto.png'
 import { Technologies } from './Technologies';
 
 
@@ -28,21 +28,27 @@ const  SobreDiv = styled.div`
 `;
 
 const MyImage = styled.div`
-  width:352px;
-  height:330px;
-  background-image: url(${PhotoOpacity});
+  width:355px;
+  height:500px;
+  background-image: url(${Photo});
   background-size:cover;
   transition: .3s ease-in-out;
   position: relative;
+  border-radius:3rem;
+  overflow:hidden;
+  transform:rotate(10deg);
   &:hover{
-  width:362px;
-  height:340px;
+  transform:rotate(0);
+
   }
   `;
 
 const  ImgDiv = styled.div`
-  justify-self:start;
+  justify-self:center;
   align-self:flex-end;
+  background:linear-gradient(-45deg, transparent, #4E2C26, transparent);
+  aspect-ratio:1/1;
+  border-radius:3rem;
   @media (max-width:70rem){
     margin-bottom:30px;
   }
@@ -73,9 +79,7 @@ export const About = () => {
               <Paragraph data-aos="fade-right" data-aos-duration="1600">
                 Sempre fui muito interessado também na criação de imagens e conteúdos para redes sociais. 
                 No começo eu administrava comunidades do Orkut e para manter a qualidade das mesmas, tive que aprender a trabalhar com o Photoshop, através de vídeo aulas da internet.
-                Juntei o útil ao agradável e durante algum tempo, trabalhei como um designer freelance para empresas de baixo/médio porte.
-              {/* Apaixonado por design desde cedo, aprendi a utilizar alguns softwares de edição somente com vídeos tutoriais do Youtube.
-              Possuo experiência em design para mídias sociais e construção de layouts para sites.  */}
+                Juntei o útil ao agradável e durante algum tempo, trabalhei como um designer freelance para empresas de pequeno/médio porte.
               </Paragraph>
             </SobreDiv>
 
