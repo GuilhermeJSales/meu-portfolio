@@ -11,6 +11,9 @@ import { Button } from '../Forms/Button'
 
 const SectionPresentation = styled.section`
   padding-bottom:200px; 
+  @media (max-width:56.25rem){
+      padding-bottom:100px; 
+  }
 `;
 
 const Span = styled.span`

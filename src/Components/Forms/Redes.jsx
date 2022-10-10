@@ -10,9 +10,9 @@ import { useScrollAnima } from '../../Hooks/useScrollAnima'
 
 const RedesDiv = styled.div` 
   position:fixed;
-  left: 1rem;
-  bottom:100px;
-  z-index:10;
+  left: 10px;
+  bottom:70px;
+  z-index:8;
 `;
 
 const RedesLi = styled.li`
@@ -21,14 +21,14 @@ const RedesLi = styled.li`
  
 `
 export const Redes = () => {
-  const media = useMedia('(max-width:49rem)')
+  const media = useMedia('(max-width:20rem)')
   useScrollAnima('.redes', 'init-hidden-redes');
 
+  console.log(media)
   return (
     <>
-    
-    {!media && 
  
+  {!media &&
     <RedesDiv className="redes">
       <ul>
         <RedesLi>
@@ -72,9 +72,8 @@ export const Redes = () => {
         </RedesLi>
       </ul>
     </RedesDiv>
+}
   
-  }
- 
   </>
   )
 }

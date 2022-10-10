@@ -8,17 +8,9 @@ import { Link } from 'react-router-dom';
 // ALL STYLES
 
 export const MainConfigs = styled.main`
-  max-width:1600px;
-  width:100%;
-  min-height:100vh;
+  max-width:min(100% - 100px, 1600px - 150px);
   margin:0 auto;
-  padding: 0 150px;
   z-index:-1;
-  @media (max-width: 48rem){
-    padding:0 50px;
-  }  @media (max-width: 38rem){
-    padding:0 25px;
-  } 
 `
 
 
@@ -33,7 +25,7 @@ export const Title = styled.h1`
 
 export const SubTitleAll = styled.h2`
   color:#F5F5F5;
-  font-size:2.5rem;
+  font-size:clamp(1.5rem, 5vw, 2.5rem);
   letter-spacing:1.1px;
   font-weight:bold;
   position:relative;
@@ -45,8 +37,8 @@ export const SubTitleAll = styled.h2`
   background:#FF7A21;
   border-radius:0 6px 6px 6px ;
   box-shadow: 2px 2px 2px rgba(0,0,0,.3);
-  width:24px;
-  height:18px;
+  width:4%;
+  height:35%;
   display:inline-block;
   position:absolute;
   bottom:5px;

@@ -21,19 +21,13 @@ padding: 30px 0;
 `;
 
 const ContainerHeader = styled.div`
-max-width:1600px;
-width:100%;
+max-width:min(100% - 100px, 1600px - 150px);
 margin:0 auto 100px;
-padding: 0 150px;
 display:grid;
 grid-template-columns: 1fr auto;
 align-items:center;
 justify-content:space-between;
-@media (max-width: 48rem){
-    padding:0 50px;
-    margin: 0 auto 100px;
-  }  @media (max-width: 38rem){
-    padding:0 25px;
+ @media (max-width: 38rem){
     margin: 0 auto 50px;
   } 
 `;

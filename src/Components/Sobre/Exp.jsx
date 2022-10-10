@@ -8,9 +8,8 @@ import { ExpButton } from "../Forms/ExpButton";
 // MY EXPERIENCIES 
 
 const ExpSection = styled.section`
-  min-height:50vh;
   max-width:800px;
-  margin:0 auto;
+  margin:0 auto 100px;
 `;
 
 
