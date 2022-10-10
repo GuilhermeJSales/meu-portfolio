@@ -22,7 +22,7 @@ const tecnologia = specializations.filter((i) => name === i.name);
     </section>
 
     <section style={{padding:'100px 0'}}>
-    <SubTitleAll>Certificados / Cursos</SubTitleAll>
+    <SubTitleAll>Certificados</SubTitleAll>
     <Certification tecnologia={tecnologia} />
     </section>
     </div>
