@@ -78,7 +78,7 @@ export const About = () => {
                 Sempre fui apaixonado por programação, me lembro de ler muito sobre esse tema quando era bem mais novo, o que me fez interessar pela área. Durante esse tempo
                 obtive experiências no desenvolvimento de alguns sites, na maioria das vezes para divulgação dos serviços dos clientes e criação de um meio mais eficiente de comunicação,
                 também obtive certificações de algumas tecnologias como o Javascript e ReactJS. <br></br>
-                Atualmente estou estudando Typescript, futuramente pretendo estudar o NodeJS e obter um diploma de nível Superior(o qual está trancado no momento, restando apenas 1 semestre para conclusão de ADS).
+                Atualmente estou estudando Typescript, futuramente pretendo estudar o NodeJS e obter um diploma de nível Superior.
               </Paragraph>
             </SobreDiv>
 
