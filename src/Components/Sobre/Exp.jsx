@@ -71,7 +71,6 @@ const ExpName = styled.h4`
   font-size:1rem;
   font-style:italic;
   color:#E0E0E0;
-  margin-bottom:1rem;
 `;
 
 const ExpSpanName = styled.span`
@@ -81,11 +80,18 @@ const ExpSpanName = styled.span`
   color:#F29602;
   `;
 
+const ExpDate = styled.span`
+font-family: 'Roboto', sans-serif;
+font-size: .625rem;
+color: #F29602;
+`
+
 
 const ExpParagraph = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size:.875rem;
   color:#E0E0E0;
+  margin-top: 1rem;
 `
 
 const DivScroll = styled.div`
@@ -111,10 +117,10 @@ transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 export const Exp = () => {
 
   const exp = [
-      {id: 0, empresa:"Máxima Voip", cargo:'Suporte Técnico',  description:"Suporte Técnico via chat para os clientes, criação de novos ambientes, configurações de conta voip e treinamento de novos clientes."},
-      {id: 1, empresa:"Agência R3", cargo:'Desenvolvedor WordPress', description:"Desenvolvimento de sites via WordPress, editando na maioria das vezes temas premium, ou criando novos através de plugins da plataforma."},
-      {id: 2, empresa:"Freelance", cargo:'Social Media', description:"Desenvolvimento de artes para redes sociais de clientes de diversos tipos de segmentos. Criação de story, post-image e também cartões de visita."},
-      {id: 3, empresa:"Omnibees", cargo:'Analista de Suporte', description:"Prestando suporte técnico sobre configurações dos softwares oferecidos pela empresa aos hotéis. Tentando entender regras de negócios dos clientes para uma melhor configuração do sistema para os mesmos."},
+      {id: 0, data:"05/22 a 10/22", empresa:"Máxima Voip", cargo:'Suporte Técnico',  description:"Suporte Técnico via chat para os clientes, criação de novos ambientes, configurações de conta voip e treinamento de novos clientes."},
+      {id: 1, data:"01/22 a 06/22", empresa:"Agência R3", cargo:'Desenvolvedor WordPress', description:"Desenvolvimento de sites via WordPress, editando na maioria das vezes temas premium, ou criando novos através de plugins da plataforma."},
+      {id: 2, data:"10/18 a 12/22", empresa:"Freelance", cargo:'Social Media', description:"Desenvolvimento de artes para redes sociais de clientes de diversos tipos de segmentos. Criação de story, post-image e também cartões de visita."},
+      {id: 3, data:"05/19 a 10/19", empresa:"Omnibees", cargo:'Analista de Suporte', description:"Prestando suporte técnico sobre configurações dos softwares oferecidos pela empresa aos hotéis. Tentando entender regras de negócios dos clientes para uma melhor configuração do sistema para os mesmos."},
       
   ];
 
@@ -147,6 +153,7 @@ export const Exp = () => {
     >
     <LiTransition ref={nodeRef}>
       <ExpName>{exp[job].cargo} <ExpSpanName>{`❖ ${exp[job].empresa}`}</ExpSpanName></ExpName>
+      <ExpDate>{exp[job].data}</ExpDate>
       <ExpParagraph>{exp[job].description}</ExpParagraph>
     </LiTransition>
     </CSSTransition>

@@ -16,6 +16,9 @@ const  TecDiv = styled.ul`
   @media (max-width:25rem){
     grid-template-columns:repeat(3,60px);
   }
+  @media (max-width:18rem){
+    grid-template-columns:repeat(2,60px);
+  }
 `;
 
 const CertificateTitle = styled.h3`
@@ -53,7 +56,7 @@ const  TecSpan = styled.span`
 export const Technologies = () => {
   return (
     <>
-    <CertificateTitle data-aos="fade-up"  data-aos-duration="2000">Minhas especializações:</CertificateTitle>
+    <CertificateTitle data-aos="fade-up"  data-aos-duration="2000">Conheça as tecnologias e visualize meus certificados:</CertificateTitle>
    <TecDiv>   
    {specializations.map((specializations) => <li  data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos-delay={specializations.duration} key={specializations.id}><TecLink to={`tecnologia/${specializations.name}`}><img src={specializations.logo}/></TecLink><TecSpan>{specializations.name}</TecSpan></li>)}

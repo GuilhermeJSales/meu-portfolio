@@ -31,7 +31,7 @@ const SubTitle = styled.h2`
 
 const ParagraphPresentation = styled(Paragraph)`
   margin: 1.875rem 0 1.875rem;
-  max-width:550px;
+  max-width:700px;
 `;
 
 const DivFlex = styled.div`
@@ -49,9 +49,10 @@ export const Presentation = () => {
       <Title>Guilherme Jesus Sales.</Title>
       <SubTitle>Sou desenvolvedor front-end.</SubTitle>
       <ParagraphPresentation>
-      Seja bem vindo ao meu portfolio!<br></br>
-      Tenho 28 anos e moro em São Paulo. Sou apaixonado por tecnologia e praticidade. Sempre fui muito perfeccionista(com datas e detalhes),
-      por isso procuro me manter sempre atualizado com as melhores tendências do mercado, fazendo assim um trabalho cada vez melhor.
+        Possuo experiências no desenvolvimento de sites, criação de layouts e artes para mídias sociais.<br></br>
+        Atuei desenvolvendo sites, na maioria das vezes para divulgar os serviços prestados pelos clientes e trazer um meio de comunicação mais eficiente com o público alvo, 
+        utilizando HTML5, CSS3, Javascript, ReactJS, bibliotecas como por exemplo o TailwindCSS e algumas vezes o CMS WordPress. Acredito que posso integrar seu time e ajudar no crescimento da sua empresa, 
+        sempre disposto a aprender novas tecnologias e sempre comprometido com datas e detalhes dos trabalhos.
       </ParagraphPresentation>
       <DivFlex>
         <Button to="projetos">Meus Projetos</Button>  
