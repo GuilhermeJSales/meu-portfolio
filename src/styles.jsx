@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 export const MainConfigs = styled.main`
   max-width:min(100% - 100px, 1600px - 150px);
+  width:100%;
   margin:0 auto;
   z-index:-1;
 `
@@ -17,7 +18,7 @@ export const MainConfigs = styled.main`
 
 
 export const Title = styled.h1`
-  font-size:clamp(2.2rem, 5vw, 5rem);
+  font-size:clamp(1.5rem, 5vw, 5rem);
   color:#F5F5F5;
   margin-top:1.125rem;
 `;

@@ -1,6 +1,3 @@
-import Origamid from "../Assets/origamid.svg"
-
-
 import javascript from "../Assets/javascript.svg"
 import certificadoJS from "../Assets/javascript.png"
 

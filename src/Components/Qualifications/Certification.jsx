@@ -42,9 +42,11 @@ export const Certification = ({tecnologia}) => {
 
   return (
     <div>
+      
     <Button onClick={handleCertificate}>     
         Certificado {tecnologia[0].plataforma}
     </Button>
+      
    
    {tecnologia[0].name === 'CSS3' && certificate ?
   <>

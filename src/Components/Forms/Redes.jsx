@@ -21,10 +21,8 @@ const RedesLi = styled.li`
  
 `
 export const Redes = () => {
-  const media = useMedia('(max-width:20rem)')
+  const media = useMedia('(max-width:19.875rem)')
   useScrollAnima('.redes', 'init-hidden-redes');
-
-  console.log(media)
   return (
     <>
  

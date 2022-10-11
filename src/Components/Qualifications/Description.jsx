@@ -6,6 +6,9 @@ display: flex;
 align-items:center;
 gap:20px;
 margin-bottom: 50px;
+@media (max-width:17.875rem){
+    width:25px;
+  }
 `
 
 
@@ -28,12 +31,12 @@ export const Description = ({tecnologia}) => {
   return (
     <>    
     <Div>
-    <TitleCertificate style={{color:'white'}}>{tecnologia[0].name}</TitleCertificate>
-    <img src={tecnologia[0].logo}/>
-      </Div>
+      <TitleCertificate style={{color:'white'}}>{tecnologia[0].name}</TitleCertificate>
+      <img src={tecnologia[0].logo}/>
+    </Div>
 
     <Infos>
-    <Paragraph>{tecnologia[0].description}</Paragraph>
+      <Paragraph>{tecnologia[0].description}</Paragraph>
       <SaibaMais href={tecnologia[0].saibaMais} target="_blank">Saiba mais sobre {tecnologia[0].name}</SaibaMais>
     </Infos>
     </>
