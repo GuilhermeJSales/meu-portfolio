@@ -38,6 +38,7 @@ const TecLink = styled(Link)`
     background:#3333;
     border: 3px solid #141414;
     outline: 2px solid #F29602;
+    transform:scale(1.1);
   }
 `
 
