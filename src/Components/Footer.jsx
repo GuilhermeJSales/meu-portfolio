@@ -14,6 +14,8 @@ export const FooterP = styled.p`
     padding:0 50px 50px;
   }  @media (max-width: 38rem){
     padding:0 25px 50px;
+    font-size:.875rem;
+
   } 
 
 `
