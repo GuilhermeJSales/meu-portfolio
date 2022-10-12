@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { ThirdTitle } from "../../styles";
 
-import { useMedia } from '../../Hooks/useMedia';
 
 
 import {ReactComponent as Git} from "../../Assets/projects/git.svg"
@@ -227,6 +226,7 @@ return () => {
             onMouseOut={handleMouseLeave}
             gif={`${item.gif}`} image={item.img} 
             src={`https://res.cloudinary.com/dwmikyqye/image/upload/${item.img}`}
+            alt={item.title}
           />        
       </div>
       

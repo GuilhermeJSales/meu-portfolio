@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components"
 
 const Button = styled.button`
@@ -34,6 +35,11 @@ const IMG = styled.img`
 
 export const Certification = ({tecnologia}) => {
   const [certificate, setCertificate] = useState(false);
+  const {pathname} = useLocation()
+
+  useEffect(() => {
+    setCertificate(false)
+  },[pathname])
 
   const handleCertificate = () => {
     setCertificate(!certificate);

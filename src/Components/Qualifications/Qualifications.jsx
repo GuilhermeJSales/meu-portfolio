@@ -1,20 +1,18 @@
-import { Link, useLocation, useParams } from "react-router-dom";
-import {useScrollAnima} from '../../Hooks/useScrollAnima'
-import {specializations} from "../../utils/Specializations-object"
 import styled from "styled-components";
+import { SubTitleAll} from "../../styles";
+import { ThirdTitle} from "../../styles";
+
+import { useRef } from "react";
+import { Link, useParams } from "react-router-dom";
+import {specializations} from "../../utils/Specializations-object"
 
 import { Description } from "./Description";
 import { Certification } from "./Certification";
-import { SubTitleAll} from "../../styles";
-import { ThirdTitle} from "../../styles";
-import { useRef } from "react";
-import { useEffect } from "react";
-
 
 
 const Subtitle = styled(SubTitleAll)`
   &:before{
-  width:3%;
+  width:2.5%;
 }
 `;
 
@@ -29,7 +27,7 @@ const TecSection = styled.section`
 
 const TecUl = styled.ul`
   display:grid;
-  grid-template-columns:repeat(6, 60px);
+  grid-template-columns:repeat(7, 60px);
   align-items:center;
   gap:20px;
   margin-bottom:1rem;
@@ -41,45 +39,45 @@ const TecUl = styled.ul`
   }
 `;
 
-
-const TecLi = styled.li`
-background:#1F1F1F;
-outline:1px solid #474747;
-border: 2px solid #141414;
-padding:8px;
-transition: all .3s ease-in-out;
-cursor:pointer;
-&:hover{
-  transform:scale(1.2);
-  outline:2px solid #141414;
-  border: 1px solid #F29602;
-}
-`;
-
-
-const TecDiv = styled.div`
-display:flex;
-justify-content:center;
-align-items:center;
-gap:20px;
-.linksNav{
-  color:#E0E0E0;
-  transition: .2s ease;
+const TecLink = styled(Link)`
+  width:60px;
+  height:60px;
+  background:#1F1F1F;
+  padding:10px;
+  outline: 2px solid #474747;
+  border: 3px solid #141414;
+  display:block;
+  cursor:pointer;
+  transition: .3s ease-in-out;
+  margin-bottom:2px;
   &:hover,
   &:focus{
-    color:#F29602;
+    background:#3333;
+    border: 3px solid #141414;
+    outline: 2px solid #F29602;
+    transform:scale(1.1);
   }
-}
-`
+  &:visited{
+    transform:scale(1.1);
+    background:#1C1C1C;
+    border: 3px solid #6495ED;
+    outline: 2px solid #191970;
+  }
+  @media (max-width:320px){
+    padding:5px;
+  }
+  
+`;
+
 
 
 
 export const Qualifications = () => {
 const {name} = useParams();
-const {pathname} = useLocation()
 const ref = useRef();
 
-const moreCertifications = specializations.filter((more) => name !== more.name)
+
+const tecnologia = specializations.filter((i) => name === i.name);
 
 const handleClick = () => {
     ref.current.classList.remove('animeLeft') 
@@ -96,8 +94,6 @@ const handleClick = () => {
     
 }
 
-
-const tecnologia = specializations.filter((i) => name === i.name);
   return (
     <div ref={ref} className="animeLeft">
     <section>
@@ -112,18 +108,15 @@ const tecnologia = specializations.filter((i) => name === i.name);
     <TecSection>
     <ThirdTitle>Outros certificados:</ThirdTitle>
       <TecUl>
-      {moreCertifications.map((item) => 
-        <TecLi key={item.id}>
-          <Link onClick={handleClick} to={`/tecnologia/${item.name}`}>
-            <img src={item.logo}/>
-          </Link>
-        </TecLi>
+      {specializations.map((item) => 
+        <li onClick={handleClick} key={item.id}>
+          <TecLink to={`/tecnologia/${item.name}`}>
+            <img src={item.logo} alt={item.name}/>
+          </TecLink>
+        </li>
+        
       )}
       </TecUl>
-      <TecDiv>
-        <Link className="linksNav" to={`/`}>Início</Link>
-        <Link className="linksNav" to={`/projetos`}>Projetos</Link>
-      </TecDiv>
     </TecSection>
     </div>
   )
