@@ -11,28 +11,30 @@ import { Technologies } from './Technologies';
 const AboutSection = styled.section`
     padding-bottom:200px; 
     margin: 0 auto;
-    @media (max-width:56.25rem){
+    @media (max-width:1024px){
       padding-bottom:100px; 
   }
 `;
 
 const AboutSect = styled.div `
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:50px;
-  @media (max-width:70rem){
-    grid-template-columns:1fr;
+  display:flex;
+  justify-content:space-between;
+  gap:60px;
+  @media (max-width:1024px){
+    flex-direction:column;
   }
 `;
 
 
 const  SobreDiv = styled.div`
+&:first-child{
   margin-bottom: 50px;
+}
 `;
 
 const MyImage = styled.div`
-  width:355px;
-  height:500px;
+  width:300px;
+  height:445px;
   background-image: url(${Photo});
   background-size:cover;
   transition: .3s ease-in-out;
@@ -42,25 +44,26 @@ const MyImage = styled.div`
   transform:rotate(10deg);
   &:hover{
   transform:rotate(0);
-  }  @media (max-width:38.125rem){
+  }  
+  @media (max-width:425px){
     width:200px;
     height:345px;
+  }
+   @media (max-width:320px){
+    width:150px;
+    height:245px;
   } 
   `;
 
 
 const  ImgDiv = styled.div`
-  justify-self:center;
-  align-self:flex-end;
+  align-self:center;
   background:linear-gradient(-45deg, transparent, #4E2C26, transparent);
   aspect-ratio:1/1;
   border-radius:3rem;
   @media (max-width:70rem){
     margin-bottom:30px;
   }
-  @media (max-width:38.125rem){
-    justify-self:center; 
-  } 
 
 `;
 export const About = () => {
@@ -98,7 +101,9 @@ export const About = () => {
         </ImgDiv>
         
         </AboutSect>
+        <div>
         <Technologies />
+        </div>
     </AboutSection>
     
   )

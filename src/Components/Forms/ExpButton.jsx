@@ -32,7 +32,8 @@ const ButtonExp = styled.button`
   }&.active{
     color:#E0E0E0;
     background:#3333;
-  } @media (max-width:54rem){
+  } 
+  @media (max-width:850px){
     min-width:300px;
     border-left:none;
   }
@@ -41,7 +42,7 @@ const ButtonExp = styled.button`
 
 
 export const ExpButton = ({children, id, setJob,setAnima, anima, job, setScrollButton}) => {
-  const media = useMedia('(max-width:54rem)');
+  const media = useMedia('(max-width:850px)');
   const ref = useRef();
 
   // evento de clique

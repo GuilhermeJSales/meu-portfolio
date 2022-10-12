@@ -8,10 +8,20 @@ import { Link } from 'react-router-dom';
 // ALL STYLES
 
 export const MainConfigs = styled.main`
-  max-width:min(100% - 100px, 1600px - 150px);
+  max-width:1600px;
+  padding:0 150px;
   width:100%;
   margin:0 auto;
   z-index:-1;
+  @media (max-width:768px) {
+    padding:0 50px;
+  }
+  @media (max-width:425px) {
+    padding:0 25px;
+  }
+  @media (max-width:320px) {
+    padding:0 20px;
+  }
 `
 
 
@@ -49,22 +59,22 @@ export const SubTitleAll = styled.h2`
 `;
 
 export const ThirdTitle = styled.h3`
-  font-size:1rem;
   color:#E0E0E0;
   font-family:'Roboto Mono', monospace;
   font-style:italic;
   font-weight:Normal;
   margin-top:10px;
   margin-bottom: 2.25rem;
-  @media (max-width:38rem){
-    font-size:.675rem;
+  @media (max-width:425px) {
+    font-size:.875rem;
   }
 `;
 
 export const Paragraph = styled.p`
   font-family:'Roboto', sans-serif;
   color:#E0E0E0;
-  @media (max-width:32rem) {
+  max-width:700px;
+  @media (max-width:425px) {
     font-size:.875rem;
   }
 `;
@@ -72,7 +82,6 @@ export const Paragraph = styled.p`
 
 export const ButtonForm = styled(Link)`
   font-family:'Roboto Mono', monospace;
-  font-size:1rem;
   letter-spacing:1px;
   text-transform:uppercase;
   color:#9F9F9F;
@@ -92,7 +101,7 @@ export const ButtonForm = styled(Link)`
     border: 3px solid #141414;
     outline: 2px solid #F29602;
   }
-  @media (max-width:25rem) {
+  @media (max-width:425px) {
     font-size:.875rem;
     width:210px;
   }

@@ -31,7 +31,6 @@ const SubTitle = styled.h2`
 
 const ParagraphPresentation = styled(Paragraph)`
   margin: 1.875rem 0 1.875rem;
-  max-width:700px;
 `;
 
 const DivFlex = styled.div`

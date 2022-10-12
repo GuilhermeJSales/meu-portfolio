@@ -39,7 +39,7 @@ padding:20px;
 margin-top:1rem;
 box-shadow: 2px 4px 5px rgba(0,0,0,.2);
 z-index:11;
-@media (max-width:63rem) {
+@media (max-width:768px) {
   right:-40px;
   background:initial;
   padding-bottom:0; 
@@ -64,7 +64,7 @@ const SpanDrop = styled.span`
  transition: .2s ease-in-out;
  &:hover{
   color:#FDA821;
- }  @media (max-width:63rem) {
+ }  @media (max-width:768px) {
     font-size:.75rem;
   }
 `

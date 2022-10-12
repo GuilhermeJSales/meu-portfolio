@@ -18,6 +18,7 @@ export default createGlobalStyle `
     overflow-x:hidden;
   }
 
+  
   body::-webkit-scrollbar-track {
     background-color: #3333;
   }

@@ -21,19 +21,29 @@ padding: 30px 0;
 `;
 
 const ContainerHeader = styled.div`
-max-width:min(100% - 100px, 1600px - 150px);
-margin:0 auto 100px;
-display:grid;
-grid-template-columns: 1fr auto;
-align-items:center;
-justify-content:space-between;
- @media (max-width: 38rem){
+  max-width:1600px;
+  padding:0 150px;
+  width:100%;
+  margin:0 auto;
+  margin:0 auto 100px;
+  display:grid;
+  grid-template-columns: 1fr auto;
+  align-items:center;
+  justify-content:space-between;
+  @media (max-width:768px) {
+    padding:0 50px;
     margin: 0 auto 50px;
-  } 
+  }
+  @media (max-width:425px) {
+    padding:0 25px;
+  }
+  @media (max-width:320px) {
+    padding:0 20px;
+  }
 `;
 
 const DivImg = styled.div`
-@media (max-width:63rem){
+@media (max-width:1024px){
   grid:2;
 }
 `
@@ -42,7 +52,7 @@ const HeaderUl = styled.ul`
 display:flex;
 align-items:center;
 z-index:9;
-@media (max-width:63rem){
+@media (max-width:768px){
   flex-direction:column;
   align-items:flex-start;
   background:#141414;
@@ -69,7 +79,7 @@ const HeaderLI = styled.li`
   margin:1.25rem;
   opacity:0;
   z-index:9;
-  @media(max-width:63rem) {
+  @media(max-width:768px) {
     opacity:0;
     margin:1.25rem 3rem;
     align-self:flex-start; 
@@ -119,7 +129,7 @@ grid:1;
 
 
 export const Header = () => {
-  const mobile = useMedia('(max-width:63rem)');
+  const mobile = useMedia('(max-width:768px)');
   const [mobileMenu, setMobileMenu] = useState(false);
   const {pathname} = useLocation();
   const ref = useRef(null);

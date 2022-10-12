@@ -8,22 +8,30 @@ const  TecDiv = styled.ul`
   grid-template-columns:repeat(7, 60px);
   gap:1.5rem;
   align-items:center;
-  margin-top:2rem;
+  margin-top:30px;
   text-align:center;
-  @media (max-width:44rem){
+  @media (max-width:768px){
+    justify-content:center;
     grid-template-columns:repeat(4,60px);
   }
-  @media (max-width:25rem){
+  @media (max-width:425px){
     grid-template-columns:repeat(3,60px);
   }
-  @media (max-width:18rem){
-    grid-template-columns:repeat(2,60px);
+  @media (max-width:320px){
+    grid-template-columns:repeat(3,45px);
   }
 `;
 
 const CertificateTitle = styled.h3`
-  font-size:1.5rem;
+  font-size:1.2rem;
   color:#e0e0e0;
+  margin-top:30px;
+  @media (max-width:768px){
+    text-align:center;
+  }
+  @media (max-width:425px){
+    font-size:.875rem;
+  }
 `
 
 
@@ -43,6 +51,9 @@ const TecLink = styled(Link)`
     outline: 2px solid #F29602;
     transform:scale(1.1);
   }
+  @media (max-width:320px){
+    padding:5px;
+  }
 `
 
 
@@ -51,6 +62,9 @@ const  TecSpan = styled.span`
   font-size:.75rem;  
   font-style:italic;
   color:#E0E0E0;
+  @media (max-width:320px){
+    font-size:.5rem;
+  }
 `;
 
 export const Technologies = () => {

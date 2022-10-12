@@ -1,4 +1,5 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
+import {useScrollAnima} from '../../Hooks/useScrollAnima'
 import {specializations} from "../../utils/Specializations-object"
 import styled from "styled-components";
 
@@ -6,12 +7,14 @@ import { Description } from "./Description";
 import { Certification } from "./Certification";
 import { SubTitleAll} from "../../styles";
 import { ThirdTitle} from "../../styles";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 
 
 const Subtitle = styled(SubTitleAll)`
   &:before{
-  width:2%;
+  width:3%;
 }
 `;
 
@@ -19,12 +22,8 @@ const Subtitle = styled(SubTitleAll)`
 const TecSection = styled.section` 
   display:grid;
   justify-content:center;
-  text-align:center;
   margin-bottom:100px;
-  @media (max-width:18.0625){
-    justify-content:initial;
-    text-align:initial;
-  }
+  text-align:center;
 `;
 
 
@@ -34,11 +33,11 @@ const TecUl = styled.ul`
   align-items:center;
   gap:20px;
   margin-bottom:1rem;
-  @media (max-width:54rem){
+  @media (max-width:768px){
     grid-template-columns:repeat(3, 60px);
   }
-    @media (max-width:18rem){
-    grid-template-columns:repeat(3, 60px);
+    @media (max-width:320px){
+    grid-template-columns:repeat(2, 60px);
   }
 `;
 
@@ -77,12 +76,30 @@ gap:20px;
 
 export const Qualifications = () => {
 const {name} = useParams();
+const {pathname} = useLocation()
+const ref = useRef();
+
 const moreCertifications = specializations.filter((more) => name !== more.name)
+
+const handleClick = () => {
+    ref.current.classList.remove('animeLeft') 
+    ref.current.classList.add('init-hidden')
+
+    const clearClass = setTimeout(() => {
+    ref.current.classList.remove('init-hidden');
+    ref.current.classList.add('animeLeft');
+    },100);
+
+    return () => {
+      clearTimeout(clearClass);
+    }
+    
+}
 
 
 const tecnologia = specializations.filter((i) => name === i.name);
   return (
-    <div data-aos="fade-up"  data-aos-duration="2000">
+    <div ref={ref} className="animeLeft">
     <section>
       <Description  tecnologia={tecnologia} />
     </section>
@@ -97,7 +114,7 @@ const tecnologia = specializations.filter((i) => name === i.name);
       <TecUl>
       {moreCertifications.map((item) => 
         <TecLi key={item.id}>
-          <Link to={`/tecnologia/${item.name}`}>
+          <Link onClick={handleClick} to={`/tecnologia/${item.name}`}>
             <img src={item.logo}/>
           </Link>
         </TecLi>

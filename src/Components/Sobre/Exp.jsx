@@ -19,7 +19,7 @@ const DivFlexExp = styled.div`
   gap:1.25rem;
   position:relative;
   margin:0 auto;
-  @media (max-width:54rem){
+  @media (max-width:850px){
     flex-direction:column;    
   }
 `;
@@ -28,7 +28,7 @@ const DivFlexExp = styled.div`
 const DivButtonFlex = styled.div`
   flex: 1;
   max-width:100%;
-  @media (max-width:54rem){
+  @media (max-width:850px){
     display:flex;
     overflow-x:auto;
     position:relative;
@@ -103,7 +103,7 @@ top:0;
 left:0;
 transform: ${({scrollButton}) => scrollButton};
 transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
-@media (max-width:54rem){
+@media (max-width:850px){
   top: 0;
   bottom:auto;
   width:300px;

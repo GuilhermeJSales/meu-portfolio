@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { ThirdTitle } from "../../styles";
 
+import { useMedia } from '../../Hooks/useMedia';
+
+
 import {ReactComponent as Git} from "../../Assets/projects/git.svg"
 import {ReactComponent as ExternalLink} from "../../Assets/projects/external-link.svg"
 import pageAll from '../../../pageAll.json'

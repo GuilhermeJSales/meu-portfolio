@@ -1,29 +1,64 @@
 import styled from "styled-components"
 
+import { dropdownItems } from "./DropdownContact/Dropdown-object"
+
+
 
 
 // FOOTER 
 
-export const FooterP = styled.p` 
+const FooterContent = styled.footer` 
+  max-width:1600px;
+  padding:0 150px;
+  width:100%;
+  margin:0 auto; 
   text-align:center;
-  font-size:1rem;
   font-family:'Roboto Mono', monospace;
   color:#E0E0E0;
-  padding:50px 150px 100px ;
-  @media (max-width: 48rem){
-    padding:0 50px 50px;
-  }  @media (max-width: 38rem){
-    padding:0 25px 50px;
+  padding-top:100px;
+  padding-bottom:100px;
+  @media (max-width:768px) {
+    padding:0 50px;
+    margin: 0 auto 50px;
     font-size:.875rem;
+  }
+  @media (max-width:425px) {
+    padding:0 25px;
+    font-size:.625rem;
+  }
+  @media (max-width:320px) {
+    padding:0 20px;
+  }
+  .email{
+    margin-bottom:20px;
+  }
+`;
 
-  } 
-
+const FooterUl = styled.ul`
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-bottom:20px;
+  li a img{
+    min-width:20px;
+  }
+`
+const FooterDiv = styled.div`
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
 `
 
 export const Footer = () => {
   return (
-    <footer>
-        <FooterP>Todos os direitos reservados - Guilherme Jesus Sales ©</FooterP>
-    </footer>
+    <FooterContent>
+      <FooterUl>
+        {dropdownItems.map((item) => <li key={item.id}><a href={item.linkSrc} target="_blank"><img src={item.imgSrc} alt={item.span} /></a></li>)}
+      </FooterUl>
+      <FooterDiv>
+        <p>guijsalesdg@outlook.com</p>
+        <p>Todos os direitos reservados - Guilherme J. Sales ©</p>
+      </FooterDiv>
+    </FooterContent>
   )
 }
