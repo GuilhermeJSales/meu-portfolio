@@ -32,7 +32,7 @@ export const Description = ({tecnologia}) => {
     <>    
     <Div>
       <TitleCertificate style={{color:'white'}}>{tecnologia[0].name}</TitleCertificate>
-      <img src={tecnologia[0].logo}/>
+      <img src={tecnologia[0].logo} alt={tecnologia[0].name}/>
     </Div>
 
     <Infos>
