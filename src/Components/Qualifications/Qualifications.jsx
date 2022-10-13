@@ -1,3 +1,5 @@
+import {Helmet} from "react-helmet";
+
 import styled from "styled-components";
 import { SubTitleAll} from "../../styles";
 import { ThirdTitle} from "../../styles";
@@ -8,7 +10,6 @@ import {specializations} from "../../utils/Specializations-object"
 
 import { Description } from "./Description";
 import { Certification } from "./Certification";
-
 
 const Subtitle = styled(SubTitleAll)`
   &:before{
@@ -95,29 +96,36 @@ const handleClick = () => {
 }
 
   return (
+    <>
+    <Helmet
+    title={`Certificado ${name} - Guilherme J. Sales - Desenvolvedor Front-end`} 
+    description={`Olá, essa é a página onde você pode visualizar meus certificados de ${name}`}
+    />
+
     <div ref={ref} className="animeLeft">
-    <section>
-      <Description  tecnologia={tecnologia} />
-    </section>
+      <section>
+        <Description  tecnologia={tecnologia} />
+      </section>
 
-    <section style={{padding:'100px 0'}}>
-    <Subtitle>Certificados</Subtitle>
-    <Certification tecnologia={tecnologia} />
-    </section>
+      <section style={{padding:'100px 0'}}>
+        <Subtitle>Certificados</Subtitle>
+        <Certification tecnologia={tecnologia} />
+      </section>
 
-    <TecSection>
-    <ThirdTitle>Outros certificados:</ThirdTitle>
-      <TecUl>
-      {specializations.map((item) => 
-        <li onClick={handleClick} key={item.id}>
-          <TecLink to={`/tecnologia/${item.name}`}>
-            <img src={item.logo} alt={item.name}/>
-          </TecLink>
-        </li>
-        
-      )}
-      </TecUl>
-    </TecSection>
+      <TecSection>
+        <ThirdTitle>Outros certificados:</ThirdTitle>
+          <TecUl>
+          {specializations.map((item) => 
+            <li onClick={handleClick} key={item.id}>
+              <TecLink to={`/tecnologia/${item.name}`}>
+                <img src={item.logo} alt={item.name}/>
+              </TecLink>
+            </li>
+            
+          )}
+          </TecUl>
+      </TecSection>
     </div>
+    </>
   )
 }

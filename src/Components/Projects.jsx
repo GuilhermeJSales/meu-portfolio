@@ -1,8 +1,9 @@
+import { useScrollAnima } from "../Hooks/useScrollAnima";
 import { useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { useScrollAnima } from "../Hooks/useScrollAnima";
-import { ThirdTitle, Title } from "../styles";
+import {Helmet} from "react-helmet";
 import { ProjectContent } from "./Projetos/ProjectContent";
+import { ThirdTitle, Title } from "../styles";
 
 
 
@@ -18,6 +19,11 @@ export const Projects = () => {
 
 return (
   <>
+  <Helmet
+     title="Projetos - Guilherme J. Sales - Desenvolvedor Front-end" 
+    description="Olá! Meu nome é Guilherme Jesus Sales e sou desenvolvedor front-end. Esses são os projetos que já conclui."
+  />
+
   <section className="init-hidden" style={{minHeight:'100vh', paddingBottom:"120px"}}>
       <Title ref={focusRef}>Projetos</Title>
       <ThirdTitle>Conheça os projetos que já realizei:</ThirdTitle>
