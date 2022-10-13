@@ -28,12 +28,6 @@ export const App = () => {
     <Helmet>
     <meta name="theme-color" content="#141414"/>
     <meta name="description" content="Guilherme Jesus Sales - Portfólio"/>
-
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Home - Guilherme J. Sales - Desenvolvedor Front-end"/>
-    <meta property="og:description" content="Meu nome é Guilherme J. Sales e sou dev front end. Atuo na criação de sites e possuo sólidos conhecimento em HTML5, CSS3, Javascript e ReactJS"/>
-    <meta property="og:url" content="https://meu-portfolio-two-tau.vercel.app/"/>
-    <meta property="og:image" content="https://meu-portfolio-two-tau.vercel.app/ogimage.png"/>
     </Helmet>
       <BrowserRouter>
         <Header />
