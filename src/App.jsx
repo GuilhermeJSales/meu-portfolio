@@ -21,14 +21,19 @@ export const App = () => {
       once: true,
     });
   },[])
+
+  useEffect(() => {
+    <Helmet>
+      <meta name="theme-color" content="#141414"/>
+      <meta name="description" content="Guilherme Jesus Sales - Portfólio"/>
+    </Helmet>
+  },[])
+
   
 
   return (
     <div>
-    <Helmet>
-    <meta name="theme-color" content="#141414"/>
-    <meta name="description" content="Guilherme Jesus Sales - Portfólio"/>
-    </Helmet>
+    
       <BrowserRouter>
         <Header />
         <Redes />

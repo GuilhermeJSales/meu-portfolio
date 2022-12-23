@@ -28,7 +28,7 @@ const TecSection = styled.section`
 
 const TecUl = styled.ul`
   display:grid;
-  grid-template-columns:repeat(7, 60px);
+  grid-template-columns:repeat(8, 60px);
   align-items:center;
   gap:20px;
   margin-bottom:1rem;

@@ -28,6 +28,11 @@ import certificadoXd from "../Assets/xd.png"
 
 
 
+import redux from "../Assets/redux.svg";
+import certificadoRedux from "../Assets/redux.png";
+
+
+
 
 
 export const specializations =
@@ -70,30 +75,38 @@ export const specializations =
   },
   {
     "id": 5,
+    "name":"Redux",
+    "logo": redux,
+    "saibaMais": "https://redux.js.org/",
+    "certificado":certificadoRedux,
+    "description":"Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo. É mais comumente usado com bibliotecas como React ou Angular para criar interfaces de usuário. Semelhante pela arquitetura Flux do Facebook, foi criado por Dan Abramov e Andrew Clark.",
+    "duration": "600",
+  },{
+    "id": 6,
     "name":"WordPress",
     "logo": wordpress,
     "saibaMais": "https://br.wordpress.org/",
     "certificado":   certificadoWordpress,
     "description":"WordPress é um sistema livre e aberto de gestão de conteúdo para internet, baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas e blogs online.",
-    "duration": "600",
+    "duration": "750",
   },
   {
-    "id": 6,
+    "id": 7,
     "name":"Photoshop",
     "logo": photoshop,
     "saibaMais": "https://www.adobe.com/br/products/photoshop.html",
     "certificado":naoPossuo,
     "description":"Adobe Photoshop é um software caracterizado como editor de imagens bidimensionais do tipo raster desenvolvido pela Adobe Systems. É considerado o líder no mercado dos editores de imagem profissionais, assim como o programa de facto para edição profissional de imagens digitais e trabalhos de pré-impressão.",
-    "duration": "750",
+    "duration": "900",
   },
   {
-    "id": 7,
+    "id": 8,
     "name":"Adobe Xd",
     "logo": xd,
     "saibaMais": "https://www.adobe.com/br/products/xd.html",
     "certificado":certificadoXd,
     "description":"Adobe XD é uma ferramenta de design de experiência do usuário baseada em vetores para aplicativos da web e aplicativos móveis, desenvolvida e publicada pela Adobe Inc.",
-    "duration": "900",
+    "duration": "1050",
   }
 
 ]

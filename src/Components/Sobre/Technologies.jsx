@@ -5,7 +5,7 @@ import {specializations} from "../../utils/Specializations-object"
 
 const  TecDiv = styled.ul`
   display:grid;
-  grid-template-columns:repeat(7, 60px);
+  grid-template-columns:repeat(8, 60px);
   gap:1.5rem;
   align-items:center;
   margin-top:30px;
