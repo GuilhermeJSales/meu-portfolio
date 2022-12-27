@@ -21,7 +21,7 @@ export const dropdownItems = [
     id: 2,
     span: 'Email',
     imgSrc: Email,
-    linkSrc: "mailto:guijsalesdg@outlook.com",
+    linkSrc: "mailto:guijsalesdev@outlook.com",
   },{
     id: 3,
     span: 'Github',

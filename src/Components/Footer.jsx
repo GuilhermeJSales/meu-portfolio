@@ -85,7 +85,7 @@ export const Footer = () => {
         <Link className="linksNav" to={`/projetos`}>Projetos</Link>
       </TecDiv>
       <FooterDiv>
-        <p>guijsalesdg@outlook.com</p>
+        <p>guijsalesdev@outlook.com</p>
         <p>Todos os direitos reservados - Guilherme J. Sales ©</p>
       </FooterDiv>
     </FooterContent>
