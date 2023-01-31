@@ -75,7 +75,7 @@ export const Paragraph = styled.p`
   color:#E0E0E0;
   max-width:700px;
   @media (max-width:425px) {
-    font-size:.875rem;
+    font-size:1rem;
   }
 `;
 
