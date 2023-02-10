@@ -163,6 +163,7 @@ const getPartsOfArray = (array, perPage) => {
   if (resultRestDivision > 0) {
     newArray.push(array.slice(inicio, final))
   }
+  console.log(newArray)
   return newArray
 }
 

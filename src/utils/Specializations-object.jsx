@@ -4,6 +4,9 @@ import certificadoJS from "../Assets/javascript.png"
 import react from "../Assets/react.svg"
 import certificadoReact from "../Assets/reactjs.png"
 
+import typescript from "../Assets/typescript.svg";
+import certificadoTypescript from "../Assets/typescript.png";
+
 import html from "../Assets/html.svg"
 import certificadohtml from "../Assets/webdesign.png"
 
@@ -57,56 +60,65 @@ export const specializations =
   },
   {
     "id": 3,
+    "name":"TypeScript",
+    "logo": typescript,
+    "saibaMais": "https://www.typescriptlang.org/",
+    "certificado":certificadoTypescript,
+    "description":"TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript, oferecendo melhores ferramentas em qualquer escala.",
+    "duration": "300",
+  },
+  {
+    "id": 4,
     "name":"HTML5",
     "logo": html,
     "saibaMais": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
     "certificado":certificadohtml,
     "description":"HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software. É a quinta versão da linguagem HTML. ",
-    "duration": "300",
+    "duration": "450",
   },
   {
-    "id": 4,
+    "id": 5,
     "name":"CSS3",
     "logo": css,
     "saibaMais": "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
     "certificado":[certificadoCSS1, certificadoCSS2, certificadoCSS3],
     "description":"CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.",
-    "duration": "450",
+    "duration": "600",
   },
   {
-    "id": 5,
+    "id": 6,
     "name":"Redux",
     "logo": redux,
     "saibaMais": "https://redux.js.org/",
     "certificado":certificadoRedux,
     "description":"Redux é uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo. É mais comumente usado com bibliotecas como React ou Angular para criar interfaces de usuário. Semelhante pela arquitetura Flux do Facebook, foi criado por Dan Abramov e Andrew Clark.",
-    "duration": "600",
+    "duration": "750",
   },{
-    "id": 6,
+    "id": 7,
     "name":"WordPress",
     "logo": wordpress,
     "saibaMais": "https://br.wordpress.org/",
     "certificado":   certificadoWordpress,
     "description":"WordPress é um sistema livre e aberto de gestão de conteúdo para internet, baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas e blogs online.",
-    "duration": "750",
+    "duration": "900",
   },
   {
-    "id": 7,
+    "id": 8,
     "name":"Photoshop",
     "logo": photoshop,
     "saibaMais": "https://www.adobe.com/br/products/photoshop.html",
     "certificado":naoPossuo,
     "description":"Adobe Photoshop é um software caracterizado como editor de imagens bidimensionais do tipo raster desenvolvido pela Adobe Systems. É considerado o líder no mercado dos editores de imagem profissionais, assim como o programa de facto para edição profissional de imagens digitais e trabalhos de pré-impressão.",
-    "duration": "900",
+    "duration": "1050",
   },
   {
-    "id": 8,
+    "id": 9,
     "name":"Adobe Xd",
     "logo": xd,
     "saibaMais": "https://www.adobe.com/br/products/xd.html",
     "certificado":certificadoXd,
     "description":"Adobe XD é uma ferramenta de design de experiência do usuário baseada em vetores para aplicativos da web e aplicativos móveis, desenvolvida e publicada pela Adobe Inc.",
-    "duration": "1050",
+    "duration": "1200",
   }
 
 ]

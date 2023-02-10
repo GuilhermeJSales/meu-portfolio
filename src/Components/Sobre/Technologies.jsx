@@ -5,14 +5,14 @@ import {specializations} from "../../utils/Specializations-object"
 
 const  TecDiv = styled.ul`
   display:grid;
-  grid-template-columns:repeat(8, 60px);
+  grid-template-columns:repeat(9, 60px);
   gap:1.5rem;
   align-items:center;
   margin-top:30px;
   text-align:center;
   @media (max-width:768px){
     justify-content:center;
-    grid-template-columns:repeat(4,60px);
+    grid-template-columns:repeat(3,60px);
   }
   @media (max-width:425px){
     grid-template-columns:repeat(3,60px);
