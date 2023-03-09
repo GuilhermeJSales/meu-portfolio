@@ -117,10 +117,11 @@ transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 export const Exp = () => {
 
   const exp = [
-      {id: 0, data:"05/22 a 10/22", empresa:"Máxima Voip", cargo:'Suporte Técnico',  description:"Suporte Técnico via chat para os clientes, criação de novos ambientes, configurações de conta voip e treinamento de novos clientes."},
-      {id: 1, data:"01/22 a 06/22", empresa:"Agência R3", cargo:'Desenvolvedor WordPress', description:"Desenvolvimento de sites via WordPress, editando na maioria das vezes temas premium, ou criando novos através de plugins da plataforma."},
-      {id: 2, data:"10/18 a 12/22", empresa:"Freelance", cargo:'Social Media', description:"Desenvolvimento de artes para redes sociais de clientes de diversos tipos de segmentos. Criação de story, post-image e também cartões de visita."},
-      {id: 3, data:"05/19 a 10/19", empresa:"Omnibees", cargo:'Analista de Suporte', description:"Prestando suporte técnico sobre configurações dos softwares oferecidos pela empresa aos hotéis. Tentando entender regras de negócios dos clientes para uma melhor configuração do sistema para os mesmos."},
+      {id: 0, data:"03/23 a atual", empresa:"Integração Digital", cargo:'Desenvolvedor Front End',  description:"Desenvolvimento e manutenção de websites, landing pages e e-commerces, utilizando JavaScript, PHP, HTML5, CSS3 e WordPress."},
+      {id: 1, data:"05/22 a 10/22", empresa:"Máxima Voip", cargo:'Suporte Técnico',  description:"Suporte Técnico via chat para os clientes, criação de novos ambientes, configurações de conta voip e treinamento de novos clientes."},
+      {id: 2, data:"01/22 a 06/22", empresa:"Agência R3", cargo:'Desenvolvedor WordPress', description:"Desenvolvimento de sites via WordPress, editando na maioria das vezes temas premium, ou criando novos através de plugins da plataforma."},
+      {id: 3, data:"10/18 a 12/22", empresa:"Freelance", cargo:'Social Media', description:"Desenvolvimento de artes para redes sociais de clientes de diversos tipos de segmentos. Criação de story, post-image e também cartões de visita."},
+      {id: 4, data:"05/19 a 10/19", empresa:"Omnibees", cargo:'Analista de Suporte', description:"Prestando suporte técnico sobre configurações dos softwares oferecidos pela empresa aos hotéis. Tentando entender regras de negócios dos clientes para uma melhor configuração do sistema para os mesmos."},
       
   ];
 
