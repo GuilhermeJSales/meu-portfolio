@@ -196,9 +196,11 @@ return () => {
 //  FUNÇÃO PARA TROCAR SRC DA IMG PARA GIF NO HOVER
   function handleMouseOver({target}){
     let gif = target.attributes.gif.nodeValue;
-      target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${gif}`);
-
+        target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${gif}`);
    }
+
+
+
 
 //  FUNÇÃO PARA TROCAR SRC DE GIF PARA IMG NO LEAVE HOVER
    function handleMouseLeave({target}){
