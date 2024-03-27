@@ -79,17 +79,7 @@ export const About = () => {
               <Paragraph data-aos="fade-up" data-aos-duration="1600">
                 Me especializei no desenvolvimento front-end e estou em constante evolução para aproveitar as tendências do mercado. 
                 Sempre fui apaixonado por programação e durante esse tempo obtive experiências no desenvolvimento de alguns sites, na maioria das vezes para divulgação dos serviços dos clientes e criação de um meio mais eficiente de comunicação. <br></br>
-                Atualmente estou cursando o ensino superior em Análise e Desenvolvimento de Sistemas na Cruzeiro do Sul e também realizando a certificação de NextJS da Origamid e de Java da Cod3r.
-              </Paragraph>
-            </SobreDiv>
-
-
-            <SobreDiv>          
-              <SubTitleAll data-aos="fade-up" data-aos-duration="1500">Designer</SubTitleAll>          
-              <Paragraph data-aos="fade-up" data-aos-duration="1600">
-                Sempre fui muito interessado também na criação de imagens e conteúdos para redes sociais. 
-                No começo eu administrava comunidades do Orkut e para manter a qualidade das mesmas, tive que aprender a trabalhar com o Photoshop, através de vídeo aulas da internet.
-                Juntei o útil ao agradável e durante algum tempo trabalhei como um designer freelance para empresas de pequeno/médio porte, buscando sempre alavancar as marcas e conseguir mais clientes através das plataformas ou até de cartões de visita.
+                Atualmente além de estar cursando o ensino superior em Análise e Desenvolvimento de Sistemas na Cruzeiro do Sul, também estou realizando a certificação de NextJS da Origamid e de Java da Cod3r.
               </Paragraph>
             </SobreDiv>
 
