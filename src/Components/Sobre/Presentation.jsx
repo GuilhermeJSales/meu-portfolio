@@ -48,10 +48,7 @@ export const Presentation = () => {
       <Title>Guilherme Jesus Sales.</Title>
       <SubTitle>Sou desenvolvedor front-end.</SubTitle>
       <ParagraphPresentation>
-      Atualmente cursando Análise e Desenvolvimento de Sistemas, possuo experiências com desenvolvimento de sites, criação de layouts e artes para mídias sociais.
-        Nas oportunidades que tive de trabalhar como desenvolvedor, procurei sempre agregar grande valor à empresa, utilizando todo o meu conhecimento para desenvolver
-         os projetos e auxiliar os colegas de equipe, gerando assim um alto rendimento na entrega dos projetos e um bom relacionamento com a equipe. 
-         Trabalho com tecnologia há mais de 6 anos na maioria das vezes utilizando JavaScript, TypeScript, React, Next, bibliotecas como por exemplo o TailwindCSS e também o CMS WordPress. 
+      Sou estudante de Análise e Desenvolvimento de Sistemas e já acumulo experiência significativa em desenvolvimento de sites, criação de layouts e design para mídias sociais. Ao longo das minhas oportunidades como desenvolvedor, busquei constantemente agregar valor às empresas onde estive, aplicando todo o meu conhecimento para conduzir projetos de forma eficaz e oferecer suporte aos colegas de equipe. Esta abordagem resultou em altos índices de produtividade na entrega de projetos e em um ambiente de trabalho colaborativo e positivo. Possuo mais de 6 anos de experiência trabalhando com tecnologia, com foco especialmente em JavaScript, TypeScript, React, Next.js, além de utilizar bibliotecas como Tailwind CSS, e também tenho conhecimento em CMS WordPress.
       </ParagraphPresentation>
       <DivFlex>
         <Button to="projetos">Meus Projetos</Button>  
