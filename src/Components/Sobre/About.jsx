@@ -78,10 +78,8 @@ export const About = () => {
               <SubTitleAll data-aos="fade-up" data-aos-duration="1500">Desenvolvedor</SubTitleAll>          
               <Paragraph data-aos="fade-up" data-aos-duration="1600">
                 Me especializei no desenvolvimento front-end e estou em constante evolução para aproveitar as tendências do mercado. 
-                Sempre fui apaixonado por programação, me lembro de ler muito sobre esse tema quando era bem mais novo, o que me fez interessar pela área. Durante esse tempo
-                obtive experiências no desenvolvimento de alguns sites, na maioria das vezes para divulgação dos serviços dos clientes e criação de um meio mais eficiente de comunicação,
-                também obtive certificações de algumas tecnologias como o Javascript e ReactJS. <br></br>
-                Atualmente estou estudando Typescript, futuramente pretendo estudar o NodeJS e obter um diploma de nível Superior.
+                Sempre fui apaixonado por programação e durante esse tempo obtive experiências no desenvolvimento de alguns sites, na maioria das vezes para divulgação dos serviços dos clientes e criação de um meio mais eficiente de comunicação. <br></br>
+                Atualmente estou cursando o ensino superior em Análise e Desenvolvimento de Sistemas na Cruzeiro do Sul e também realizando a certificação de NextJS da Origamid e de Java da Cod3r.
               </Paragraph>
             </SobreDiv>
 
