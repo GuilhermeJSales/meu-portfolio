@@ -7,7 +7,7 @@
     "live": "https://github-blog-flax.vercel.app/",
     "img": "v1711593588/github-blog.png", 
     "description": "O GitHub Blog foi desenvolvido para solucionar o desafio de ReactJS imposto pela Rocketseat. O Blog utiliza as issues postadas no meu GitHub como postagens do blog.",
-    "technologies":"ReactJS - TypeScript - Styled-Components - FortAwesome - React Hook Form - Zod - Axios - React Markdown - React Router DOM - React Syntax Highlighter"
+    "technologies":"ReactJS - TypeScript - Styled-Components - React Hook Form - Zod "
   },{
   "id": 1,
   "title": "Coffee Delivery",
@@ -26,7 +26,7 @@
   "live": null,
   "img": "v1711592349/uploadAI.gif", 
   "description": "Aplicação que possibilita realizar upload de videos e por meio de IA, criar automaticamente títulos chamativos e descrições com um boa indexação.",
-  "technologies":"ReactJS - TypeScript - NodeJS - TailwindCSS - Shadcn/UI - Lucide-react - FFmpeg - Fastify - OpenAi - Zod - Prisma - VercelAi - Dotenv"
+  "technologies":"ReactJS - TypeScript - NodeJS - TailwindCSS - Fastify - OpenAi - Zod - Prisma - VercelAi"
 },
 {
   "id": 3,
@@ -36,7 +36,7 @@
   "live": "https://dt-money-mu-bice.vercel.app/",
   "img": "v1711593342/DTMoney.png", 
   "description": "O DTMoney é um projeto para controle de entrada e saída de dinheiro, o usuário pode cadastrar as entradas e as saídas inserindo uma descrição para as mesmas e manter um melhor controle financeiro.",
-  "technologies":"ReactJS - TypeScript - Styled-Components - Phosphor Icons - React Hook Form - Zod"
+  "technologies":"ReactJS - TypeScript - Styled-Components - React Hook Form - Zod"
 },
 {
   "id": 4,
@@ -46,7 +46,7 @@
   "live": "https://ignite-timer-psi-nine.vercel.app/",
   "img": "v1711593125/timer.png", 
   "description": "O Ignite Timer é um projeto desenvolvido durante o segundo modulo de React da Rocketseat. O mesmo é um contador para controle de horas trabalhadas nas tarefas.",
-  "technologies":"ReactJS - TypeScript - Styled-Components -  React Hook Form - Zod - Immer - Phosphor React - DateFns"
+  "technologies":"ReactJS - TypeScript - Styled-Components -  React Hook Form - Zod - Immer - DateFns"
 },
 {
   "id": 5,
@@ -66,7 +66,7 @@
   "live": null,
   "img": "v1711590071/space-time.png", 
   "description": "O NLW Spacetime é um projeto desenvolvido no evento da NLW Rocketseat, utilizando NodeJs com Fastify e NextJs 13, onde conseguimos cadastrar lembranças com fotos e descrições em uma linha do tempo própria.",
-  "technologies":"NextJs - TypeScript - NodeJS - Axios - Fastify - Prisma - TailwindCSS - JsCookie - DayJs"
+  "technologies":"NextJs - TypeScript - NodeJS - Axios - Fastify - Prisma - TailwindCSS"
 },
 {
   "id": 7,
