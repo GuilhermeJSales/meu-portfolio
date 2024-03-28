@@ -10,7 +10,7 @@ import reactTsx from "../Assets/react-tsx.png";
 import reactRocket from "../Assets/react-rocket.png";
 
 import html from "../Assets/html.svg"
-import certificadohtml from "../Assets/webdesign.png"
+import certificadoHtml from "../Assets/webdesign.png"
 
 
 
@@ -76,7 +76,7 @@ export const specializations =
     "name":"HTML5",
     "logo": html,
     "saibaMais": "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
-    "certificado":certificadohtml,
+    "certificado":certificadoHtml,
     "description":"HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software. É a quinta versão da linguagem HTML. ",
     "duration": "450",
   },
@@ -102,7 +102,7 @@ export const specializations =
     "name":"WordPress",
     "logo": wordpress,
     "saibaMais": "https://br.wordpress.org/",
-    "certificado":   certificadoWordpress,
+    "certificado": certificadoWordpress,
     "description":"WordPress é um sistema livre e aberto de gestão de conteúdo para internet, baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas e blogs online.",
     "duration": "900",
   },

@@ -56,9 +56,13 @@ export const Certification = ({tecnologia}) => {
    
    {tecnologia[0].certificado.length > 1 && certificate ?
   <>
-    <IMG src={tecnologia[0].certificado[0]} alt="certificado" />
+    {/* <IMG src={tecnologia[0].certificado[0]} alt="certificado" />
     <IMG src={tecnologia[0].certificado[1]} alt="certificado" />
-    <IMG src={tecnologia[0].certificado[2]} alt="certificado" />
+    <IMG src={tecnologia[0].certificado[2]} alt="certificado" /> */}
+
+    {tecnologia.map((item, index) => 
+        <IMG id={index} src={item.certificado[index]} alt="certificado" />            
+          )}
   </>  
   : certificate &&
     <IMG src={tecnologia[0].certificado} alt="certificado" />
