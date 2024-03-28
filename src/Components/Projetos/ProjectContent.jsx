@@ -213,7 +213,7 @@ return () => {
       <div className="projectInfos">
         <div className="projectTitle">
           <ProjectName>{item.title}</ProjectName>
-          {item.server ? <> <a href={item.git} target="_blank"><Git/></a> <a href={item.live} target="_blank"><ExternalLink/></a> </> : <a href={item.git}><Git/></a> }
+          {item.server ? <> <a href={item.git} target="_blank"><Git/></a> <a href={item.live} target="_blank"><ExternalLink/></a> </> : <a href={item.git} target="_blank"><Git/></a> }
         </div>
           <Tech>{item.technologies}</Tech>
         <div className="projectDescription">
