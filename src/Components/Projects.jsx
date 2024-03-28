@@ -30,7 +30,7 @@ return (
 
   <section className="init-hidden" style={{minHeight:'100vh', paddingBottom:"120px"}}>
       <Title ref={focusRef}>Projetos</Title>
-      <ThirdTitle>Conheça os projetos que já realizei:</ThirdTitle>
+      <ThirdTitle>Conheça os projetos que já desenvolvi:</ThirdTitle>
       <ProjectContent contRef={ref}/>
   </section>
   <div ref={ref}></div>

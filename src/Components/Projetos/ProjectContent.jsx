@@ -89,7 +89,7 @@ p{
   }
  } 
 }
- @media (max-width:51.25rem){
+ @media (max-width:78.125rem){
   .projectInfos{
   grid-column:1/-1;
   padding:10px;
@@ -163,7 +163,6 @@ const getPartsOfArray = (array, perPage) => {
   if (resultRestDivision > 0) {
     newArray.push(array.slice(inicio, final))
   }
-  console.log(newArray)
   return newArray
 }
 

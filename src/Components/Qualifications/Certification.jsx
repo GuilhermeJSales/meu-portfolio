@@ -45,22 +45,20 @@ export const Certification = ({tecnologia}) => {
     setCertificate(!certificate);
   }
 
-
   return (
     <div>
       
     <Button onClick={handleCertificate}>     
         Certificado {tecnologia[0].plataforma}
     </Button>
-      
+    
    
-  <>
-    {tecnologia[0].map((item, index) => 
-        <>
-        <IMG id={index} src={item.certificado[index]} alt="certificado" />  
-        </>         
-          )}
- </>  
+    {certificate && ( 
+      tecnologia[0].certificado.map((item,index) => (
+        <IMG key={index} src={item} alt="certificado" />
+      ))  
+    )
+  }   
 
     </div>
   )
