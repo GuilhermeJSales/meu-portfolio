@@ -1,5 +1,53 @@
-[ 
- 
+[  
+  {
+    "id": 0,
+    "title": "GitHub Blog",
+    "server": true,
+    "git": "https://github.com/GuilhermeJSales/github-blog",
+    "live": "https://github-blog-flax.vercel.app/",
+    "img": "v1711593588/github-blog.png", 
+    "description": "O GitHub Blog foi desenvolvido para solucionar o desafio de ReactJS imposto pela Rocketseat. O Blog utiliza as issues postadas no meu GitHub como postagens do blog.",
+    "technologies":"ReactJS - TypeScript - Styled-Components - FortAwesome - React Hook Form - Zod - Axios - React Markdown - React Router DOM - React Syntax Highlighter"
+  },{
+  "id": 0,
+  "title": "Coffee Delivery",
+  "server": true,
+  "git": "https://github.com/GuilhermeJSales/coffee-delivery",
+  "live": "https://coffee-delivery-seven-tau.vercel.app/",
+  "img": "v1711592812/coffee-delivery.png", 
+  "description": "O Coffee Delivery é um projeto desenvolvido para entrega do desafio do módulo 2 de REACT da Rocketseat, onde o mesmo foi desenvolvido através de um layout criado no figma pela plataforma de ensinos.",
+  "technologies":"ReactJS - TypeScript - Styled-Components - Phosphor Icons - React Hook Form - Zod"
+},
+{
+  "id": 0,
+  "title": "UploadAI",
+  "server": false,
+  "git": "https://github.com/GuilhermeJSales/upload.ai",
+  "live": null,
+  "img": "v1711592349/uploadAI.gif", 
+  "description": "Aplicação que possibilita realizar upload de videos e por meio de IA, criar automaticamente títulos chamativos e descrições com um boa indexação.",
+  "technologies":"ReactJS - TypeScript - NodeJS - TailwindCSS - Shadcn/UI - Lucide-react - FFmpeg - Fastify - OpenAi - Zod - Prisma - VercelAi - Dotenv"
+},
+{
+  "id": 0,
+  "title": "DT Money",
+  "server": true,
+  "git": "https://github.com/GuilhermeJSales/dt-money",
+  "live": "https://dt-money-mu-bice.vercel.app/",
+  "img": "v1711593342/DTMoney.png", 
+  "description": "O DTMoney é um projeto para controle de entrada e saída de dinheiro, o usuário pode cadastrar as entradas e as saídas inserindo uma descrição para as mesmas e manter um melhor controle financeiro.",
+  "technologies":"ReactJS - TypeScript - Styled-Components - Phosphor Icons - React Hook Form - Zod"
+},
+{
+  "id": 0,
+  "title": "Ignite Timer",
+  "server": true,
+  "git": "https://github.com/GuilhermeJSales/igniteTimer",
+  "live": "https://ignite-timer-psi-nine.vercel.app/",
+  "img": "v1711593125/timer.png", 
+  "description": "O Ignite Timer é um projeto desenvolvido durante o segundo modulo de React da Rocketseat. O mesmo é um contador para controle de horas trabalhadas nas tarefas.",
+  "technologies":"ReactJS - TypeScript - Styled-Components -  React Hook Form - Zod - Immer - Phosphor React - DateFns"
+},
 {
   "id": 0,
   "title": "ToDo List",
@@ -30,6 +78,15 @@
   "gid": null,
   "description": "Projeto é um feed de notícias, onde é possível publicar e excluir comentários nas postagens dos usuários",
   "technologies":"Vite - TypeScript - ReactJS - Phosphor React - CSS Modules - Date FNS"
+},{
+  "id": 0,
+  "title": "Fintech",
+  "server": true,
+  "git": "https://github.com/GuilhermeJSales/Fintech",
+  "live": "https://fintech-nine-vert.vercel.app/",
+  "img": "v1711592599/Fintech.png", 
+  "description": "A Fintech é o projeto final desenvolvido durante o curso de certificação de React com Typescript da Origamid, onde através de uma API puxamos os dados de pagamentos de uma data inicial até uma data final, escolhida pelo usuário.",
+  "technologies":"ReactJS - TypeScript - CSS3 - Recharts"
 },
   {
     "id": 3,
