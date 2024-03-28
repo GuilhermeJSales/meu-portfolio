@@ -225,8 +225,8 @@ return () => {
 
       <div className="projectImage">
          <img 
-            onMouseEnter={handleMouseOver}
-            onMouseOut={handleMouseLeave}
+            // onMouseEnter={handleMouseOver}
+            // onMouseOut={handleMouseLeave}
             gif={`${item.gif}`} image={item.img} 
             src={`https://res.cloudinary.com/dwmikyqye/image/upload/${item.img}`}
             alt={item.title}
