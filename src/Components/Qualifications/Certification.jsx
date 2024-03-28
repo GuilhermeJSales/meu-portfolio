@@ -55,8 +55,8 @@ export const Certification = ({tecnologia}) => {
       
    
   <>
-    {tecnologia.certificado.map((item, index) => 
-        <IMG id={index} src={item[index]} alt="certificado" />            
+    {tecnologia[0].map((item, index) => 
+        <IMG id={index} src={item.certificado[index]} alt="certificado" />            
           )}
  </>  
 
