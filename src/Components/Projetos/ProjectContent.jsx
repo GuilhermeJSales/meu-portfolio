@@ -194,10 +194,10 @@ return () => {
 
 
 //  FUNÇÃO PARA TROCAR SRC DA IMG PARA GIF NO HOVER
-  function handleMouseOver({target}){
-    let gif = target.attributes.gif.nodeValue;
-        target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${gif}`);
-   }
+  // function handleMouseOver({target}){
+  //   let gif = target.attributes.gif.nodeValue;
+  //       target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${gif}`);
+  //  }
 
 
 
@@ -205,7 +205,6 @@ return () => {
 //  FUNÇÃO PARA TROCAR SRC DE GIF PARA IMG NO LEAVE HOVER
   //  function handleMouseLeave({target}){
   //   let image = target.attributes.image.nodeValue;
-  //     if(projet)
   //     target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${image}`);
   //  }
   
