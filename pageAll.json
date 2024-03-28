@@ -27,6 +27,7 @@
   "git": "https://github.com/GuilhermeJSales/ignite-feed-with-typescript",
   "live": "https://ignite-feed-with-typescript.vercel.app/",
   "img": "v1711589529/ignite-feed.png", 
+  "gid": null,
   "description": "Projeto é um feed de notícias, onde é possível publicar e excluir comentários nas postagens dos usuários",
   "technologies":"Vite - TypeScript - ReactJS - Phosphor React - CSS Modules - Date FNS"
 },

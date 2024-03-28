@@ -203,10 +203,11 @@ return () => {
 
 
 //  FUNÇÃO PARA TROCAR SRC DE GIF PARA IMG NO LEAVE HOVER
-   function handleMouseLeave({target}){
-    let image = target.attributes.image.nodeValue;
-      target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${image}`);
-   }
+  //  function handleMouseLeave({target}){
+  //   let image = target.attributes.image.nodeValue;
+  //     if(projet)
+  //     target.setAttribute('src', `https://res.cloudinary.com/dwmikyqye/image/upload/${image}`);
+  //  }
   
     return (
     <ul>
