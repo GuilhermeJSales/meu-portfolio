@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Paragraph, SubTitleAll} from "../../styles"
-import Photo from '../../Assets/mypicture.png'
+import Photo from '../../Assets/minhafoto.png'
 import { Technologies } from './Technologies';
 
 
