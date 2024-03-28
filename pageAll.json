@@ -52,7 +52,7 @@
   "id": 5,
   "title": "ToDo List",
   "server": true,
-  "git": "https://github.com/GuilhermeJSales/nlw-spacetime",
+  "git": "https://github.com/GuilhermeJSales/toDo-list",
   "live": "https://to-do-list-kappa-weld.vercel.app/",
   "img": "v1711591419/todo-list.png", 
   "description": "O ToDo List é um projeto onde o usuário consegue cadastrar as tarefas que precisa realizar e marca-las como concluídas ou excluir as mesmas da lista",
