@@ -6,6 +6,8 @@ import certificadoReact from "../Assets/reactjs.png"
 
 import typescript from "../Assets/typescript.svg";
 import certificadoTypescript from "../Assets/typescript.png";
+import reactTsx from "../Assets/react-tsx.png";
+import reactRocket from "../Assets/react-rocket.png";
 
 import html from "../Assets/html.svg"
 import certificadohtml from "../Assets/webdesign.png"
@@ -38,6 +40,8 @@ import certificadoRedux from "../Assets/redux.png";
 
 
 
+
+
 export const specializations =
 [
 {
@@ -54,7 +58,7 @@ export const specializations =
     "name":"ReactJS",
     "logo": react,
     "saibaMais": "https://pt-br.reactjs.org/",
-    "certificado":certificadoReact,
+    "certificado":[reactRocket, reactTsx, certificadoReact],
     "description":"O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros.",
     "duration": "150",
   },
@@ -63,7 +67,7 @@ export const specializations =
     "name":"TypeScript",
     "logo": typescript,
     "saibaMais": "https://www.typescriptlang.org/",
-    "certificado":certificadoTypescript,
+    "certificado":[reactRocket,reactTsx, certificadoTypescript],
     "description":"TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript, oferecendo melhores ferramentas em qualquer escala.",
     "duration": "300",
   },
