@@ -54,7 +54,7 @@ export const Certification = ({tecnologia}) => {
     </Button>
       
    
-   {tecnologia[0].name === 'CSS3' && certificate ?
+   {tecnologia[0].name === 'CSS3' || tecnologia[0].name === 'TypeScript' || tecnologia[0].name === 'React' && certificate ?
   <>
     <IMG src={tecnologia[0].certificado[0]} alt="certificado" />
     <IMG src={tecnologia[0].certificado[1]} alt="certificado" />
