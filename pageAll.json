@@ -1,16 +1,47 @@
 [ 
+ 
+{
+  "id": 0,
+  "title": "ToDo List",
+  "server": true,
+  "git": "https://github.com/GuilhermeJSales/nlw-spacetime",
+  "live": "https://to-do-list-kappa-weld.vercel.app/",
+  "img": "v1711591419/todo-list.png", 
+  "description": "O ToDo List é um projeto onde o usuário consegue cadastrar as tarefas que precisa realizar e marca-las como concluídas ou excluir as mesmas da lista",
+  "technologies":"ReactJS - TypeScript - CSS Module - Phosphor Icons"
+},
+{
+  "id": 1,
+  "title": "NLW SpaceTime",
+  "server": false,
+  "git": "https://github.com/GuilhermeJSales/nlw-spacetime",
+  "live": null,
+  "img": "v1711590071/space-time.png", 
+  "description": "O NLW Spacetime é um projeto desenvolvido no evento da NLW Rocketseat, utilizando NodeJs com Fastify e NextJs 13, onde conseguimos cadastrar lembranças com fotos e descrições em uma linha do tempo própria.",
+  "technologies":"NextJs - TypeScript - NodeJS - Axios - Fastify - Prisma - TailwindCSS - JsCookie - DayJs"
+},
+{
+  "id": 2,
+  "title": "Ignite Feed",
+  "server": true,
+  "git": "https://github.com/GuilhermeJSales/ignite-feed-with-typescript",
+  "live": "https://ignite-feed-with-typescript.vercel.app/",
+  "img": "v1711589529/ignite-feed.png", 
+  "description": "Projeto é um feed de notícias, onde é possível publicar e excluir comentários nas postagens dos usuários",
+  "technologies":"Vite - TypeScript - ReactJS - Phosphor React - CSS Modules - Date FNS"
+},
   {
-    "id": 0,
+    "id": 3,
     "title": "Personal Trainer",
-    "server": false,
+    "server": true,
     "git": "https://github.com/GuilhermeJSales/personal-landingpage",
-    "live": null,
+    "live": "https://personal-landingpage-lilac.vercel.app/",
     "img": "v1678325726/projects/personal-trainer_mfrwot.png", 
     "gif": "v1678325726/projects/personal-trainer_mfrwot.png",
     "description": "Projeto desenvolvido para divulgação de vendas de planilhas de treino e consultoria online de um personal fictício, onde as vendas seriam realizadas através da hotmart.",
     "technologies":"JavaScript - TypeScript - HTML5 - CSS3 - EmailJs - GlideJs"
   },{
-    "id": 1,
+    "id": 4,
     "title": "NLW Copa - Bolão",
     "server": false,
     "git": "https://github.com/GuilhermeJSales/nlw-copa",
@@ -20,7 +51,7 @@
     "description": "Projeto desenvolvido na NLW - Copa da @Rocketseat - trilha ignite. O projeto consiste na criação de um bolão, onde o usuário escolhe o nome do mesmo e recebe um código para convidar os amigos para participar, através da aplicação mobile, criada com React Native.",
     "technologies":"NextJS - TypeScript - NodeJS - TailwindCSS - Fastify - Prisma"
   },{
-    "id": 2,
+    "id": 5,
     "title": "NLW eSports",
     "server": false,
     "git": "https://github.com/GuilhermeJSales/nlw-esports-ignite",
@@ -30,7 +61,7 @@
     "description": "Projeto desenvolvido na semana da NLW ESPORTS - Trilha Ignite da @Rocketseat. O projeto consiste em facilitar a vida do gamer, disponibilizando uma maneira de encontrar um duo com os mesmos níveis de habilidade e mesmos horários de disponibilidade, basta apenas criar um anúncio e aguardar que alguém envie o convite no discord para começar a gameplay.",
     "technologies":"ReactJS - React Native - NodeJS - TailwindCSS - Radix UI - Prisma"
   },{
-    "id": 3,
+    "id": 6,
     "title": "React Dogs",
     "server": true,
     "git": "https://github.com/GuilhermeJSales/react-dogs",
@@ -40,7 +71,7 @@
     "description": "Projeto desenvolvido no curso para certificação de ReactJs, da plataforma de ensino @Origamid. Consiste em um 'Instagram' para cachorros. Criamos a API pelo WordPress, possibilitando assim a criação de novas contas, postagens de fotos, troca e recuperação de senha perdida/esquecida pelo usuário, comentários nas fotos do feed, visualização do gráfico de alcance individual de cada conta e atualização de visualização em tempo real.",
     "technologies":"ReactJS - CSS3 - WordPress"
   }, {
-    "id": 4,
+    "id": 7,
     "title": "Ranek Product API",
     "server": true,
     "git": "https://github.com/GuilhermeJSales/ranekProductAPI",
@@ -50,7 +81,7 @@
     "description": "Projeto desenvolvido no curso de React Completo, puxando dados da API Ranek para fazer um 'mini ecommerce', utilizando react-router.",
     "technologies":"ReactJS - CSS3"
   },  {
-    "id": 5,
+    "id": 8,
     "title": "NLW Impulse",
     "server": true,
     "git": "https://github.com/GuilhermeJSales/nlw-return-impulse-web",
@@ -60,7 +91,7 @@
     "description": "Projeto desenvolvido na semana da NLW Impulse, da @Rocketseat. O projeto consiste em um widgetForm, que possibilita o usuário enviar/reportar um(a) Feedback/Ideia/Bug através de um texto e também enviar um print da tela clicando no botão de print do widget.",
     "technologies":"ReactJS - NodeJS - ReactNative - TailwindCSS - Prisma"
    }, {
-    "id": 6,
+    "id": 9,
     "title": "Impulse Advogados",
     "server": true,
     "git": "https://github.com/GuilhermeJSales/impulseadv",
@@ -70,7 +101,7 @@
     "description": "Este é o desenvolvimento de um site para uma empresa FICTÍCIA,cujo nome é Impulse Advogados. Desenvolvido para estudo tantos das tecnologias utilizadas como de criação de layout pelo adobe xD.",
     "technologies":"Javascript - HTML5 - CSS3"
     },{
-      "id": 7,
+      "id": 10,
       "title": "Animais Fantásticos",
       "server": true,
       "git": "https://github.com/GuilhermeJSales/animais-fantasticos",
@@ -80,7 +111,7 @@
       "description": "Site desenvolvido no curso de certificação de Javascript ES6+ da @Origamid. Site possui modal de login, menu dropdown, slide, animação de números, scroll to section e algumas outras funcionalidades, todas feitas do zero. É um projeto bem completo para finalização do curso e bom entendimento do Javascript.",
       "technologies":"Javascript - HTML5 - CSS3"
     },{
-      "id": 8,
+      "id": 11,
       "title": "WildBeast",
       "server": true,
       "git": "https://github.com/GuilhermeJSales/wildbeast",
