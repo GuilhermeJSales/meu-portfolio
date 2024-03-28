@@ -73,7 +73,7 @@ export const ThirdTitle = styled.h3`
 export const Paragraph = styled.p`
   font-family:'Roboto', sans-serif;
   color:#E0E0E0;
-  max-width:700px;
+  max-width:755px;
   @media (max-width:425px) {
     font-size:1rem;
   }
