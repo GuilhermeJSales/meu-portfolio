@@ -117,10 +117,12 @@ transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 export const Exp = () => {
 
   const exp = [
-      {id: 0, data:"03/23 a 11/23", empresa:"Integração Digital", cargo:'Desenvolvedor Front End',  description:"Desenvolvimento e manutenção de websites, landing pages e e-commerces, utilizando JavaScript, PHP, HTML5, CSS3 e WordPress."},
-      {id: 1, data:"05/22 a 12/22", empresa:"Máxima Voip", cargo:'Suporte Técnico',  description:"Suporte Técnico via chat para os clientes, criação de novos ambientes, configurações de conta voip e treinamento de novos clientes."},
-      {id: 2, data:"02/22 a 12/22", empresa:"Agência R3", cargo:'Desenvolvedor WordPress', description:"Desenvolvimento de sites via WordPress, editando na maioria das vezes temas premium, ou criando novos através de plugins da plataforma."},
-      {id: 3, data:"10/18 a 12/22", empresa:"Freelance", cargo:'Social Media', description:"Desenvolvimento de artes para redes sociais de clientes de diversos tipos de segmentos. Criação de story, post-image e também cartões de visita."},
+      {id: 0, data:"06/24 a atual", empresa:"Quality Digital", cargo:'Analista de sistemas',  description:"Responsável pelo suporte aos sistemas ERP da empresa, lidando com tickets de alta prioridade. Utilização de bancos de dados (SQL) para análise e resolução eficaz de tickets de alta prioridade.  Criação e manutenção de documentação detalhada de procedimentos de resolução de incidentes, garantindo precisão e fácil referência futura. "},
+      {id: 1, data:"11/23 a atual", empresa:"Freelancer", cargo:'Desenvolvedor Full Stack',  description:"Desenvolvimento de sites institucionais e landing pages com NextJS, CSS3 e WordPress."},
+      {id: 2, data:"03/23 a 11/23", empresa:"Integração Digital", cargo:'Desenvolvedor Full Stack',  description:"Desenvolvimento e manutenção de websites, landing pages e e-commerces, utilizando JavaScript, PHP, HTML5, CSS3 e WordPress."},
+      {id: 3, data:"05/22 a 12/22", empresa:"Máxima Voip", cargo:'Suporte Técnico',  description:"Suporte Técnico via chat para os clientes, criação de novos ambientes, configurações de conta voip e treinamento de novos clientes."},
+      {id: 4, data:"02/22 a 12/22", empresa:"Agência R3", cargo:'Desenvolvedor WordPress', description:"Desenvolvimento de sites via WordPress, editando na maioria das vezes temas premium, ou criando novos através de plugins da plataforma."},
+      {id: 5, data:"10/18 a 12/22", empresa:"Freelance", cargo:'Social Media', description:"Desenvolvimento de artes para redes sociais de clientes de diversos tipos de segmentos. Criação de story, post-image e também cartões de visita."},
   ];
 
   const [job, setJob] = useState(0);

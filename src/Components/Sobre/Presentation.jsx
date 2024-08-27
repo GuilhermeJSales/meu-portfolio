@@ -46,9 +46,9 @@ export const Presentation = () => {
     <SectionPresentation data-aos="fade-up"  data-aos-duration="2000">
       <Span>Olá, meu nome é</Span>
       <Title>Guilherme Jesus Sales.</Title>
-      <SubTitle>Sou desenvolvedor front-end.</SubTitle>
+      <SubTitle>Sou desenvolvedor full stack.</SubTitle>
       <ParagraphPresentation>
-      Sou estudante de Análise e Desenvolvimento de Sistemas e já acumulo experiência significativa em desenvolvimento de sites, criação de layouts e design para mídias sociais. Ao longo das minhas oportunidades como desenvolvedor, busquei constantemente agregar valor às empresas onde estive, aplicando todo o meu conhecimento para conduzir projetos de forma eficaz e oferecer suporte aos colegas de equipe. Esta abordagem resultou em altos índices de produtividade na entrega de projetos e em um ambiente de trabalho colaborativo e positivo. Possuo mais de 6 anos de experiência trabalhando com tecnologia, com foco especialmente em JavaScript, TypeScript, React, Next.js, além de utilizar bibliotecas como Tailwind CSS, e também tenho conhecimento em CMS WordPress.
+      Com mais de 4 anos de experiência na área de desenvolvimento, venho aprimorando minhas habilidades em diversas tecnologias, incluindo JavaScript, ReactJS, NextJS, NodeJS, PHP e Java. Minha trajetória me proporcionou sólidos conhecimentos tanto no frontend quanto no backend, permitindo que eu desenvolva soluções robustas e escaláveis.
       </ParagraphPresentation>
       <DivFlex>
         <Button to="projetos">Meus Projetos</Button>  

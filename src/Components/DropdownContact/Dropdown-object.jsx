@@ -2,7 +2,6 @@ import WhatsApp from '../../Assets/dropdown-contact/WhatsApp.png'
 import LinkedIn from '../../Assets/dropdown-contact/LinkedIn.png'
 import Email from '../../Assets/dropdown-contact/Email.png'
 import Github from '../../Assets/dropdown-contact/Github.png'
-import Behance from '../../Assets/dropdown-contact/Behance.png'
 
 
 
@@ -16,7 +15,7 @@ export const dropdownItems = [
     id: 1,
     span: 'LinkedIn',
     imgSrc: LinkedIn,
-    linkSrc: "https://www.linkedin.com/in/guilherme-jesus-sales-792157209/",
+    linkSrc: "https://www.linkedin.com/in/guilhermejsales/",
   },{
     id: 2,
     span: 'Email',
@@ -27,11 +26,6 @@ export const dropdownItems = [
     span: 'Github',
     imgSrc: Github,
     linkSrc: "https://github.com/GuilhermeJSales",
-  },{
-    id: 4,
-    span: 'Behance',
-    imgSrc: Behance,
-    linkSrc: "https://www.behance.net/guijsales",
-  },
+  }
 ]
 
